@@ -148,7 +148,67 @@ section.logo h2.titulo {
 .devs .dev .foto {
   width: 200px;
   height: 200px;
-  background: black;
+  border-radius: 20px;
+}
+
+.devs .dev .enzzo {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/enzzo.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.devs .dev .gabriel {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/gabriel.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+.devs .dev .tamires {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/tamires.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.devs .dev .john{
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/john.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.devs .dev .luiza {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/luiza.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+.devs .dev .guilherme {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/guilherme.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+.devs .dev .grazi {
+  width: 200px;
+  height: 200px;
+  background-image: url("/sobre/img/grazielly.jpeg");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.devs .dev .tok {
+  width: 200px;
+  height: 200px;
+  background-image: url("/img/Simbolo.png");
+  background-size:cover;
   border-radius: 20px;
 }
 .dev .info h3 {
@@ -451,7 +511,10 @@ div.social a:hover {
     width: 200px;
     height: 200px;
   }
-
+  .devs .dev .foto {
+    width: 200px;
+    height: 200px;
+  }
   .biscoito {
     position: absolute;
     width: 150px;
