@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
+  <title>Tok D' Cereja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fundo">
+  <!-- <img class="fundo" src="img/fundo 2 toque de cereja.png" alt=""> -->
+  <!-- navbar  -->
+  <nav>
+    <div class="containerNavBar">
+      <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+      <div class="sections">
+        <a href="/home/home.html">Início</a>
+        <a href="/avaliacao/avaliacao.html">Avaliação</a>
+        <a href="/Planos/Planos/index.html">Planos</a>
+        <a href="/Livros/index.html">Ferramentas
+        </a>
+      </div>
+      <div class="icons">
+        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+        <a href="/Perfil/Perfil/perfil.html">
+          <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+        </a>
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </nav>
+  <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+
+  <!-- final navbar  -->
+
+  <!-- aside  -->
+
+  <div id="sidebar">
+    <div id="newRecipe">
+      <input class="p1" type="text" id="recipeInput" placeholder="+ Nova Receita">
+      <div class="btn">
+        <button class="butt" onclick="saveRecipe()">Salvar</button>
+        <button class="butt" onclick="clearRecipe()">Excluir</button>
+      </div>
+      <div id="savedRecipes"></div>
+    </div>
+  </div>
+
+  <button id="hamburger" class="bt" onclick="toggleSidebar()">
+    <img class="bt1" src="img/icons8-start-96.png" alt="">
+  </button>
+
+  <!-- final aside  -->
+
+  <!-- tabela  -->
+
+  <main class="content">
+
+
+
+    <div class="centralize">
+
+      <!-- <br> -->
+      <div class="center">
+        <input type="text" id="textoEditavel" class="editavel" value="Titulo dos Ingredientes">
+      </div>
+
+      <!-- <hr> -->
+      <div class="test">
+        <table id="tabela">
+
+          <thead class="cabecalho">
+            <tr>
+              <th class="bb">Produto <span class="seta"><img src="img/Imagem_setas33-removebg-preview.png"
+                    alt=""></span></th>
+              <th class="bb">Quantidade <span class="seta"><img src="img/Imagem_setas33-removebg-preview.png"
+                    alt=""></span></th>
+              <th class="bb">Medida <span class="seta"><img src="img/Imagem_setas33-removebg-preview.png" alt=""></span>
+              </th>
+              <th class="bb">Preço <span class="seta"><img src="img/Imagem_setas33-removebg-preview.png" alt=""></span>
+              </th>
+              <!-- <th>Ação</th> -->
+            </tr>
+          </thead>
+
+        </table>
+
+        <!-- part2 -->
+        <table id="tabela-2">
+          <tbody class="corpo" id="corpoTabela">
+            <!-- linhas da tabela -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <br> -->
+      <!-- <hr> -->
+
+      <div class="total">
+        <p>Total: R$<span id="total">0.00</span></p>
+      </div>
+      <hr>
+      <div class="center-bottom">
+        <button id="adicionar">Adicionar Ingrediente</button>
+
+
+        <button id="remover">Remover Ingrediente</button>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <!-- final tabela  -->
+  <script src="script.js"></script>
+  <div vw class="enabled"> <!-- API - Libras -->
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script> <!-- API - Libras-->
+</body>
+
+</html>

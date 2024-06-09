@@ -1,0 +1,337 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+  :root {
+    --logoSize: 50px;
+    --paddingNavBar: 30px;
+    --fa-size: 28px;
+  }
+  
+  nav {
+    width: 100%;
+    height: 85px;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .containerNavBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--paddingNavBar);
+    padding-right: var(--paddingNavBar);
+  }
+  
+  .containerNavBar .logo {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .containerNavBar .logo img {
+    width: var(--logoSize);
+    height: calc(var(--logoSize) + 5px);
+  }
+  
+  .containerNavBar button {
+    height: 35px;
+    border-radius: 8px;
+    background: #6b0206;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    font-size: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 80ms ease-in-out;
+  }
+  
+  .containerNavBar button:active {
+    transform: scale(0.9);
+  }
+  
+  .containerNavBar button:hover {
+    cursor: pointer;
+  }
+  
+  .containerNavBar button.reg {
+    background-color: white;
+    color: #6b0206;
+  }
+  
+  .containerNavBar .sections {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .sections a {
+    color: #6b0206;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 80ms ease-in-out;
+  }
+  
+  .sections a:hover {
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
+  
+  
+  .icons .circuloIcon i.fa-config {
+    font-size: var(--fa-size);
+    color: #6b0206;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .icons .circuloIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+  }
+  
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  
+
+.container{
+    width:100% ;
+    height:100vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroud{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+}
+
+body{
+    background-color: #D0E9F2;
+    overflow: hidden;
+    position: relative;
+
+}
+.body2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.ParteAzul{
+    width: 50%;
+    height: 100vh;
+}
+
+.arcoSuperior{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: solid 60px #BFC9FF;
+    position: relative;
+    left: -380px;
+    top: -100px;
+}
+
+.Arcoinferior{
+    width: 450px;
+    height: 450px;
+    position: relative;
+    border-radius: 50%;
+    border: solid 60px #BFC9FF;
+    left: -450px;
+    bottom: -200px;
+}
+
+.MaoDoce{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    rotate: 60deg;
+    right: -61px;
+    top: -90px;
+}
+
+.parteRosa {
+   position: relative;
+   height: 100%;
+   width: 60%;
+   background: #FFCCD3;
+   clip-path: url(#ondasRosas);
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+.ArcoRosa{
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: solid 60px #FF7789;
+    right: -460px;
+    position: relative;
+    bottom: -120px;
+}
+
+
+.circuloRosa{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: solid 60px #FF7789;
+    position: relative;
+    top: -250px;
+    right: -200px;
+}
+
+.cookie{
+    width: 230px;
+    height: 230px;
+    rotate: 140deg;
+    bottom: -550px;
+    position: relative;
+    right: -180vh;
+    z-index: 1;
+}
+
+
+.maoCookie{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    rotate: 180deg;
+    top: 100px;
+    right: -40px;
+}
+
+/*Tabela*/
+
+
+.tabela{
+    width:750px;
+    height: auto;
+    background: #ffff;
+    border-radius: 20px;
+    border: 5px solid #7086FF;
+}
+
+.titulo{
+    width: 100%;
+    height:60px;
+    background:#BFC9FF;
+    font-size:25px;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 5px solid #7086FF ;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+}
+
+.info{
+    width:100%;
+    height: 60px;
+    border-bottom: 2.5px solid #000;
+    border-right: 2.5px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1% 0 1%;
+
+}
+
+
+.ultimo{
+    border-bottom: 0px;
+
+}
+
+.dados{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.grafico{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#colorido{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .containe{
+        width:20% ;
+        height:100vh ;
+    }
+
+
+
+
+}

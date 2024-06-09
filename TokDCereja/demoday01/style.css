@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
+}
+
+/* navBar  */
+nav {
+  width: 100%;
+  height: 85px;
+  background: #6b0206;
+}
+
+.containerNavBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
+}
+.containerNavBar .logo {
+  width: 65px;
+  height: 65px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
+}
+.containerNavBar button:active {
+  transform: scale(0.9);
+}
+.containerNavBar button:hover {
+  cursor: pointer;
+}
+
+.containerNavBar button.reg {
+  background-color: white;
+  color: #6b0206;
+}
+.containerNavBar .sections {
+  display: flex;
+  gap: 50px;
+}
+.sections a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+.icons .circuloIcon i.fa-config {
+  font-size: var(--fa-size);
+  color: #6b0206;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons .circuloIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* final navBar  */
+
+
+
+/* aside  */
+
+#sidebar {
+    display: none;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff ;
+    color: #6B0206;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+
+
+
+#content {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+#newRecipe {
+    margin: 20px;
+}
+
+.savedRecipe{
+    width: 150px;
+    background-color: #6B0206;
+    color: #fff;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid red;
+
+}
+.savedRecipe:hover{
+    background-color: #fff;
+    color: #6B0206;
+}
+
+
+#sidebar input{
+    color: black;
+}
+
+
+.trash-icon {
+    cursor: pointer;
+    float: right;
+}
+.trash-icon.white {
+    color: #fff;
+}
+.trash-icon.red {
+    color: #6B0206;
+}
+
+.btn{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    gap: 50px;
+}
+/* #recipeInput{
+    color: #fff;
+    width: 310px; 
+} */
+
+#recipeInput{
+    width: 155px; 
+    /* background-color: #AE0B11;  */
+    color:#fff; 
+    outline: none; 
+    border-radius: 5px; 
+    border: 1px solid #AE0B11; 
+    height: 28px;
+}
+
+#recipeInput:hover{
+    background-color: #AE0B11;
+    border: 1px solid #fff;
+    
+}
+
+.bt {
+    position: absolute;
+    top: auto;
+    left: 0;
+    background-color: #AE0B11;
+    width: 39px;
+    height: 70px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border: 1px solid #fff;
+}
+
+.bt1 {
+    width: 49px;
+    height: 50px;
+    margin-right: 100px;
+    transform: scaleX(-1);
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+/* final aside  */
+
+/* tabela  */
+/* body{
+    /* display: flex; 
+    background-image: url(img/fundo\ 2\ toque\ de\ cereja.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    
+} */
+
+.fundo{
+    background-image: url(img/fundo\ 2\ toque\ de\ cereja.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    /* z-index: -1; */
+    /* background-image: ; */
+    /* background-repeat: no-repeat; */
+    /* overflow: hidden; */
+
+}
+
+.content{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+
+.centralize{
+    border: 2px solid #2941BE;
+    max-height: 688px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+#tabela, #tabela-2{
+    /* border: 1px solid black;     */
+    width: 1089px;
+    /* border-radius: 50px; */
+    /* border: 1px solid red; */
+    /* background-color: #A1B0FF; */
+}
+
+#tabela{
+  /* border: 1px solid black; */
+  background-color: #A1B0FF;
+  border-bottom: 2px solid black;
+  /* border: 1px solid red; */
+  /* gap: ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+th, td{
+    /* border: 1px solid ; */
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+td{
+    border-bottom: 1px solid ;
+    
+    
+}
+
+.bb{
+    /* border: 1px solid; */
+    width: 200px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 60px;
+}
+
+#adicionar{
+    /* border: 1px solid red; */
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    background: #A1B0FF;
+    color: #000;
+    transition: all 0.3s;
+}
+
+#adicionar:hover{
+    /* border: 1px solid red; */
+    border: 2px solid #A1B0FF;
+    padding: 8px;
+    border-radius: 15px;
+    background: #fff;
+    color: #000;
+}
+
+
+#remover{
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    background: #A1B0FF;
+    color: #000;
+    transition: all 0.3s;
+}
+
+
+
+#remover:hover{
+    border: 2px solid #A1B0FF;
+    padding: 8px;
+    border-radius: 15px;
+    background: #fff;
+    color: #000;
+}
+
+.center{
+    /* height: 80%; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 1%; */
+    /* background: #2941BE; */
+    /* border: 1px solid red; */
+    /* background-color: red; */
+    border-bottom: 2px solid black;
+}
+
+.editavel {
+    /* border: 1px solid black; */
+    padding: 5px;
+    text-align: center;
+    height: 78px;
+    width: 100%;
+    /* opacity: 80%; */
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #7B90FF;
+    color: #fff;
+}
+
+.center-bottom{
+    width: auto;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border: 1px solid;
+    height: 48px;
+    border: none;
+}
+
+.total{
+    height: 48px;
+    display: flex;
+    text-align: center;
+    align-items:center;
+    margin-left: 30px;
+}
+
+p{
+    font-weight: 600;
+}
+#total{
+    font-weight: 600;
+}
+
+
+
+.cabecalho{
+  /* background-color: #A1B0FF; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* border-bottom: 2px solid black; */
+}
+
+.corpo {
+  background-color: white;
+  /* border: 1px solid red; */
+}
+
+/* .test{
+  border: 5px solid #A1B0FF;
+} */
+
+.seta{
+    /* border: 1px solid red;    */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* final tabela  */
+
+/* respondividade  */
+/* Estilos padrão */
+
+/* Estilos para dispositivos com largura de até 768px (mobile) */
+@media (max-width: 480px){
+    body{
+        overflow: scroll;
+    }
+    .containerNavBar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: none;
+    }
+
+    .centralize {
+        width: 100%;
+    }
+
+    #tabela, #tabela-2 {
+        width: 100%;
+    }
+
+    .center {
+        flex-direction: column;
+    }
+
+    .editavel {
+        border-radius: 0;
+    }
+
+    .center-bottom {
+        flex-direction: column;
+        height: auto;
+    }   
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .containerNavBar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: none;
+    }
+
+    .centralize {
+        width: 100%;
+    }
+
+    #tabela, #tabela-2 {
+        width: 100%;
+    }
+
+    .center {
+        flex-direction: column;
+    }
+
+    .editavel {
+        border-radius: 0;
+    }
+
+    .center-bottom {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Estilos para dispositivos com largura entre 769px e 1024px (tablet) */
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    /* body{
+        background-image: url(img/fundo\ 2\ toque\ de\ cereja.png);
+        background-size: 100%;
+        width: 100%;
+        height: 100vh;
+    } */
+
+    #tamanhoIp{
+        border: 5px solid red;
+        width: 100px;
+    }
+
+    
+    .containerNavBar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sections {
+        gap: 20px;
+    }
+
+    .icons {
+        gap: 20px;
+    }
+
+    #content {
+        position: relative;
+    }
+
+    .centralize {
+        max-height: 500px;
+    }
+
+    #tabela, #tabela-2 {
+        width: 100%;
+    }
+
+    .bb {
+        width: 150px;
+    }
+}
+
+/* Estilos para dispositivos com largura acima de 1024px (PC, notebook, TV) */
+@media only screen and (min-width: 1025px) {
+    .containerNavBar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .sections {
+        gap: 50px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    
+
+    .centralize {
+        max-height: 688px;
+    }
+
+    #tabela, #tabela-2 {
+        width: 1089px;
+    }
+
+    .center {
+        flex-direction: row;
+    }
+}

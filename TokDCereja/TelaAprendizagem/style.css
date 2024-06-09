@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.body2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+}
+
+:root {
+    --logoSize: 50px;
+    --paddingNavBar: 30px;
+    --fa-size: 28px;
+}
+
+/*Navbar*/
+
+nav {
+    width: 100%;
+    height: 85px;
+    background: #fff;
+}
+
+.containerNavBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--paddingNavBar);
+    padding-right: var(--paddingNavBar);
+}
+
+.containerNavBar .logo {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+    width: var(--logoSize);
+    height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+    height: 35px;
+    border-radius: 8px;
+    background: #fff;
+    color: #6b0206;
+    font-weight: 600;
+    border: 2px solid white;
+    font-size: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 80ms ease-in-out;
+}
+
+.containerNavBar button:active {
+    transform: scale(0.9);
+}
+
+.containerNavBar button:hover {
+    cursor: pointer;
+}
+
+.containerNavBar button.reg {
+    background-color: white;
+    color: #6b0206;
+}
+
+.containerNavBar .sections {
+    display: flex;
+    gap: 50px;
+}
+
+.sections a {
+    color: #6b0206;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+    text-decoration: underline 3px #6b0206;
+    transform: scale(0.9);
+}
+
+.icons .circuloIcon i.fa-config {
+    font-size: var(--fa-size);
+    color: #6b0206;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icons .circuloIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/*Título*/
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*Carrossel*/
+
+.container {
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    border-radius: 15px;
+}
+
+#img {
+    margin-top: 20px;
+    height: 20rem;
+    width: 12rem;
+}
+
+#prev {
+    color: white;
+    top: 38.2rem;
+    left: 36rem;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#next {
+    color: white;
+    top: 38.2rem;
+    right: 36rem;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.6s ease;
+    border-radius: 3px 0px 0px 3px;
+    user-select: none;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dots {
+    text-align: center;
+    margin-top: 42px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #717171;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+.imgActive{
+    transform: scale(1.1);
+}
+
+.fade {
+    transition: all 0.5s;
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 100%;
+    }
+}

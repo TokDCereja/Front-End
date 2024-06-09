@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Resultado precificação</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="containerNavBar">
+            <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+            <div class="sections">
+                <a href="/home/home.html">Início</a>
+                <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                <a href="../Planos/Planos/index.html">Planos</a>
+                <a href="/Livros/index.html">Ferramentas</a>
+            </div>
+
+            <div class="icons">
+                <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                <a href="/Perfil/Perfil/perfil.html">
+                    <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                </a>
+            </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="tabela">
+                <div class="titulo">
+                    <p>Resultados da precificação</p>
+                </div>
+                <div class="conteudo">
+                    <div class="dados">
+                        <div class="info">
+                            <p>Custo total da receita</p>
+                            <p>R$5,00</p>
+                        </div>
+                        <div class="info">
+                            <p>Mão de obra (% sobre o custo da receita)</p>
+                            <p>R$--</p>
+                        </div>
+                        <div class="info">
+                            <p>Custo fixo unitário</p>
+                            <p>R$5,00</p>
+                        </div>
+                        <div class="info">
+                            <p>Custo variável unitário</p>
+                            <p>R$5,00</p>
+                        </div>
+                        <div class="info">
+                            <p>Preço de venda (inserir)</p>
+                            <p>R$--</p>
+                        </div>
+                        <div class="info ultimo">
+                            <p>Lucro Projetado</p>
+                            <p>R$5,00</p>
+                        </div>
+                    </div>
+                    <div class="grafico">
+                        <div class="text">
+                            <p>Porcentual de lucro</p>
+                            <p>20%</p>
+                        </div>
+                        <div class="text">
+                            <p>Lucro unitário</p>
+                            <p>R$2,00</p>
+                        </div>
+                        <div id="colorido">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Mão de obra', 'Preço de venda', 'Lucro Projetado'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [5, 2, 3],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    <div class="backgroud">
+        <img class="cookie" src="img/cookie2.png" alt="cookie">
+
+        <div class="ParteAzul">
+            <div class="arcoSuperior"></div>
+            <div class="Arcoinferior">
+                <img class="MaoDoce" src="img/mao2.png" alt="mão doce">
+            </div>
+        </div>
+        <div class="parteRosa">
+            <img class="maoCookie" src="img/mao1.png" alt="">
+
+            <div class="circuloRosa"></div>
+            <div class="ArcoRosa"></div>
+        </div>
+        <svg>
+            <clipPath id="ondasRosas">
+                <path
+                    d="M15.8955 79.4093C255.317 -633.037 950 61.2915 950 61.2915V1010.66C950 1010.66 -1.76079 1175.68 45.5642 1010.66C68.9923 928.959 394.198 615.307 216.456 495.607C15.4999 360.273 -28.8053 212.426 15.8955 79.4093Z"
+                    fill="#FFCCD3" />
+            </clipPath>
+        </svg>
+    </div>
+    </div>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

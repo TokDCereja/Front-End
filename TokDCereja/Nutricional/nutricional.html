@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela nutricional</title>
+</head>
+
+<body>
+    <nav>
+        <div class="containerNavBar">
+            <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+            <div class="sections">
+                <a href="/home/home.html">Início</a>
+                <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                <a href="../Planos/Planos/index.html">Planos</a>
+                <a href="/Livros/index.html">Ferramentas</a>
+            </div>
+            <div class="icons">
+                <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                <a href="/Perfil/Perfil/perfil.html">
+                    <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BACKGROUND -->
+    <section>
+        <div class="container">
+            <div class="info">
+                <h2>Bolo de cenoura</h2>
+                <h3>informação nutricional</h3>
+                <p>Porção por embalagem: 60g</p>
+                <p>Porção: 60g (1fatia)</p>
+                <div class="content">
+                    <div class="top">
+                        <p>Quantidade por porção</p>
+                        <p>%VD(*)</p>
+                    </div>
+                    <div class="mid">
+                        <p class="nutri">Valor energético (Kcal)</p>
+                        <p class="nutri">66kcal=275KJ</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Açúcares totais (g)</p>
+                        <p>14g</p>
+                        <p>4%</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Carboidratos (g)</p>
+                        <p>26g</p>
+                        <p>8%</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Açúcares (g)</p>
+                        <p>10g</p>
+                        <p>9%</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Proteínas (g)</p>
+                        <p>12g</p>
+                        <p>2%</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Gorduras totais (g)</p>
+                        <p>38g</p>
+                        <p>9%</p>
+                    </div>
+                    <div class="low">
+                        <p class="nutri">Gorduras saturadas (g)</p>
+                        <p>10g</p>
+                        <p>5%</p>
+                    </div>
+                    <!-- <table>
+                        <td>oiii</td>
+                        <tr>Quantidade por porção %VD(*)</tr>
+                        <td>tarde</td>
+                        <tr>Quantidade por porção %VD(*)</tr>
+                    </table> -->
+                </div>
+                <p class="bottom">(*)% Percentual de valores diários fornecidos pela porção.</p>
+            </div>
+
+            <div class="receita">
+                <h3>Receita</h3>
+                <div class="content">
+
+                    <div class="data">
+                        <div class="data v">
+                            <p>Data Val.:</p>
+                            <input type="date">
+                        </div>
+                        <div class="data f">
+                            <p>Data Fab.:</p>
+                            <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="top">
+                        <div class="top l">
+                            <p>Nome do produto:</p>
+                            <input type="text" placeholder="Ex: Bolo de cenoura">
+                        </div>
+                        <div class="top r">
+                            <p>Receita:</p>
+                            <input type="text" placeholder="Ex: Bolo de cenoura">
+                        </div>
+                    </div>
+
+                    <div class="list">
+                        <div class="list l">
+                            <p>Ingredientes:</p>
+                            <input type="text" placeholder="Ex: leite">
+                        </div>
+                        <div class="list r">
+                            <p>Quantidade:</p>
+                            <input type="text" placeholder="Ex: 100ml">
+
+                        </div>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="low">
+                        <div class="left">
+                            <p>Produto final:</p>
+                            <input type="text" placeholder="Ex: Fatia">
+                            <!-- <select>
+                                <option value="fatia">Fatia</option>
+                                <option value="inteiro">Inteiro</option>
+                            </select> -->
+                        </div>
+                        <div class="center">
+                            <p>Quantidade:</p>
+                            <input type="text" placeholder="Ex: 1">
+                            <!-- <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select> -->
+                        </div>
+
+                        <div class="right">
+                            <p>Gramas</p>
+                            <input type="text" placeholder="Ex: 100g">
+                        </div>
+                    </div>
+                    <button>Imprimir</button>
+                </div>
+            </div>
+        </div>
+
+<!--Background-->
+        <div class="background">
+            <div class="ParteVerde">
+                <div class="CirculoSuperior"></div> <!--Parte Verde-->
+                <div class="CirculoInferior"></div> <!--Parte Verde-->
+                <div class="ParteRosa">
+                    <svg>
+                        <clipPath id="Rosa"> <!--Formato - parte Rosa-->
+                            <path
+                                d="M219.574 52.5072C102.582 -189.467 1301 48.8248 1301 48.8248V1020.93C1301 1020.93 -2.91098 1140.34 181.077 1020.93C335.734 920.556 286.287 893.104 57.0851 616.938C-155.683 314.47 300.781 220.468 219.574 52.5072Z"
+                                fill="#FFCCD3" />
+                        </clipPath>
+                    </svg>
+                    <div class="ArcoSuperior"></div> <!--Parte Rosa-->
+                    <div class="ArcoDireito"></div> <!--Parte Rosa-->
+                </div>
+            </div>
+            <img src="img/cake1.png" alt="CakeMorango">
+            <img class="Pudim" src="img/Pudim01.png" alt="Pudim">
+            <img class="Cump" src="img/cake2.png" alt="Cump">
+             <img src="img/" alt="">
+        </div>
+    </section>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+</body>
+</html>

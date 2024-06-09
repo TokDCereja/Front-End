@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+:root {
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
+}
+
+nav {
+  width: 100%;
+  height: 85px;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.containerNavBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
+}
+
+.containerNavBar .logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
+}
+
+.containerNavBar button:active {
+  transform: scale(0.9);
+}
+
+.containerNavBar button:hover {
+  cursor: pointer;
+}
+
+.containerNavBar button.reg {
+  background-color: white;
+  color: #6b0206;
+}
+
+.containerNavBar .sections {
+  display: flex;
+  gap: 50px;
+}
+
+.sections a {
+  color: #6b0206;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+.icons .circuloIcon i.fa-config {
+  font-size: var(--fa-size);
+  color: #6b0206;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons .circuloIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/* BACKGROUND */
+
+.ParteCreme{
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color:#FFF9E6;
+  overflow: hidden;
+}
+
+.CirculoSuperior{
+  width: 389px;
+  height: 389px;
+  position: absolute;
+  top: -150px;
+  left: -160px;
+  border-radius: 50%;
+  border: 60px solid #802F31;
+  box-sizing: border-box;
+}
+.Cake{
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: -30px;
+  transform: rotate(220deg);
+  right: -108px;
+  object-fit: contain;
+}
+
+.CirculoInferior{
+  width: 389px;
+  height: 389px;
+  position: absolute;
+  top:490px;
+  left: -250px;
+  border-radius: 50%;
+  border: 60px solid #802F31;
+  box-sizing: border-box;
+}
+
+.ParteMarrom{
+  width: 80%;
+  height: 100%;
+  position: relative;
+  right: -50%;
+  background-color: #c74c4cb4;
+}
+/* 
+.ArcoSuperior{
+  width: 389px;
+  height: 389px;
+  top: -320px;
+  right: -340px;
+  position: relative;
+  border-radius: 50%;
+  border: 60px solid #511d1fbb;
+  box-sizing: border-box;
+} */
+
+.ParteMarrom{
+width: 60%;
+height: 100%;
+clip-path: url(#Marrom);  /*Formato - parte Marrom*/
+}
+
+.ArcoDireito{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: -575px;
+  bottom: 170px;
+  border-radius: 50%;
+  border: 60px solid #511d1fbb;
+  box-sizing: border-box;
+
+}
+
+.Donut{
+width: 350px;
+height: 350px;
+position: absolute;
+transform: rotate(45deg);
+top:500px;
+left: -180px;
+object-fit: cover;
+}
+
+.background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+/* CONTAINERS */
+
+.container {
+  top: calc(85px + 15%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  z-index: 2;
+  position: absolute;
+}
+
+.feedback {
+  width: 500px;
+  border: 6px solid #6b0206;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.feedback, .coments h2 {
+  text-align: center;
+  padding: 2%;
+}
+
+.feedback p {
+  font-size: 1.3rem;
+  padding: 2% 4%;
+  text-align: center;
+}
+
+.feedback .stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #6b0206;
+  padding: 2%;
+}
+
+.stars i{
+  cursor: pointer;
+}
+
+.comentar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.comentar textarea {
+  width: 400px;
+  height: 250px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #dddddd;
+  border: 2px solid #0000008b;
+  resize: none;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.comentar textarea::placeholder {
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.enviar button {
+  padding: 2.5% 20% 2.5% 20%;
+  cursor: pointer;
+  background-color: #6b0206;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  transition: all 80ms ease-in-out;
+}
+
+.enviar button:hover{
+  transform: scale(0.97);
+}
+
+.coments {
+  width: 500px;
+}
+
+.comentarios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top{
+  display: flex;
+  gap: 10px;
+}
+
+.top .stars{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 5%;
+}
+
+.coment{
+  padding: 5%;
+  border: #6b0206 4px solid;
+  border-radius: 20px;
+  margin-top: 3%;
+  background-color: #fff;
+}
+
+.coment h3{
+  font-size: 1.4rem;
+}
+
+.coment p{
+  font-size: 1.2rem;
+}
+
+.coment .fa-user{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
