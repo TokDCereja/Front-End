@@ -5,29 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="/Menu01/Menu/MenuCadastro/MenuCadastro.css">
     <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Tok D' Cereja</title>
 </head>
 
 <body>
-    <nav>
-        <div class="containerNavBar">
-            <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
-            <div class="sections">
-                <a href="/index.html">Início</a>
-                <a href="/sobre/sobre.html">Sobre</a>
-                <a href="/planosOff/index.html">Planos</a>
-                <a href="/sobre/sobre.html#footer">Contato</a>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/index.html">Início</a>
+                    <a href="/sobre/sobre.html">Sobre</a>
+                    <a href="/telas/PlanosSemLogin/planos.html">Planos</a>
+                    <a href="/sobre/sobre.html#footer">Contato</a>
+                </div>
+
+                <div class="buttons">
+                    <a href="/loginSignUp/index.html"><button type="button">Entrar</button></a>
+                    <a href="/loginSignUp/index.html"><button class="reg" type="button">Registrar-se</button></a>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="/loginSignUp/index.html"><button type="button">Entrar</button></a>
-                <a href="/loginSignUp/index.html"><button class="reg" type="button">Registrar-se</button></a>
-            </div>
+        </nav>
+
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
 
-    </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item"><a href="/sobre/sobre.html">Sobre</a></li>
+                <li class="nav-item"><a href="/telas/PlanosSemLogin/planos.html">Planos</a></li>
+                <li class="nav-item"> <a href="/sobre/sobre.html#footer">Contato</a></li>
+
+                <li class="nav-item"><a href="/loginSignUp/index.html"><button type="button">Entrar</button></a></li>
+                <li class="nav-item"><a href="/loginSignUp/index.html"><button class="reg"
+                            type="button">Registrar-se</button></a></li>
+            </ul>
+        </div>
+    </header>
     <section class="home">
         <div class="containerHome">
             <div class="ladoEsquerdo">
@@ -37,7 +58,7 @@
                         em algo Doce, nunca foi tão fácil!”</p>
                     <h4>Tok D’ Cereja, 2024</h4>
                 </div>
-                <button type="button">Açucarar</button>
+                <a href="/loginSignUp/index.html"><button type="button">Açucarar</button></a>
                 <img src="./img/bonequinho.png" alt="doce fofinho">
             </div>
             <div class="ladoDireito">
@@ -51,13 +72,14 @@
     <div vw class="enabled"> <!-- API - Libras -->
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script> <!-- API - Libras-->
-    
+    <script src="/Menu01/Menu/MenuCadastro/MenuCadastro.js"></script>
 </body>
+
 </html>
