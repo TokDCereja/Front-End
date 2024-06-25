@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="img/Símbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/home/home.html">Início</a>
+                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/Planos/index.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="caixa-container">
+                <h2>Meu caixa</h2>
+                <div class="main-box">
+                    <div class="box">
+                        <h3>Custo fixo</h3>
+                        <div class="content">
+                            <div class="row">
+                                <p class="left">Conta de luz</p>
+                                <p>R$199,99</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Conta de água</p>
+                                <p>R$109,99</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Conta de gás</p>
+                                <p>R$199,99</p>
+                            </div>
+                        </div>
+                        <h3>Fundo de reserva</h3>
+                        <div class="bottom">
+                            <p>R$500,00</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Custo por unidade</h3>
+                        <div class="content">
+                            <div class="row">
+                                <p class="left">Brigadeiro</p>
+                                <p>R$4,99</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Bolo de pote</p>
+                                <p>R$15,99</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Bronie</p>
+                                <p>R$8,99</p>
+                            </div>
+                        </div>
+                        <h3>Capital de giro</h3>
+                        <div class="bottom">
+                            <p>R$400,00</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Total de vendas</h3>
+                        <div class="content">
+                            <div class="row">
+                                <p class="left">Brigadeiro</p>
+                                <p>R$500,00</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Bolo de pote</p>
+                                <p>R$800,00</p>
+                            </div>
+                            <div class="row">
+                                <p class="left">Brownie</p>
+                                <p>R$700,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="background">
+            <div class="ParteVerde">
+                <div class="CirculoSuperior"></div> <!--Parte Verde-->
+                <div class="CirculoInferior"></div> <!--Parte Verde-->
+                <div class="ParteRosa">
+                    <svg>
+                        <clipPath id="Rosa"> <!--Formato - parte Rosa-->
+                            <path
+                                d="M219.574 52.5072C102.582 -189.467 1301 48.8248 1301 48.8248V1020.93C1301 1020.93 -2.91098 1140.34 181.077 1020.93C335.734 920.556 286.287 893.104 57.0851 616.938C-155.683 314.47 300.781 220.468 219.574 52.5072Z"
+                                fill="#FFCCD3" />
+                        </clipPath>
+                    </svg>
+                    <div class="ArcoSuperior"></div> <!--Parte Rosa-->
+                    <div class="ArcoInferior"></div> <!--Parte Rosa-->
+                </div>
+            </div>
+            <img src="img/cake2.png" alt="Pudim" class="Pudim">
+            <img src="img/donut.png" alt="Cump" class="Cump">
+        </div>
+    </section>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    <script src="../JavaScript.js"></script>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="/Menu01/Menu/MenuCadastro/MenuCadastro.js"></script>
+</body>
+
+</html>

@@ -74,6 +74,9 @@ section {
   width: 200px;
 }
 
+section.parceria .textoDireito .esquerda img {
+  width: 500px;
+}
 .biscoito {
   position: absolute;
   left: 250px;
@@ -114,7 +117,8 @@ section.equipeDev {
 section.equipeDev h2.titulo,
 section.paletaDeCores h2.titulo,
 section.Futuro h2.titulo,
-section.logo h2.titulo {
+section.logo h2.titulo,
+section.parceria h2.titulo {
   font-size: 2.1rem;
   text-align: center;
   color: #6b0206;
@@ -174,7 +178,7 @@ section.logo h2.titulo {
   border-radius: 20px;
 }
 
-.devs .dev .john{
+.devs .dev .john {
   width: 200px;
   height: 200px;
   background-image: url("/sobre/img/john.jpeg");
@@ -208,7 +212,7 @@ section.logo h2.titulo {
   width: 200px;
   height: 200px;
   background-image: url("/img/Simbolo.png");
-  background-size:cover;
+  background-size: cover;
   border-radius: 20px;
 }
 .dev .info h3 {

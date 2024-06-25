@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  
+}
+
+    /* .img{
+        /* width: 100%  !important; */
+        /* height: 100% !important; 
+    } */
+
+/* aside  */
+
+/* final aside  */
+
+/* código tabela  */
+
+.fundo{
+    background-image: url(img/Tela\ recheio\ pão\ de\ mel.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.content{
+    /* border: 10px solid red; */
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    /* border: 1px solid; */
+    overflow: hidden;
+    
+}
+
+.centralize{
+    border: 3px solid #2941BE;
+    max-height: 688px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: auto;
+    margin-bottom: 100px;
+    border-radius: 2px;
+    height: 284px;
+    border-radius: 50px;
+}
+
+
+#tabela, #tabela-2{
+    /* border: 1px solid black;     */
+    /* width: 1089px; */
+    /* border-radius: 50px; */
+    /* border: 1px solid red; */
+    /* background-color: #A1B0FF; */
+    width: 1370px;
+    /* height: 284px ; */
+    top: 293px;
+    left: 35px;
+    gap: 0px;
+    /* border: 2px 0px 0px 0px; */
+    opacity: 0px;
+
+}
+
+.center{
+    /* Dados */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 10px;
+gap: 55px;
+
+width: 1370px;
+height: 78px;
+
+background: #7B90FF;
+
+border-bottom: 2px solid #2941BE
+
+/* Inside auto layout */
+
+
+}
+
+.editavel{
+    /* Preço (Grama) */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 164px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+#textoEditavel{
+    /* Preço (Grama) */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+/* gap: 10px; */
+/* width: 164px;
+height: 38px; */
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+background: #7B90FF;
+color:#FFFFFF;
+outline: none;
+border: none;
+/* border: 1px solid black; */
+font-size: 1.8rem;
+/* border: 1px solid red; */
+margin: -30px;
+}
+
+#tabela{
+    background-color: #A1B0FF;
+    padding: 20px 10px 20px 10px;
+    /* border-bottom: 2px solid #000000;  */
+}
+
+.bb{
+    color: #fff;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+
+
+.seta{
+    margin-left: 50px;    
+}
+
+
+
+.check-01{
+    /* border: 1px solid; */
+    margin-right: 10px;
+}
+
+.total{
+    height: 68px;
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    margin-left: 40px;
+}
+
+.total1{
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+#total2{
+    margin-left: 150px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+#total3{
+    margin-left: 70px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+
+.center-bottom{
+    width: auto;
+    /* border-bottom-left-radius: 24px; */
+    /* border-bottom-right-radius: 24px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* border: 1px solid; */
+    height: 48px;
+    border: none;
+}
+
+#adicionar{
+    border: none;
+    background-color: #fff;
+    margin-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+#adicione{
+    color: #BEC8D0;
+}
+
+#mudar{
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid red; */
+    margin-left: 950px;
+    gap: 30px;
+    height: 28px;
+    width: 228px fixed;
+
+    font-size: 22px;
+    line-height: 27.5px;
+    border: none;
+    background-color: #fff;
+}
+
+.number{
+    font-size: 22px;
+    line-height: 27.5px;
+}
+.seta-esquerda{
+    margin-right: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.seta-direita{
+    margin-left: 20px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* css aside  */
+
+body {
+    background-color: cadetblue;
+}
+
+#aside {
+    width: 340px;
+    background: #fff;
+    height: 100vh;
+    /* border: 1px solid red; */
+    /* margin-top: -20px; */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff ;
+    z-index: 1;
+}
+
+.nomeTabela {
+    border: 3px solid #6B0206;
+    width: 310px;
+    height: 38px;
+    margin: 5px;
+    border-radius: 3px;
+    justify-content: space-between;
+    padding: 5px, 10px, 5px, 10px;
+    margin-top: 8px;
+    cursor: pointer;
+
+    /* segunda part */
+    font-family: Lexend;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    color: #6B0206;
+}
+
+.nomeTabela:hover{
+    background-color: #6B0206;
+    color: #fff;
+}
+
+.name:hover{
+    background-color: #6B0206;
+    color: #fff;
+}
+
+.nomeTabela1{
+    border: 3px solid #6B0206;
+    width: 310px;
+    height: 38px;
+    margin: 5px;
+    border-radius: 3px;
+    justify-content: space-between;
+    padding: 5px, 10px, 5px, 10px;
+    background-color: #6B0206;
+}
+
+.name {
+    font-family: Lexend;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    color: #6B0206;
+}
+
+
+.name1{
+    font-family: Lexend;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.5px;
+    text-align: center;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.setinha{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+.check{
+    margin-left: 200px;
+}
+.check1{
+    margin-left: 182px;
+}
+.check2{
+    margin-left: 158px;
+}
+.check3{
+    margin-left: 138px;
+}
+
+.hamburguer{
+    position: absolute;
+    top: 0;
+    left: -2px;
+    /* background-color: #AE0B11; */
+    width: 39px;
+    height: 70px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    /* border: 1px solid #fff; */
+    cursor: pointer;
+}
+
+
+
+.bbt{
+    position: fixed;
+    top: 85px;
+    border: none;
+    margin-left: 0;
+}
+
+.bta {
+    position: absolute;
+    margin-top: -10px;
+    right: -1px;
+}
+
+
+
+#corpoTabela input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* css navbar  */
+
+
+:root {
+    --logoSize: 50px;
+    --paddingNavBar: 30px;
+    --fa-size: 28px;
+  }
+ 
+  nav {
+    width: 100%;
+    height: 85px;
+    background: #ffffff;
+    /* position: absolute; */
+    z-index: 1;
+  }
+
+  .containerNavBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--paddingNavBar);
+    padding-right: var(--paddingNavBar);
+  }
+ 
+  .containerNavBar .logo {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+ 
+  .containerNavBar .logo img {
+    width: var(--logoSize);
+    height: calc(var(--logoSize) + 5px);
+  }
+ 
+  .containerNavBar button {
+    height: 35px;
+    border-radius: 8px;
+    background: #6b0206;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    font-size: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 80ms ease-in-out;
+  }
+ 
+  .containerNavBar button:active {
+    transform: scale(0.9);
+  }
+ 
+  .containerNavBar button:hover {
+    cursor: pointer;
+  }
+ 
+  .containerNavBar button.reg {
+    background-color: white;
+    color: #6b0206;
+  }
+ 
+  .containerNavBar .sections {
+    display: flex;
+    gap: 50px;
+  }
+ 
+  .sections a {
+    color: #6b0206;
+    font-size: 22px;
+    font-weight: 600;
+    transition: all 80ms ease-in-out;
+  }
+ 
+  .sections a:hover {
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
+ 
+ 
+  .icons .circuloIcon i.fa-config {
+    font-size: var(--fa-size);
+    color: #6b0206;
+  }
+ 
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+ 
+  .icons .circuloIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+  }
+ 
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+
+
+
+  .mobile-menu{
+    display: none;
+  }
+
+ 
+  @media screen and (max-width: 480px){
+    .nav {
+        padding:  1.5rem 4rem;
+    }
+
+
+    .sections, .icons, .containerNavBar a{
+        display: none;
+    }
+
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+
+    .containerNavBar .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+
+     .containerNavBar .logo img{
+        width: 45px;
+        height: 45px;
+     }
+   
+     .menu{
+        width: 45px;
+        height: 45px;
+        position: relative;
+        background: transparent;
+        border: none;
+        color: #6b0206;
+        cursor: pointer;
+        left:45vh;
+        bottom:-20px;
+        position: relative;
+        z-index: 2;
+     }
+
+body{
+  background: #6b0206;
+}
+     
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  position:absolute;
+  background: #fff;
+  z-index: 4;
+   top:9%;
+   left:0.2vh;
+}
+
+.mobile-menu li {
+height: 5vh;
+width: 100vw;
+bottom: 5vh;
+position: relative;
+
+}
+
+
+     .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+     }
+
+
+     .mobile-menu .icons-button{
+        display: block;
+        padding: 1rem 2rem;
+     }
+
+
+     .mobile-menu .icons-button i{
+        width: 100%;
+     }
+
+
+     .open{
+        display: block;
+     }
+
+
+     .menu, .fa-x {
+      font-size: 26px;
+       
+    }
+
+
+    .icons-button{
+        left: 21vh;
+        position: relative;
+       
+       
+    }
+
+
+    .nav-item a, .fa-config {
+        color: #6b0206;
+       
+    }
+
+
+    .nav-item li{
+      font-size: 18px;
+    }
+
+
+  .icons .circuloIcon {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+ 
+    transition: all 80ms ease-in-out;
+  }
+
+
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+
+  .nav-item a{
+    color: #6b0206;
+    font-size:19px;
+    transition: all 80ms ease-in-out;
+  }
+
+  .nav-item a:hover{
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
+
+}
+
+

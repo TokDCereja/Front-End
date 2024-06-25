@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/loginSignUp.css">
+    <link rel="stylesheet" href="loginSignUp.css">
     <title>Login</title>
 </head>
 
@@ -40,7 +39,6 @@
                     <p>Ou</p>
                     <div class="line"></div>
                 </div>
-
                 <div class="social">
                     <button type="button" class="socialBtn">
                         <img class="icon" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
@@ -54,7 +52,6 @@
                 </div>
             </form>
         </div>
-
         <div class="formContainer signIn">
             <form>
                 <h2><label class="redLetter">E</label>ntrar</h2>
@@ -67,7 +64,7 @@
                     <input type="password" name="password" id="password" placeholder="Senha">
                 </div>
                 <div class="info2">
-                    <div>
+                    <div class="remember">
                         <input type="checkbox" name="remember" id="remember"><label for="remember">Lembrar de
                             mim</label>
                     </div>
@@ -79,7 +76,6 @@
                     <p>Ou</p>
                     <div class="line"></div>
                 </div>
-
                 <div class="social">
                     <button type="button" class="socialBtn">
                         <img class="icon" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
@@ -93,18 +89,16 @@
                 </div>
             </form>
         </div>
-
         <div class="toggleContainer">
             <div class="toggle">
                 <div class="togglePanel toggleLeft">
-                    <div class="toggleImg"><img src="/img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
+                    <div class="toggleImg"><img src="img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
                     <h2>Bem-vindo de volta!</h2>
                     <p>É ótimo ter você de volta ao nosso site!</p>
                     <button type="button" class="hidden" id="login">Entrar</button>
                 </div>
-
                 <div class="togglePanel toggleRight">
-                    <div class="toggleImg"><img src="/img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
+                    <div class="toggleImg"><img src="img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
                     <h2>Olá Açucarado(a)!</h2>
                     <p>Para começar sua jornada, faça seu registro!</p>
                     <button type="button" class="hidden" id="register">Registrar</button>
@@ -112,18 +106,6 @@
             </div>
         </div>
     </div>
-
-    <div vw class="enabled"> <!-- API - Libras -->
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script> <!-- API - Libras-->
-
     <script src="script.js"></script>
 </body>
 

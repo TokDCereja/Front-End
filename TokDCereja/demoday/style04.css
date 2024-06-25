@@ -1,0 +1,253 @@
+.fundo{
+    background-image: url(img/Pão\ de\ mel\ embalagem.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.bb-1 {
+    /* border: 1px solid red; */
+    color: #fff;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+
+.centralize-table2 {
+    /* border: 1px solid red; */
+    height: 488px;
+}
+
+.test-02 {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+#tabela-3 {
+    /* border: 1px solid red; */
+    height: 68px;
+    width: 100%;
+    border-bottom: 3px solid #D8D3D3;
+
+}
+
+.valor-tabela {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    gap: 10px;
+    width: 170px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.valor-tabela-2{
+    /* border: 1px solid red; */
+    padding-bottom: 30px;
+}
+
+
+
+.separar-01 {
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: -95px;
+
+}
+
+.separ {
+    margin-left: 5px;
+}
+
+.check-01 {
+    /* border: 1px solid red; */
+    margin-left: 15px;
+}
+
+/* .check-02{
+    border: 1px solid red;
+    margin-left: -10px;
+} */
+
+
+.check-02 {
+    margin-left: -40px;
+    margin-right: 10px;
+}
+
+.check-03 {
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.check-001 {
+    /* border: 1px solid; */
+    margin-left: -10px;
+
+}
+
+
+
+.separar {
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: -50px;
+    padding-bottom: 10px;
+
+}
+
+/* R$  */
+.separar-1 {
+    /* border: 1px solid red; */
+    /* margin-right: -100px; */
+    position: fixed;
+    margin-left: -100px;
+}
+
+.separar-01 {
+    /* border: 1px solid red; */
+    margin-left: 80px;
+}
+
+/* 500  */
+.separar-2 {
+    /* border: 1px solid ; */
+    margin-left: 90px;
+    position: fixed;
+
+}
+
+.separar-3 {
+    /*G*/
+    /* border: 1px solid red; */
+    /* margin-left: 90px; */
+    position: fixed;
+    margin-left: 40px;
+
+}
+
+.separed {
+    /* border: 1px solid blue; */
+    position: fixed;
+    margin-left: 130px;
+
+}
+
+
+/* 500 coluna 2 */
+.separar-4 {
+    /* border: 1px solid red; */
+    /* margin-left: 10px; */
+    position: fixed;
+    margin-left: -55px;
+    align-items: center;
+    text-align: center;
+}
+
+/* G coluna 2 */
+.separar-5 {
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: -60px;
+    /* position: fixed; */
+
+
+}
+
+/* seta  */
+.separar-6 {
+    /* border: 1px solid red; */
+    position: fixed;
+    /* margin-left: 40px; */
+    margin-left: 108px;
+
+}
+
+.separar-7 {
+    /* border: 1px solid ; */
+    position: fixed;
+    margin-left: -140px;
+}
+
+.separar-8 {
+    position: fixed;
+    margin-left: 5px;
+}
+
+.cont {
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* margin-left: 100px; */
+    width: 200px;
+    position: relative;
+    left: 60px;
+    height: 25px;
+}
+
+/* conteudo 1 R$ 500 G  */
+.cont-1 {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 25px;
+}
+
+.cont-2 {
+    /* border: 1px solid red; */
+    height: 25px;
+}
+
+
+
+#total2{
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: 220px;
+    font-weight: 700;
+}
+
+#total3{
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: 350px;
+    font-weight: 700;
+}
+
+.total1{
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: 30px;
+}
+
+#adicionar{
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+}
+
+#adicione{
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+#adicione1{
+    /* border: 1px solid red; */
+    position: fixed;
+    margin-left: 60px;
+}
+
+#mudar{
+   /* border: 1px solid red; */
+   margin-left: 1160px; 
+}
+
+/* aside  */
+

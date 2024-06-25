@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="img/Símbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/home/home.html">Início</a>
+                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/Planos/index.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=638&wkst=1&ctz=America%2FSao_Paulo&bgcolor=%23ffffff&src=NGY4YjVjZWUzMmI2Mzc5YWIyMTM0MTMxOGIwZDYyYjJlOGQzNGM0MWRmZTYwYTI1ZTA1YWNmNzIwOWJiZjM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB&color=%230B8043"
+            style="border:solid 0px #777" width="1535" height="638" frameborder="0" scrolling="no"></iframe>
+
+        <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+        <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+
+        <form id="event-form">
+            <input type="text" id="event-summary" placeholder="Event Summary">
+            <input type="datetime-local" id="event-start">
+            <input type="datetime-local" id="event-end">
+            <button type="button" onclick="createEvent()">Create Event</button>
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="/Menu01/Menu/MenuCadastro/MenuCadastro.js"></script>
+    <script>
+        let client;
+
+        function initClient() {
+            gapi.client.init({
+                apiKey: 'AIzaSyDrFzz6_6PbIpgIZB46BGVRd9kE-4hmovI',
+                clientId: '972398362283-265t88h0mjccica8a0nkkbks2tkjqohc.apps.googleusercontent.com',
+                discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+                scope: "https://www.googleapis.com/auth/calendar.events"
+            }).then(function () {
+                client = gapi.client;
+                updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+                gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+            }, function (error) {
+                console.error(JSON.stringify(error, null, 2));
+            });
+        }
+
+        function handleClientLoad() {
+            gapi.load('client:auth2', initClient);
+        }
+
+        function handleAuthClick() {
+            gapi.auth2.getAuthInstance().signIn();
+        }
+
+        function handleSignoutClick() {
+            gapi.auth2.getAuthInstance().signOut();
+        }
+
+        function updateSigninStatus(isSignedIn) {
+            document.getElementById('authorize_button').style.display = isSignedIn ? 'none' : 'block';
+            document.getElementById('signout_button').style.display = isSignedIn ? 'block' : 'none';
+            document.getElementById('event-form').style.display = isSignedIn ? 'block' : 'none';
+        }
+
+        function createEvent() {
+            const event = {
+                'summary': document.getElementById('event-summary').value,
+                'start': {
+                    'dateTime': document.getElementById('event-start').value,
+                    'timeZone': 'America/Sao_Paulo'
+                },
+                'end': {
+                    'dateTime': document.getElementById('event-end').value,
+                    'timeZone': 'America/Sao_Paulo'
+                }
+            };
+
+            client.calendar.events.insert({
+                'calendarId': 'primary',
+                'resource': event
+            }).then(function (response) {
+                console.log('Event created: ', response);
+            }, function (error) {
+                console.error(JSON.stringify(error, null, 2));
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            handleClientLoad();
+        });
+    </script>
+</body>
+
+</html>

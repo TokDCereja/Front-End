@@ -6,29 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página para criação de perfil de usuário. " />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" />
-    <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Menu01/Menu/Menu/style.css">
+
     <title>Perfil</title>
 </head>
 
 <body>
     <!--Começo NavBar-->
-    <nav>
-        <div class="containerNavBar">
-            <div class="logo"><img src="img/Simbolo.png" alt="logo Tok D' Cereja"></div>
-            <div class="sections">
-                <a href="/home/home.html">Início</a>
-                <a href="/avaliacao/avaliacao.html">Avaliação</a>
-                <a href="/Planos/Planos/index.html">Planos</a>
-                <a href="/Livros/index.html">Ferramentas</a>
-            </div>
-            <div class="icons">
-                <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                <div class="circuloIcon"><i class="fa-solid fa-user fa-config"><a
-                            href="/Perfil/Perfil/index.html"></a></i>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/home/home.html">Início</a>
+                    <a href="/telas/Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="/telas/Planos/planos.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/Perfil/perfil.html" class="circuloIcon"><i
+                            class="fa-solid fa-user fa-config"></i></a>
                 </div>
             </div>
-    </nav> <!--Fim NavBar-->
+        </nav>
+
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="/telas/Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="/telas/Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+
+
+            </ul>
+        </div>
+    </header> <!--Fim NavBar-->
 
     <section>
         <div class="Container-Perfil">
@@ -56,11 +79,13 @@
                         <option value="meia-xicara">1/4 Xícara</option>
                         <option value="meia-xicara">1/2 Xícara</option>
                         <option value="meia-xicara">1 Xícara</option>
+
                     </select>
 
                     <button type="submit">Editar</button>
             </div>
             </form>
+
 
             <div class="Perfil-Avatar">
                 <img src="img/Avatar.png" alt="Avatar do Usuário">
@@ -72,7 +97,6 @@
         </div>
         <img class="Manteguinha" src="img/Manteguinha.png" alt="Manteguinha de frente ao container">
     </section>
-
     <div class="Background">
         <div class="CirculoSuperior"></div>
         <div class="CirculoLateral"></div>
@@ -81,22 +105,11 @@
         <img class="Cookie1" src="img/Cookie1.png" alt="Cookie no canto superior esquerdo da pagina">
         <img class="Cookie2" src="img/Cookie2.png" alt="Cookie na lateral direita da pagina">
         <img class="Cookie3" src="img/Cookie3.png" alt="Cookie na parte inferior esquerda da pagina">
+
     </div>
-
     <script src="script.js"></script>
-
-    <div vw class="enabled"> <!-- API - Libras -->
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script> <!-- API - Libras-->
-    
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script> <!--Icones - NavBar-->
+    <script src="/Menu01/Menu/Menu/JavaScript.js"></script>
 </body>
 
 </html>

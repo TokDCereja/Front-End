@@ -4,38 +4,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/livros.css" />
-  <title>Livros de receitas</title>
+  <link rel="stylesheet" href="/Menu01/Menu/Menu/style.css">
+  <title>Livro de receitas</title>
 </head>
 
 <body>
-
   <!-- NAVBAR -->
-  <nav>
-    <div class="containerNavBar">
-      <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
-      <div class="sections">
-        <a href="/home/home.html">Início</a>
-        <a href="/avaliacao/avaliacao.html">Avaliação</a>
-        <a href="/Planos/Planos/index.html">Planos</a>
-        <a href="/Livros/index.html">Ferramentas
-        </a>
-      </div>
-      <div class="icons">
-        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-        <a href="/Perfil/Perfil/perfil.html">
-          <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
-        </a>
 
+  <header>
+    <nav>
+      <div class="containerNavBar">
+        <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+        <div class="sections">
+          <a href="/home/home.html">Início</a>
+          <a href="/telas/Avaliação/avaliacao.html">Avaliação</a>
+          <a href="/telas/Planos/planos.html">Planos</a>
+          <a href="/Livros/index.html">Ferramentas</a>
+        </div>
+        <div class="icons">
+          <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+          <a href="/Perfil/Perfil/perfil.html" class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></a>
+        </div>
       </div>
+    </nav>
+
+
+    <div class="mobile-menu-icon">
+      <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
     </div>
+
+
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="/home/home.html">Início</a></li>
+        <li class="nav-item"><a href="/telas/Avaliação/avaliacao.html">Avaliação</a></li>
+        <li class="nav-item"><a href="/telas/Planos/planos.html">Planos</a></li>
+        <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+        <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+        <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+        </li>
+
+
+      </ul>
     </div>
-    </div>
-  </nav>
+  </header>
 
   <!-- LIVRO -->
   <div class="container">
+
     <div class="livro" id="livro1">
       <div class="bandeira"></div>
       <a href="/TelaAprendizagem/index.html">
@@ -72,7 +90,6 @@
         </div>
       </a>
       <div>
-
         <p>Vol.3</p>
       </div>
       <div class="pagina"></div>
@@ -81,7 +98,7 @@
 
     <div class="livro" id="livro4">
       <div class="bandeira"></div>
-      <a href="">
+      <a href="/Caixa/caixa.html">
         <div class="capa">
           <h2>Meu caixa</h2>
         </div>
@@ -95,7 +112,7 @@
 
     <div class="livro" id="livro5">
       <div class="bandeira"></div>
-      <a href="/Nutricional/nutricional.html">
+      <a href="/telas/Nutricional/nutricional.html">
         <div class="capa">
           <h2>Tabela nutricional</h2>
         </div>
@@ -109,7 +126,7 @@
 
     <div class="livro" id="livro6">
       <div class="bandeira"></div>
-      <a href="/PrecificacaoProdutos/PrecificacaoResultados/index.html">
+      <a href="/PrecificacaoResultados/index.html">
         <div class="capa">
           <h2>Precificação</h2>
         </div>
@@ -123,7 +140,7 @@
 
     <div class="livro" id="livro7">
       <div class="bandeira"></div>
-      <a href="">
+      <a href="/Estoque/index.html">
         <div class="capa">
           <h2>Estoque</h2>
         </div>
@@ -137,7 +154,7 @@
 
     <div class="livro" id="livro8">
       <div class="bandeira"></div>
-      <a href="">
+      <a href="/Calendario/calendario.html">
         <div class="capa">
           <h2>Agenda</h2>
         </div>
@@ -151,7 +168,7 @@
 
     <div class="livro" id="livro9">
       <div class="bandeira"></div>
-      <a href="/demoday01/index.html">
+      <a href="/demoday/index.html">
         <div class="capa">
           <h2>
             Preço <br />
@@ -165,35 +182,41 @@
       <div class="pagina"></div>
       <div class="contracapa"></div>
     </div>
-  </div>
 
+    <div class="livro" id="livro5">
+      <div class="bandeira"></div>
+      <a href="/Vitrine/VitrineConfeiteiro/BoloFesta/BolosDeFesta.html">
+        <div class="capa">
+          <h2>Vitrine <br>
+            Virtual
+          </h2>
+        </div>
+      </a>
+      <div>
+        <p>vol.10</p>
+      </div>
+      <div class="pagina"></div>
+      <div class="contracapa"></div>
+    </div>
+
+  </div>
   <!-- backgroud -->
   <div class="circle1"></div>
   <div class="circle2"></div>
   <div class="circle3"></div>
-  <div class="ladoVerde">
+  <div class="ladoRoxo">
     <svg>
-      <clipPath id="Verde">
+      <clipPath id="Roxo">
         <path
           d="M12.9466 257.633C202.446 -229.471 1016.93 123.732 1016.93 123.732L1028.93 1169.33C1028.93 1169.33 247.446 1260.84 275.928 1169.33C327.147 1004.78 394.033 770.739 232.825 694.656C-28.5535 571.299 -11.7125 321.018 12.9466 257.633Z"
-          fill="#000" />
+          fill="#756CA7" />
       </clipPath>
     </svg>
-  </div>
-   
-  <div vw class="enabled"> <!-- API - Libras -->
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script> <!-- API - Libras-->
 
+  </div>
   <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script src="/Menu01/Menu/Menu/"></script>
 </body>
 
 </html>
