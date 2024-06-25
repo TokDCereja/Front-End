@@ -5,28 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/sobre.css">
-    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/Menu01/Menu/MenuCadastro/MenuCadastro.css">
     <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Sobre</title>
 </head>
 
 <body>
-    <nav>
-        <div class="containerNavBar">
-            <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
-            <div class="sections">
-                <a href="../index.html">Início</a>
-                <a href="../sobre/sobre.html">Sobre</a>
-                <a href="/planosOff/index.html">Planos</a>
-                <a href="/sobre/sobre.html#footer">Contato</a>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/index.html">Início</a>
+                    <a href="/sobre/sobre.html">Sobre</a>
+                    <a href="/telas/PlanosSemLogin/planos.html">Planos</a>
+                    <a href="/sobre/sobre.html#footer">Contato</a>
+                </div>
+
+                <div class="buttons">
+                    <a href="/loginSignUp/index.html"><button type="button">Entrar</button></a>
+                    <a href="/loginSignUp/index.html"><button class="reg" type="button">Registrar-se</button></a>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="/loginSignUp/index.html"><button type="button">Entrar</button></a>
-                <a href="/loginSignUp/index.html"><button class="reg" type="button">Registrar-se</button></a>
-            </div>
+        </nav>
+
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
-    </nav>
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item"><a href="/sobre/sobre.html">Sobre</a></li>
+                <li class="nav-item"><a href="/telas/PlanosSemLogin/planos.html">Planos</a></li>
+                <li class="nav-item"> <a href="/sobre/sobre.html#footer">Contato</a></li>
+
+                <li class="nav-item"><a href="/loginSignUp/index.html"><button type="button">Entrar</button></a></li>
+                <li class="nav-item"><a href="/loginSignUp/index.html"><button class="reg"
+                            type="button">Registrar-se</button></a></li>
+            </ul>
+        </div>
+    </header>
     <div class="tradutor">
         <div class="translate">
             <i class="ri-translate-2"></i>
@@ -143,7 +165,7 @@
                 <!--Informações do Dev-->
                 <div class="info">
                     <h3>John Wesley</h3>
-                    <h4>Full-Stack</h4>
+                    <h4>Front-End</h4>
                     <!--ícones utilizados-->
                     <div class="redes">
                         <i class="fa-brands fa-linkedin fa-size"></i>
@@ -216,6 +238,21 @@
 
     <section class="Futuro">
         <h2 class="titulo">Visão de futuro </h2>
+        <div class="textoDireito">
+            <!-- elementos na esquerda -->
+            <div class="esquerda">
+                <div class="arco">
+                    <img src="/img/icons/icons8-smartphone-100.png" alt="icone de um smartphone">
+                </div>
+            </div>
+
+            <!--  texto na direita -->
+            <div class="texto direita">
+                <h2>Aplicativo Mobile</h2>
+                <p>Não iremos ficar só na plataforma Web, vamos além, trazendo a mesma para o ambiante mobile, para que
+                    todos os nossos açucarados possam levar a Tok D' Cereja em seus bolsos.</p>
+            </div>
+        </div>
 
         <div class="textoEsquerdo">
             <div class="texto esquerda">
@@ -235,7 +272,7 @@
             <!-- elementos na esquerda -->
             <div class="esquerda">
                 <div class="arco">
-                    <img src="/img/icons/icons8-rolling-pin-100.png" alt="icone de rolo de massa">
+                    <img src="/img/icons/icons8-shop-100.png" alt="icone de uma loja">
                 </div>
                 <img class="biscoito" src="/img/bonequinho3.png" alt=" doce biscoito">
                 <img class="bolo" src="/img/bonequinho5.png" alt="doce bolo">
@@ -243,9 +280,9 @@
 
             <!--  texto na direita -->
             <div class="texto direita">
-                <h2>Vitrine Virtual</h2>
-                <p>Queremos deixar à mostra o trabalho dos nossos “açucarados”,criando a “Vitrine virtual” ,onde o
-                    cliente irá visualizar os produtos que estão à venda</p>
+                <h2>Comparação de Mercado</h2>
+                <p>Queremos deixar mais fácil a busca por preços mais baratos de ingredientes, criando a Comparação de
+                    Mercado, que fará a comparação de preços entre os mercados mais próximos.</p>
             </div>
         </div>
 
@@ -258,7 +295,7 @@
 
             <div class="direita">
                 <div class="circulo">
-                    <img src="/img/icons/icons8-chef-hat-50.png" alt="icone de chapéu de chef">
+                    <img src="/img/icons/icons8-rolling-pin-100.png" alt="icone de rolo de massa">
                 </div>
                 <img class="bolinho" src="/img/bonequinho4.png" alt=" doce bolinho">
             </div>
@@ -336,7 +373,25 @@
             <img src="/img/logo.png" alt="Logoda plataforma">
         </div>
     </section>
+    <section class="parceria">
+        <h2 class="titulo">Parceria</h2>
+        <div class="textoDireito">
+            <!-- elementos na esquerda -->
+            <div class="esquerda">
+                <img calss="AutonoMy" src="/img/icons/AutonoMy Extenso.png" alt="icone da AutonoMy">
+            </div>
 
+            <!--  texto na direita -->
+            <div class="texto direita">
+                <h2>AutonoMy</h2>
+                <p>Gostaríamos de auxiliar outros profissionais de diferentes áreas durante sua gestão, pensando nisso,
+                    realizamos uma
+                    parceria com a AutonoMy para auxiliar diversos profissionais a gerir os seus negócios de forma
+                    eficiente.
+                </p>
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div id="Footerlogo">
             <img id="logo" src="/img/logo.png" alt="logo da Tok D' Cereja">
@@ -376,6 +431,7 @@
     <!--Api Tradutor-->
 
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="/Menu01/Menu/MenuCadastro/MenuCadastro.js"></script>
 </body>
 
 </html>
