@@ -28,11 +28,9 @@
                 </div>
             </div>
         </nav>
-
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
-
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="/home/home.html">Início</a></li>
@@ -45,87 +43,67 @@
             </ul>
         </div>
     </header>
+    <div class="container">
 
-    <main>
-        <iframe
-            src="https://calendar.google.com/calendar/embed?height=638&wkst=1&ctz=America%2FSao_Paulo&bgcolor=%23ffffff&src=NGY4YjVjZWUzMmI2Mzc5YWIyMTM0MTMxOGIwZDYyYjJlOGQzNGM0MWRmZTYwYTI1ZTA1YWNmNzIwOWJiZjM1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB&color=%230B8043"
-            style="border:solid 0px #777" width="1535" height="638" frameborder="0" scrolling="no"></iframe>
-
-        <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
-        <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-
-        <form id="event-form">
-            <input type="text" id="event-summary" placeholder="Event Summary">
-            <input type="datetime-local" id="event-start">
-            <input type="datetime-local" id="event-end">
-            <button type="button" onclick="createEvent()">Create Event</button>
-        </form>
-    </main>
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">dezembro 2024</div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/aaaa" class="date-input" />
+                        <button class="goto-btn">Ir</button>
+                    </div>
+                    <button class="today-btn">Hoje</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="today-date">
+                <div class="event-day">Qua</div>
+                <div class="event-date">03 de julho de 2024</div>
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Adicionar evento</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Nome do evento" class="event-name" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Início" class="event-time-from" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Término" class="event-time-to" />
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Adicionar evento</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <script src="../JavaScript.js"></script>
+    <script src="calendario.js"></script>
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
-    <script src="/Menu01/Menu/MenuCadastro/MenuCadastro.js"></script>
-    <script>
-        let client;
-
-        function initClient() {
-            gapi.client.init({
-                apiKey: 'AIzaSyDrFzz6_6PbIpgIZB46BGVRd9kE-4hmovI',
-                clientId: '972398362283-265t88h0mjccica8a0nkkbks2tkjqohc.apps.googleusercontent.com',
-                discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
-                scope: "https://www.googleapis.com/auth/calendar.events"
-            }).then(function () {
-                client = gapi.client;
-                updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-                gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-            }, function (error) {
-                console.error(JSON.stringify(error, null, 2));
-            });
-        }
-
-        function handleClientLoad() {
-            gapi.load('client:auth2', initClient);
-        }
-
-        function handleAuthClick() {
-            gapi.auth2.getAuthInstance().signIn();
-        }
-
-        function handleSignoutClick() {
-            gapi.auth2.getAuthInstance().signOut();
-        }
-
-        function updateSigninStatus(isSignedIn) {
-            document.getElementById('authorize_button').style.display = isSignedIn ? 'none' : 'block';
-            document.getElementById('signout_button').style.display = isSignedIn ? 'block' : 'none';
-            document.getElementById('event-form').style.display = isSignedIn ? 'block' : 'none';
-        }
-
-        function createEvent() {
-            const event = {
-                'summary': document.getElementById('event-summary').value,
-                'start': {
-                    'dateTime': document.getElementById('event-start').value,
-                    'timeZone': 'America/Sao_Paulo'
-                },
-                'end': {
-                    'dateTime': document.getElementById('event-end').value,
-                    'timeZone': 'America/Sao_Paulo'
-                }
-            };
-
-            client.calendar.events.insert({
-                'calendarId': 'primary',
-                'resource': event
-            }).then(function (response) {
-                console.log('Event created: ', response);
-            }, function (error) {
-                console.error(JSON.stringify(error, null, 2));
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            handleClientLoad();
-        });
-    </script>
 </body>
-
 </html>
