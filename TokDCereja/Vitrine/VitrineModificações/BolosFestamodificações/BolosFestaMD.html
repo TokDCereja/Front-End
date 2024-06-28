@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../Menu/style.css">
     <link rel="stylesheet" href="BolosFestaMd.css">
     <title>Modificações</title>
 </head>
@@ -14,38 +15,36 @@
     <header>
         <nav>
             <div class="containerNavBar">
-                <div class="logo"><img src="../../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="logo"><img src="../../../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
                 <div class="sections">
-                    <a href="/home/home.html">Início</a>
-                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
-                    <a href="../Planos/Planos/index.html">Planos</a>
-                    <a href="/Livros/index.html">Ferramentas</a>
+                    <a href="../../../home/home.html">Início</a>
+                    <a href="../../../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../../../Planos/planos.html">Planos</a>
+                    <a href="../../../Livros/index.html">Ferramentas</a>
                 </div>
                 <div class="icons">
                     <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                    <a href="/Perfil/Perfil/perfil.html" class="circuloIcon"><i
-                            class="fa-solid fa-user fa-config"></i></a>
+                    <a href="../../../Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
                 </div>
             </div>
         </nav>
-
 
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
 
-
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="/home/home.html">Início</a></li>
-                <li class="nav-item"><a href="../avaliacao/avaliacao.html">Avaliação</a></li>
-                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
-                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="../../../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../../../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../../../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../../../Livros/index.html">Ferramentas</a></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
-                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                <li class="nav-item"><a href="../../../Perfil/Perfil/perfil.html"><i
+                            class="fa-solid fa-user fa-config"></i></a>
                 </li>
-
-
             </ul>
         </div>
     </header>
@@ -132,21 +131,21 @@
 
             <div class="produtos">
                 <div class="produto produto01">
-                    <a href="../../VitrineModificações/BolosCaseirosModificações/ModificaçõesCaseiros.html">
+                    <a href="/Vitrine/VitrineModificações/BolosCaseirosModificações/ModificaçõesCaseiros.html">
                         <button>Bolos Caseiros</button>
                     </a>
                     <button class="excluirProduto"><i class="fas fa-times"></i></button>
                 </div>
 
                 <div class="produto produto02">
-                    <a href="../../VitrineModificações/BolosFestamodificações/BolosFestaMD.html">
+                    <a href="/Vitrine/VitrineModificações/BolosFestamodificações/BolosFestaMD.html">
                         <button>Bolos de Festa</button>
                     </a>
                     <button class="excluirProduto"><i class="fas fa-times"></i></button>
                 </div>
 
                 <div class="produto produto03">
-                    <a href="../../VitrineModificações/KitsModificações/KitsMd.html">
+                    <a href="/Vitrine/VitrineModificações/KitsModificações/KitsMd.html">
                         <button>Kits</button>
                     </a>
                     <button class="excluirProduto"><i class="fas fa-times"></i></button>
@@ -195,8 +194,19 @@
                 </div>
             </div>
         </div>
+        <div vw class="enabled"> <!-- API - Libras -->
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script> <!-- API - Libras-->
 
         <script src="BoloFestaMd.js"></script>
+        <script src="../../../Menu/JavaScript.js"></script>
 </body>
 
 </html>

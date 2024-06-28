@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../img/Simbolo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/Simbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../Menu/style.css">
     <link rel="stylesheet" href="Kit.css">
     <title>Vitrine Kits</title>
 </head>
@@ -14,38 +15,36 @@
     <header>
         <nav>
             <div class="containerNavBar">
-                <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="logo"><img src="../../../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
                 <div class="sections">
-                    <a href="/home/home.html">Início</a>
-                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
-                    <a href="../Planos/Planos/index.html">Planos</a>
-                    <a href="/Livros/index.html">Ferramentas</a>
+                    <a href="../../../home/home.html">Início</a>
+                    <a href="../../../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../../../Planos/planos.html">Planos</a>
+                    <a href="../../../Livros/index.html">Ferramentas</a>
                 </div>
                 <div class="icons">
                     <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                    <a href="/Perfil/Perfil/perfil.html" class="circuloIcon"><i
-                            class="fa-solid fa-user fa-config"></i></a>
+                    <a href="../../../Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
                 </div>
             </div>
         </nav>
-
 
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
 
-
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="/home/home.html">Início</a></li>
-                <li class="nav-item"><a href="../avaliacao/avaliacao.html">Avaliação</a></li>
-                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
-                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="../../../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../../../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../../../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../../../Livros/index.html">Ferramentas</a></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
-                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                <li class="nav-item"><a href="../../../Perfil/Perfil/perfil.html"><i
+                            class="fa-solid fa-user fa-config"></i></a>
                 </li>
-
-
             </ul>
         </div>
     </header>
@@ -135,9 +134,10 @@
             </div>
 
             <div class="produto">
-                <a href="../../VitrineConfeiteiro/BolosCaseiros/BolosCaseiros.html" class="produto01">Bolos Caseiros</a>
-                <a href="../../VitrineConfeiteiro/BoloFesta/BolosDeFesta.html" class="produto02">Bolos De Festa</a>
-                <a href="../../VitrineConfeiteiro/Kits/Kit.html" class="produto03">Kits</a>
+                <a href="/Vitrine/VitrineConfeiteiro/BolosCaseiros/BolosCaseiros.html" class="produto01">Bolos
+                    Caseiros</a>
+                <a href="/Vitrine/VitrineConfeiteiro/BoloFesta/BolosDeFesta.html" class="produto02">Bolos De Festa</a>
+                <a href="/Vitrine/VitrineConfeiteiro/Kits/Kit.html" class="produto03">Kits</a>
             </div>
 
             <div class="imagens">
@@ -150,17 +150,27 @@
                     <img class="BoloChocolate" src="../../img/kit15.jpg" alt="BoloChocolate">
 
                     <div class="açoes">
-                        <a href="../../VitrineModificações/KitsModificações/KitsMd.html" class="alterações">Fazer
+                        <a href="/Vitrine/VitrineModificações/KitsModificações/KitsMd.html" class="alterações">Fazer
                             Modificações</a>
-                        <a href="../../Visualização/KitsVs/kitsvs.html" class="visializar">Visualizar</a>
+                        <a href="/Vitrine/Visualização/KitsVs/kitsvs.html" class="visializar">Visualizar</a>
 
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
     <script src="Kits.js"></script>
+    <script src="../../../Menu/JavaScript.js"></script>
 </body>
 
 </html>
