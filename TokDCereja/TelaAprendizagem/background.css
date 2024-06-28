@@ -5,7 +5,7 @@
     height: 100vh;
     background: #65bce1;
     position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
     filter: blur(4px);
 }
 
@@ -16,6 +16,7 @@
     height: 100%;
     background: #FAB1D8;
     clip-path: url("#mask1");
+    overflow-x: hidden;
 }
 
 .background .circulo {
@@ -76,4 +77,5 @@
 svg {
     position: absolute;
     top: -100%;
+    overflow-x: hidden;
 }
