@@ -4,31 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/Símbolo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Tabela nutricional</title>
 </head>
 
 <body>
-    <nav>
-        <div class="containerNavBar">
-            <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
-            <div class="sections">
-                <a href="/home/home.html">Início</a>
-                <a href="../avaliacao/avaliacao.html">Avaliação</a>
-                <a href="../Planos/Planos/index.html">Planos</a>
-                <a href="/Livros/index.html">Ferramentas</a>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="img/Símbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/home/home.html">Início</a>
+                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/Planos/index.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
             </div>
-            <div class="icons">
-                <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                <a href="/Perfil/Perfil/perfil.html">
-                    <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
-                </a>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!-- BACKGROUND -->
+
     <section>
         <div class="container">
             <div class="info">
@@ -75,20 +93,12 @@
                         <p>10g</p>
                         <p>5%</p>
                     </div>
-                    <!-- <table>
-                        <td>oiii</td>
-                        <tr>Quantidade por porção %VD(*)</tr>
-                        <td>tarde</td>
-                        <tr>Quantidade por porção %VD(*)</tr>
-                    </table> -->
                 </div>
                 <p class="bottom">(*)% Percentual de valores diários fornecidos pela porção.</p>
             </div>
-
             <div class="receita">
                 <h3>Receita</h3>
                 <div class="content">
-
                     <div class="data">
                         <div class="data v">
                             <p>Data Val.:</p>
@@ -99,7 +109,6 @@
                             <input type="date">
                         </div>
                     </div>
-
                     <div class="top">
                         <div class="top l">
                             <p>Nome do produto:</p>
@@ -110,7 +119,6 @@
                             <input type="text" placeholder="Ex: Bolo de cenoura">
                         </div>
                     </div>
-
                     <div class="list">
                         <div class="list l">
                             <p>Ingredientes:</p>
@@ -123,26 +131,15 @@
                         </div>
                         <i class="fa-solid fa-plus"></i>
                     </div>
-
                     <div class="low">
                         <div class="left">
                             <p>Produto final:</p>
                             <input type="text" placeholder="Ex: Fatia">
-                            <!-- <select>
-                                <option value="fatia">Fatia</option>
-                                <option value="inteiro">Inteiro</option>
-                            </select> -->
                         </div>
                         <div class="center">
                             <p>Quantidade:</p>
                             <input type="text" placeholder="Ex: 1">
-                            <!-- <select>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select> -->
                         </div>
-
                         <div class="right">
                             <p>Gramas</p>
                             <input type="text" placeholder="Ex: 100g">
@@ -153,7 +150,6 @@
             </div>
         </div>
 
-<!--Background-->
         <div class="background">
             <div class="ParteVerde">
                 <div class="CirculoSuperior"></div> <!--Parte Verde-->
@@ -167,27 +163,27 @@
                         </clipPath>
                     </svg>
                     <div class="ArcoSuperior"></div> <!--Parte Rosa-->
-                    <div class="ArcoDireito"></div> <!--Parte Rosa-->
+                    <div class="ArcoInferior"></div> <!--Parte Rosa-->
                 </div>
             </div>
-            <img src="img/cake1.png" alt="CakeMorango">
-            <img class="Pudim" src="img/Pudim01.png" alt="Pudim">
-            <img class="Cump" src="img/cake2.png" alt="Cump">
-             <img src="img/" alt="">
+            <img src="img/Pudim01.png" alt="Pudim" class="Pudim">
+            <img src="img/cake2.png" alt="Cump" class="Cump">
         </div>
     </section>
 
     <div vw class="enabled"> <!-- API - Libras -->
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script> <!-- API - Libras-->
 
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript.js"></script>
 </body>
+
 </html>

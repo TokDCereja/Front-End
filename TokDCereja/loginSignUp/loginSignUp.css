@@ -292,50 +292,35 @@ button:hover {
   height: 170px;
 }
 @media screen and (max-width: 480px) {
-  .container {
-    width: 350px;
-    height: 450px;
-  }
-  .container .info input {
-    width: 200px;
-  }
-  .container .or {
-    width: 220px;
-  }
-
-  .container .or .line {
-    width: 5rem;
-  }
-
-  .container button {
-    width: 200px;
-    font-size: 1rem;
-  }
-
-  .container .info2 .remember {
+  .toggleContainer {
     display: none;
   }
-
-  .container h2 {
-    font-size: 1.8rem;
+  .signIn,
+  .signUp {
+    width: 100%;
+  }
+  .signUp {
+    margin-left: -100%;
+  }
+  h3 {
+    width: 100%;
+    text-align: center;
   }
 
-  .container .info label {
-    font-size: 1.3rem;
+  span.conta {
+    color: var(--color1);
   }
-  .toggle .toggleImg {
-    width: 100px;
-    height: 100px;
-  }
-
-  .toggle .toggleImg img {
-    width: 75px;
-    height: 90px;
+  span.conta:hover {
+    cursor: pointer;
   }
 
-  .togglePanel h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  h3 {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width:481px){
+  h3{
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {

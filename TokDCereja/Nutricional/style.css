@@ -85,7 +85,6 @@ nav {
 
 .sections a {
     color: #6b0206;
-    ;
     font-size: 22px;
     font-weight: 600;
     transition: all 80ms ease-in-out;
@@ -123,6 +122,128 @@ nav {
     cursor: pointer;
 }
 
+/* MENU HAMBURGUER */
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        padding: 1.5rem 4rem;
+    }
+
+    .sections, .icons, .containerNavBar a {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .containerNavBar .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .containerNavBar .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .menu {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        background: transparent;
+        border: none;
+        color: #6b0206;
+        cursor: pointer;
+        left: 85vw;
+        top: 4vw;
+        position: relative;
+        z-index: 5;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        background: #fff;
+        z-index: 4;
+        top: 16.9vw;
+        left: 0vh;
+    }
+
+    .mobile-menu li {
+        height: 6vh;
+        width: 100vw;
+        top: -6vw;
+        position: relative;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .icons-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .icons-button i {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .menu, .fa-x {
+        font-size: 26px;
+    }
+
+    .icons-button {
+        left: 21vh;
+        position: relative;
+    }
+
+    .nav-item a, .fa-config {
+        color: #6b0206;
+
+    }
+
+    .nav-item li {
+        font-size: 18px;
+    }
+
+    .icons .circuloIcon {
+        width: 25px;
+        height: 25px;
+        background: #fff;
+        border-radius: 50%;
+        transition: all 80ms ease-in-out;
+    }
+
+    .icons .circuloIcon:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+    }
+
+    .nav-item a {
+        color: #6b0206;
+        font-size: 19px;
+        transition: all 80ms ease-in-out;
+    }
+
+    .nav-item a:hover {
+        text-decoration: underline 3px white;
+        transform: scale(0.9);
+    }
+}
+
 /* BACKGROUND */
 
 .ParteVerde {
@@ -130,7 +251,7 @@ nav {
     height: 1024px;
     position: relative;
     background-color: #FF6B7E;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .CirculoSuperior {
@@ -153,43 +274,21 @@ nav {
     object-fit: contain;
 }
 
-/*
-.CirculoInferior {
-    width: 389px;
-    height: 389px;
-    position: absolute;
-    top:680px;
-    border-radius: 50%;
-    border: 60px solid #FFF9E6;
-    box-sizing: border-box;
-    left: 450px;
-}
-*/
 .ParteRosa {
     width: 80%;
     height: 100%;
     position: relative;
     right: -50%;
     background-color: #FFF9E6;
+    overflow-x: hidden;
 }
-
-/* 
-.ArcoSuperior{
-  width: 389px;
-  height: 389px;
-  top: -320px;
-  right: -340px;
-  position: relative;
-  border-radius: 50%;
-  border: 60px solid #511d1fbb;
-  box-sizing: border-box;
-} */
 
 /*Parte Bege*/
 .ParteRosa {
     width: 60%;
     height: 100%;
     clip-path: url(#Rosa);
+    overflow-x: hidden;
     /*Formato - parte Rosa*/
 }
 
@@ -202,9 +301,7 @@ nav {
     border-radius: 50%;
     border: 60px solid #FF6B7E;
     box-sizing: border-box;
-
 }
-
 
 .Pudim {
     width: 300px;
@@ -216,19 +313,17 @@ nav {
     object-fit: cover;
 }
 
-.Cump{
+.Cump {
     width: 300px;
     height: 300px;
     position: absolute;
     bottom: -90px;
     left: -130px;
     transform: rotate(400deg);
-
-  
 }
 
-
 .background {
+    overflow-x: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -239,7 +334,7 @@ nav {
 /* CONTAINER PRINCIPAL */
 
 .container {
-    top: calc(85px + 60px);
+    top: calc(85px + 7%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,7 +422,6 @@ nav {
     text-align: center;
     background-color: #FFF;
     width: 140px;
-
 }
 
 .receita .content {
@@ -373,12 +467,12 @@ nav {
     width: 94%;
 }
 
-.receita .top.l{
+.receita .top.l {
     display: flex;
     flex-direction: column;
 }
 
-.receita .top.r{
+.receita .top.r {
     display: flex;
     flex-direction: column;
 }
@@ -409,47 +503,38 @@ nav {
     transition: .3s;
 }
 
-.receita .list i:hover{
+.receita .list i:hover {
     transform: scale(1.07);
     color: #6b0206;
 }
 
-.receita .low{
+.receita .low {
     margin-top: 7%;
     display: flex;
     gap: 3px;
 }
 
-.receita .low .left{
+.receita .low .left {
     width: 33%;
 }
 
-.receita .low .center{
+.receita .low .center {
     width: 33%;
 }
 
-.receita .low .right{
+.receita .low .right {
     width: 33%;
 }
 
-.receita .low input{
+.receita .low input {
     width: 150px;
 }
 
-/* .receita select{
-    display: flex;
-    margin-top: 4%;
-    padding: 7px;
-    width: 150px;
-    border-radius: 10px;
-    border: 2px #6b0206 solid;
-} */
-
-.receita .content input::placeholder{
+.receita .content input::placeholder {
     color: #a0a0a0;
 }
 
-.receita .content button{
+.receita .content button {
     display: flex;
     margin-left: 40%;
     margin-top: 4%;
@@ -463,10 +548,279 @@ nav {
     transition: .3s;
 }
 
-.receita .content button:hover{
+.receita .content button:hover {
     background-color: #fff;
     color: #6b0206;
     border: 2px #6b0206 solid;
     transform: scale(1.02);
 }
 
+/* RESPONSIVIDADE */
+
+@media (min-width: 1440px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1028px) {
+
+    .container {
+        top: calc(85px + 90px);
+        gap: 10px;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1%;
+    }
+
+    .info h3 {
+        font-size: 1.3rem;
+        padding-bottom: 1%;
+    }
+
+    .info .top {
+        gap: 40px;
+    }
+
+    .info .mid {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        border-top: 1px black solid;
+    }
+
+    .info .low {
+        gap: 140px;
+    }
+
+    .info .bottom {
+        padding-top: 4%;
+    }
+
+    .receita .content {
+        width: 450px;
+    }
+
+    .receita p {
+        font-size: 0.9rem;
+        margin-bottom: -5%;
+    }
+
+    .receita .low p {
+        margin-bottom: 5%;
+    }
+
+    .receita input {
+        padding: 7px;
+    }
+
+    .receita .low {
+        margin-top: 5%;
+    }
+
+    .receita .low .left {
+        width: 31%;
+    }
+
+    .receita .low .center {
+        width: 31%;
+    }
+
+    .receita .low .right {
+        width: 31%;
+    }
+
+    .receita .low input {
+        width: 122px;
+    }
+
+    .receita .content button {
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 500px) {
+    body {
+        background-color: #FF6B7E;
+    }
+
+    .container {
+        flex-direction: column;
+        top: calc(85px + 40px);
+        gap: 30px;
+    }
+
+    .info {
+        width: 340px;
+    }
+
+    .info p {
+        font-size: 0.8rem;
+    }
+
+    .info h2 {
+        font-size: 1.3rem;
+        padding-bottom: 1%;
+    }
+
+    .info h3 {
+        font-size: 1.1rem;
+        padding-bottom: 1%;
+    }
+
+    .info .top {
+        margin-left: 34%;
+    }
+
+    .info .mid {
+        gap: 80px;
+    }
+
+    .info .nutri {
+        width: 5%;
+    }
+
+    .info .low {
+        gap: 120px;
+    }
+
+    .receita .content {
+        width: 340px;
+    }
+
+    .receita p {
+        font-size: 0.8rem;
+        margin-bottom: -5%;
+    }
+
+    .receita .content button {
+        margin-bottom: -10px;
+    }
+
+    .receita .data {
+        width: 130px;
+    }
+
+    .receita .top {
+        width: 130px;
+    }
+
+    .receita .list {
+        width: 130px;
+    }
+
+    .receita .list i {
+        margin-left: -5px;
+        margin-bottom: -30px;
+    }
+
+    .receita .low .left {
+        width: 33%;
+    }
+
+    .receita .low .center {
+        width: 33%;
+    }
+
+    .receita .low .right {
+        width: 33%;
+    }
+
+    .receita .low input {
+        width: 80px;
+    }
+
+}
+
+/* MONITOR */
+@media (min-width: 1680px) {
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        top: calc(85px + 15%);
+    }
+
+    .info {
+        padding: 25px;
+        width: 800px;
+    }
+
+    .info p {
+        font-size: 1.3rem;
+    }
+
+    .info h2 {
+        font-size: 2rem;
+        padding-bottom: 2%;
+    }
+
+    .info h3 {
+        font-size: 1.7rem;
+        padding-bottom: 2%;
+    }
+
+    .info .top {
+        gap: 100px;
+    }
+
+    .info .mid {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        border-top: 1px black solid;
+    }
+
+    .info .low {
+        gap: 230px;
+    }
+
+    .receita .content {
+        width: 800px;
+    }
+
+    .receita h3 {
+        font-size: 1.4rem;
+    }
+
+    .receita p {
+        font-size: 1.3rem;
+    }
+
+    .receita .low p {
+        margin-bottom: 5%;
+    }
+
+    .receita input {
+        padding: 12px;
+    }
+
+    .receita input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .receita .low {
+        margin-top: 5%;
+    }
+
+    .receita .low input {
+        width: 215px;
+    }
+
+    .receita .content button {
+        font-size: 1.4rem;
+    }
+}
