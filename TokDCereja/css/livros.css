@@ -14,124 +14,32 @@ body {
   justify-content: flex-start;
   align-items: center;
   background-color: #87ceeb;
-  overflow: hidden;
   margin-bottom: 200px;
 }
-
-/* NAVBAR */
-:root {
-  --logoSize: 50px;
-  --paddingNavBar: 30px;
-  --fa-size: 28px;
-}
-
-nav {
+header {
   width: 100%;
-  height: 85px;
-  background: #6b0206;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
 }
 
-.containerNavBar {
+.containerIndex {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: var(--paddingNavBar);
-  padding-right: var(--paddingNavBar);
-}
-
-.containerNavBar .logo {
-  width: 65px;
-  height: 65px;
-  background: #fff;
+  position: absolute;
+  z-index: 1001;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
-
-.containerNavBar .logo img {
-  width: var(--logoSize);
-  height: calc(var(--logoSize) + 5px);
-}
-
-.containerNavBar button {
-  height: 35px;
-  border-radius: 8px;
-  background: #6b0206;
-  color: white;
-  font-weight: 600;
-  border: 2px solid white;
-  font-size: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-  transition: all 80ms ease-in-out;
-}
-
-.containerNavBar button:active {
-  transform: scale(0.9);
-}
-
-.containerNavBar button:hover {
-  cursor: pointer;
-}
-
-.containerNavBar button.reg {
-  background-color: white;
-  color: #6b0206;
-}
-
-.containerNavBar .sections {
-  display: flex;
-  gap: 50px;
-}
-
-.sections a {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  transition: all 80ms ease-in-out;
-}
-
-.sections a:hover {
-  text-decoration: underline 3px white;
-  transform: scale(0.9);
-}
-
-.icons .circuloIcon i.fa-config {
-  font-size: var(--fa-size);
-  color: #6b0206;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.icons .circuloIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  transition: all 80ms ease-in-out;
-}
-
-.icons .circuloIcon:hover {
-  transform: scale(0.9);
-  cursor: pointer;
-}
-
 /* BACKGROUD */
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
 .circle1 {
   width: 300px;
@@ -140,8 +48,8 @@ nav {
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
-  top: -5px;
-  left: -100px;
+  top: -2%;
+  left: -5%;
   z-index: 1;
 }
 .circle2 {
@@ -151,39 +59,38 @@ nav {
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
-  left: 150px;
+  left: 10%;
+  bottom: -12%;
   margin-top: 650px;
   z-index: 1;
 }
-
 
 .ladoRoxo {
   width: 100%;
   height: 100%;
   clip-path: url(#Roxo);
+  overflow-x: hidden;
 }
 
 .ladoRoxo {
-  width: 80%;
-  top: -1100px;
+  top: 0;
   height: 2024px;
-  position: relative;
-  right: -40%;
+  position: absolute;
+  left: 50%;
   background-color: #756ca7;
 }
 
 .circle3 {
-  width: 325px;
+  width: 300px;
   height: 300px;
-  border: 50px solid #4C38BA;
+  border: 50px solid #4c38ba;
   border-radius: 50%;
   background-color: transparent;
   position: absolute;
-  top: 450px;
-  right: -200px; 
+  top: 50%;
+  right: -10%;
   transform: translateY(-50%);
   z-index: 300;
- 
 }
 
 /* LIVROS */
@@ -202,12 +109,11 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   overflow: auto;
   border: 4px solid #800020;
-  padding-left: 90px;
+  padding: 50px;
   z-index: 500;
-  padding-top: 40px;
 }
 
-.container::-webkit-scrollbar{
+.container::-webkit-scrollbar {
   display: none;
 }
 
@@ -451,46 +357,49 @@ h2 {
   padding: 20px;
 }
 
-@media (max-width: 480px) {
-  .containerNavBar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .containerNavBar .sections {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .containerNavBar .buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .sections a {
-    font-size: 16px;
-  }
-
+@media screen and (max-width: 1024px) {
   .container {
-    padding-top: 140px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 700px;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 50px;
   }
-
-  .livro {
-    width: 120px;
-    height: 180px;
+  .circle1,
+  .circle2,
+  .circle3 {
+    width: 230px;
+    height: 230px;
   }
-
-  .livro .capa h2 {
-    font-size: 14px;
+  .circle1 {
+    left: -20%;
   }
-
-  .livro p {
-    font-size: 10px;
+  .circle2 {
+    left: 0%;
   }
+  .circle3 {
+    top: 60%;
+    right: -25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 300px;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+}
 
-  .containerNavBar .logo img {
-    width: 30px;
-    height: 30px;
+@media screen and (max-width: 900px) {
+  .mobile-menu-icon {
+    position: absolute;
+    z-index: 10;
+  }
+  .container {
+    z-index: 1;
   }
 }

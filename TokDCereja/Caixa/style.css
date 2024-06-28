@@ -1,249 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Lexend", sans-serif;
-    text-decoration: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 100%;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 :root {
-    --logoSize: 50px;
-    --paddingNavBar: 30px;
-    --fa-size: 28px;
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
 }
 
 nav {
-    width: 100%;
-    height: 85px;
-    background: #fff;
-    position: absolute;
-    z-index: 2;
+  width: 100%;
+  height: 85px;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
 }
 
 .containerNavBar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: var(--paddingNavBar);
-    padding-right: var(--paddingNavBar);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
 }
 
 .containerNavBar .logo {
-    width: 65px;
-    height: 65px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 .containerNavBar .logo img {
-    width: var(--logoSize);
-    height: calc(var(--logoSize) + 5px);
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
 }
 
 .containerNavBar button {
-    height: 35px;
-    border-radius: 8px;
-    background: #6b0206;
-    color: white;
-    font-weight: 600;
-    border: 2px solid white;
-    font-size: 21px;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: all 80ms ease-in-out;
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
 }
 
 .containerNavBar button:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .containerNavBar button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .containerNavBar button.reg {
-    background-color: white;
-    color: #6b0206;
+  background-color: white;
+  color: #6b0206;
 }
 
 .containerNavBar .sections {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .sections a {
-    color: #6b0206;
-    font-size: 22px;
-    font-weight: 600;
-    transition: all 80ms ease-in-out;
+  color: #6b0206;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
 }
 
 .sections a:hover {
-    text-decoration: underline 3px white;
-    transform: scale(0.9);
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
 }
 
 .icons .circuloIcon i.fa-config {
-    font-size: var(--fa-size);
-    color: #6b0206;
+  font-size: var(--fa-size);
+  color: #6b0206;
 }
 
 .icons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .icons .circuloIcon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 50%;
-    transition: all 80ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
 }
 
 .icons .circuloIcon:hover {
-    transform: scale(0.9);
-    cursor: pointer;
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 /* MENU HAMBURGUER */
 
 .mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 1.5rem 4rem;
+  }
+
+  .sections, .icons, .containerNavBar a {
     display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .containerNavBar .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containerNavBar .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .menu {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #6b0206;
+    cursor: pointer;
+    left: 85vw;
+    top: 4vw;
+    position: relative;
+    z-index: 5;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+    top: 16.9vw;
+    left: 0vh;
+  }
+
+  .mobile-menu li {
+    height: 6vh;
+    width: 100vw;
+    top: -6vw;
+    position: relative;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .icons-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .icons-button i {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .menu, .fa-x {
+    font-size: 26px;
+  }
+
+  .icons-button {
+    left: 21vh;
+    position: relative;
+  }
+
+  .nav-item a, .fa-config {
+    color: #6b0206;
+
+  }
+
+  .nav-item li {
+    font-size: 18px;
+  }
+
+  .icons .circuloIcon {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+  }
+
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    color: #6b0206;
+    font-size: 19px;
+    transition: all 80ms ease-in-out;
+  }
+
+  .nav-item a:hover {
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
 }
-
-@media screen and (max-width: 500px) {
-    .nav {
-        padding: 1.5rem 4rem;
-    }
-
-    .sections, .icons, .containerNavBar a {
-        display: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .containerNavBar .logo {
-        width: 40px;
-        height: 40px;
-    }
-
-    .containerNavBar .logo img {
-        width: 45px;
-        height: 45px;
-    }
-
-    .menu {
-        width: 45px;
-        height: 45px;
-        position: relative;
-        background: transparent;
-        border: none;
-        color: #6b0206;
-        cursor: pointer;
-        left: 85vw;
-        top: 4vw;
-        position: relative;
-        z-index: 5;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        position: absolute;
-        background: #fff;
-        z-index: 4;
-        top: 16.9vw;
-        left: 0vh;
-    }
-
-    .mobile-menu li {
-        height: 6vh;
-        width: 100vw;
-        top: -6vw;
-        position: relative;
-    }
-
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile-menu .icons-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-
-    .mobile-menu .icons-button i {
-        width: 100%;
-    }
-
-    .open {
-        display: block;
-    }
-
-    .menu, .fa-x {
-        font-size: 26px;
-    }
-
-    .icons-button {
-        left: 21vh;
-        position: relative;
-    }
-
-    .nav-item a, .fa-config {
-        color: #6b0206;
-
-    }
-
-    .nav-item li {
-        font-size: 18px;
-    }
-
-    .icons .circuloIcon {
-        width: 25px;
-        height: 25px;
-        background: #fff;
-        border-radius: 50%;
-        transition: all 80ms ease-in-out;
-    }
-
-    .icons .circuloIcon:hover {
-        transform: scale(0.9);
-        cursor: pointer;
-    }
-
-    .nav-item a {
-        color: #6b0206;
-        font-size: 19px;
-        transition: all 80ms ease-in-out;
-    }
-
-    .nav-item a:hover {
-        text-decoration: underline 3px white;
-        transform: scale(0.9);
-    }
-}
-
 
 .ParteVerde {
     width: 100%;
@@ -251,6 +253,7 @@ nav {
     position: relative;
     background-color: #FFB3BD;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .CirculoSuperior {
@@ -279,6 +282,7 @@ nav {
     position: relative;
     right: -50%;
     background-color: #FFB3BD;
+    overflow-x: hidden;
 }
 
 /*Parte Bege*/
@@ -287,6 +291,7 @@ nav {
     height: 100%;
     clip-path: url(#Rosa);
     /*Formato - parte Rosa*/
+    overflow-x: hidden;
 }
 
 .ArcoDireito {
@@ -320,6 +325,7 @@ nav {
 }
 
 .background {
+    overflow-x: hidden;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -329,11 +335,10 @@ nav {
 
 /* MEU CAIXA */
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .caixa-container {
@@ -360,19 +365,19 @@ nav {
     margin-bottom: 20px;
 }
 
-.box h3{
+.box h3 {
     color: #6b0206;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.main-box{
+.main-box {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.caixa-container .content{
+.caixa-container .content {
     background-color: #fff;
     width: 350px;
     height: 250px;
@@ -381,18 +386,18 @@ nav {
     border: 4px solid #6b0206;
 }
 
-.content .row{
+.content .row {
     display: flex;
     flex-direction: row;
     margin: 20px;
     font-size: 1.2rem;
 }
 
-.content .row .left{
+.content .row .left {
     width: 75%;
 }
 
-.box .bottom{
+.box .bottom {
     padding: 10px;
     border-radius: 15px;
     background-color: #fff;
@@ -403,6 +408,52 @@ nav {
 
 @media (min-width: 1440px) {
     body {
-      overflow: hidden;
+        overflow: hidden;
     }
-  }
+}
+
+@media (max-width: 500px) {
+
+    body{
+        background-color: #FFB3BD;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        margin-left: 105px;
+    }
+
+    .caixa-container{
+        padding: 180px;
+        width: 140px;
+        height: 1400px;
+    }
+
+    .caixa-container h2{
+        font-size: 1.7rem;
+        width: 150px;
+    }
+
+    .caixa-container p{
+        font-size: 1rem;
+    }
+
+    .caixa-container .content {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .main-box {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .content .row .left {
+        width: 75%;
+    }
+
+}

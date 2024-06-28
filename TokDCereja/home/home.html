@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/Menu01/Menu/Menu/style.css">
+    <link rel="stylesheet" href="../Menu/style.css">
+    <link rel="shortcut icon" href="../img/Simbolo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Tok D' Cereja</title>
 </head>
@@ -14,38 +15,36 @@
     <header>
         <nav>
             <div class="containerNavBar">
-                <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
                 <div class="sections">
-                    <a href="/home/home.html">Início</a>
-                    <a href="/telas/Avaliação/avaliacao.html">Avaliação</a>
-                    <a href="/telas/Planos/planos.html">Planos</a>
-                    <a href="/Livros/index.html">Ferramentas</a>
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
                 </div>
                 <div class="icons">
                     <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                    <a href="/Perfil/Perfil/perfil.html" class="circuloIcon"><i
-                            class="fa-solid fa-user fa-config"></i></a>
+                    <a href="../Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
                 </div>
             </div>
         </nav>
-
 
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
 
-
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="/home/home.html">Início</a></li>
-                <li class="nav-item"><a href="/telas/Avaliação/avaliacao.html">Avaliação</a></li>
-                <li class="nav-item"><a href="/telas/Planos/planos.html">Planos</a></li>
-                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
                 <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
-                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                <li class="nav-item"><a href="../Perfil/Perfil/perfil.html"><i
+                            class="fa-solid fa-user fa-config"></i></a>
                 </li>
-
-
             </ul>
         </div>
     </header>
@@ -64,8 +63,18 @@
             </div>
         </div>
     </section>
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
-    <script src="/Menu01/Menu/Menu/JavaScript.js"></script>
+    <script src="../Menu/JavaScript.js"></script>
 </body>
 
 </html>

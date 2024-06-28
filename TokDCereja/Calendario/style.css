@@ -804,6 +804,11 @@ body {
     height: 75px;
   }
 
+  .container{
+    width: 380px;
+    margin-left: 4%;
+  }
+
   .calendar .weekdays {
     height: 50px;
   }

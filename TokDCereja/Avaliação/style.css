@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
+}
+
+nav {
+  width: 100%;
+  height: 85px;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.containerNavBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
+}
+
+.containerNavBar .logo {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
+}
+
+.containerNavBar button:active {
+  transform: scale(0.9);
+}
+
+.containerNavBar button:hover {
+  cursor: pointer;
+}
+
+.containerNavBar button.reg {
+  background-color: white;
+  color: #6b0206;
+}
+
+.containerNavBar .sections {
+  display: flex;
+  gap: 50px;
+}
+
+.sections a {
+  color: #6b0206;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+.icons .circuloIcon i.fa-config {
+  font-size: var(--fa-size);
+  color: #6b0206;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons .circuloIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/* MENU HAMBURGUER */
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 1.5rem 4rem;
+  }
+
+  .sections, .icons, .containerNavBar a {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .containerNavBar .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containerNavBar .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .menu {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #6b0206;
+    cursor: pointer;
+    left: 85vw;
+    top: 4vw;
+    position: relative;
+    z-index: 5;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+    top: 16.9vw;
+    left: 0vh;
+  }
+
+  .mobile-menu li {
+    height: 6vh;
+    width: 100vw;
+    top: -6vw;
+    position: relative;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .icons-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .icons-button i {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .menu, .fa-x {
+    font-size: 26px;
+  }
+
+  .icons-button {
+    left: 21vh;
+    position: relative;
+  }
+
+  .nav-item a, .fa-config {
+    color: #6b0206;
+
+  }
+
+  .nav-item li {
+    font-size: 18px;
+  }
+
+  .icons .circuloIcon {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+  }
+
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    color: #6b0206;
+    font-size: 19px;
+    transition: all 80ms ease-in-out;
+  }
+
+  .nav-item a:hover {
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
+}
+
+/* BACKGROUND */
+
+.background{
+  overflow-x: hidden;
+}
+
+.ParteCreme {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color: #FFF9E6;
+  overflow-x: hidden;
+}
+
+.CirculoSuperior {
+  width: 389px;
+  height: 389px;
+  position: absolute;
+  top: -150px;
+  left: -160px;
+  border-radius: 50%;
+  border: 60px solid #802F31;
+  box-sizing: border-box;
+}
+
+.Cake {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: -30px;
+  transform: rotate(220deg);
+  right: -108px;
+  object-fit: contain;
+}
+
+.CirculoInferior {
+  width: 389px;
+  height: 389px;
+  position: absolute;
+  top: 490px;
+  left: -250px;
+  border-radius: 50%;
+  border: 60px solid #802F31;
+  box-sizing: border-box;
+}
+
+.ParteMarrom {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  right: -50%;
+  background-color: #c74c4cb4;
+  overflow-x: hidden;
+}
+
+.ParteMarrom {
+  width: 60%;
+  height: 100%;
+  clip-path: url(#Marrom);
+  overflow-x: hidden;
+  /*Formato - parte Marrom*/
+}
+
+.ArcoDireito {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: -575px;
+  bottom: 170px;
+  border-radius: 50%;
+  border: 60px solid #511d1fbb;
+  box-sizing: border-box;
+
+}
+
+.Donut {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 500px;
+  left: -180px;
+  object-fit: cover;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+/* CONTAINERS */
+
+.container {
+  top: calc(85px + 10%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  z-index: 2;
+  position: absolute;
+}
+
+.feedback {
+  width: 600px;
+  border: 6px solid #6b0206;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 530px;
+}
+
+.feedback, .coments h2 {
+  text-align: center;
+  padding: 1.5%;
+}
+
+.feedback p {
+  font-size: 1.3rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.feedback .stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #6b0206;
+  padding-bottom: 2%;
+}
+
+.stars i {
+  cursor: pointer;
+}
+
+.comentar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.comentar textarea {
+  width: 600px;
+  height: 180px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #dddddd;
+  border: 2px solid #0000008b;
+  resize: none;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.comentar textarea::placeholder {
+  font-size: 1.3rem;
+  text-align: start;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+.enviar button {
+  padding: 3% 31% 3% 31%;
+  cursor: pointer;
+  background-color: #6b0206;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 15px;
+  border: none;
+  transition: all 80ms ease-in-out;
+}
+
+.enviar button:hover {
+  transform: scale(0.97);
+}
+
+.coments {
+  width: 600px;
+}
+
+.coments h2 {
+  font-size: 1.7rem;
+}
+
+.comentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  gap: 10px;
+}
+
+.top .stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 5%;
+}
+
+.coment {
+  padding: 2.5% 2.5% 3% 5%;
+  border: #6b0206 4px solid;
+  border-radius: 20px;
+  margin-top: 3%;
+  background-color: #fff;
+}
+
+.coment h3 {
+  font-size: 1.4rem;
+}
+
+.coment p {
+  font-size: 1.2rem;
+}
+
+.coment .fa-user {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 1440px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1028px) {
+
+  .container {
+    top: calc(85px + 7%);
+  }
+
+  .feedback {
+    width: 450px;
+  }
+
+  .enviar button {
+    padding: 3% 25% 3% 25%;
+    font-size: 1.4rem;
+  }
+
+  .container p {
+    font-size: 1.1rem;
+  }
+
+  .coments {
+    width: 450px;
+  }
+
+  .coment h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+  body {
+    background-color: #FFF9E6;
+  }
+
+  section{
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .container {
+    top: calc(85px + 4%);
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+
+  .feedback {
+    width: 300px;
+    height: 400px;
+  }
+
+  .feedback i {
+    font-size: 1.5rem;
+  }
+
+  .feedback h2 {
+    font-size: 1.2rem;
+  }
+
+  .comentar textarea {
+    height: 160px;
+  }
+
+  .comentar textarea::placeholder {
+    font-size: 1rem;
+  }
+
+  .enviar button {
+    padding: 3% 25% 3% 25%;
+    font-size: 1rem;
+  }
+
+  .coments {
+    width: 300px;
+    backdrop-filter: blur(15px);
+    padding: 2%;
+    border-radius: 15px;
+  }
+
+  .coments i {
+    font-size: .9rem;
+  }
+
+  .coments h2 {
+    font-size: 1.2rem;
+  }
+
+  .coment h3 {
+    font-size: 1rem;
+  }
+
+  .ParteMarrom {
+    overflow-x: hidden;
+  }
+  
+  .ParteMarrom {
+    width: 50%;
+    overflow-x: hidden;
+  }
+}
+
+/* MONITOR */
+
+@media (min-width: 1680px) {
+
+  .container {
+    top: calc(85px + 15%);/
+  }
+
+  .feedback {
+    width: 800px;
+    height: 650px;
+  }
+
+  .container p {
+    font-size: 1.4rem;
+  }
+
+  .feedback h2 {
+    font-size: 1.9rem;
+  }
+
+  .comentar textarea {
+    height: 230px;
+    width: 670px;
+    font-size: 1.4rem;
+  }
+
+  .comentar textarea::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .enviar button {
+    padding: 2.5% 31% 2.5% 31%;
+    font-size: 1.7rem;
+  }
+
+  .coments {
+    width: 800px;
+  }
+
+  .coments h2 {
+    font-size: 1.9rem;
+  }
+
+  .coment h3 {
+    font-size: 1.7rem;
+  }
+}

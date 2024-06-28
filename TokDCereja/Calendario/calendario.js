@@ -233,7 +233,7 @@ function updateEvents(date) {
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>Sem Eventos</h3>
+            <h3>No Events</h3>
         </div>`;
   }
   eventsContainer.innerHTML = events;
