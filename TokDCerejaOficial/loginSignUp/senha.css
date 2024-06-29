@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.esqueciSenha {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10001;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.containerSenha,
+.containerAlterar {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: 2.5px solid black;
+  position: absolute;
+  background-color: #fff;
+}
+.containerSenha .confirmacao {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.containerSenha .titulo,
+.containerAlterar .titulo {
+  width: 100%;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.containerSenha .titulo span,
+.containerAlterar .titulo span {
+  color: #6b0206;
+}
+
+.containerSenha .conteudo h3,
+.containerAlterar .conteudo h3 {
+  font-size: 20px;
+}
+
+.containerSenha input[type="email"],
+.containerSenha input[type="text"],
+.containerAlterar input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2.5px solid #a3a3a3;
+  font-size: 1.2rem;
+}
+
+.containerSenha input[type="submit"],
+.containerAlterar input[type="submit"] {
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  background: #fff;
+  border: 2px solid #6b0206;
+  color: #6b0206;
+}
+
+.containerSenha input[type="submit"]:hover,
+.containerAlterar input[type="submit"]:hover {
+  border: none;
+  background-color: #6b0206;
+  color: #fff;
+  cursor: pointer;
+}
+
+.containerSenha .dado,
+.containerAlterar .senha {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.containerSenha .conteudo,
+.containerAlterar .conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerSenha i,
+.containerAlterar i {
+  font-size: 35px;
+  color: green;
+}
+
+.esqueciSenha .hidden {
+  display: none;
+}

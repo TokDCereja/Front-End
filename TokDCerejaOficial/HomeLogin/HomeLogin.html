@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/TokDCereja/Menu01/Menu/Menu/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Tok D' Cereja</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="img/Símbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="/home/home.html">Início</a>
+                    <a href="../avaliacao/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/Planos/index.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/Perfil/perfil.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/Planos/index.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
+                <li class="nav-item"><a href="/Perfil/Perfil/perfil.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="home">
+        <div class="containerHome">
+            <div class="ladoEsquerdo">
+                <div class="texto">
+                    <h2>Seja Bem-Vindo(a) a nossa Plataforma!</h2>
+                </div>
+                <img src="/img/bonequinho.png" alt="doce fofinho">
+            </div>
+            <div class="ladoDireito">
+                <div class="circulo">
+                    <img src="/img/doce1.png" alt="Imagem doce com canela e cravo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    <script src="inicio.js"></script>
+</body>
+
+</html>

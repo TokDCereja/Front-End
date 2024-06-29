@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginSignUp.css">
+    <link rel="stylesheet" href="senha.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="formContainer signUp" id="signUp">
+            <form>
+                <h2><label class="redLetter">C</label>adastrar-se</h2>
+                <div class="info">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                </div>
+                <div class="info">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="info">
+                    <label for="emailAgain">E-mail Novamente:</label>
+                    <input type="email" name="emailAgain" id="emailAgain" placeholder="E-mail">
+                </div>
+                <div class="info">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Senha">
+                </div>
+                <div class="info">
+                    <label for="passwordAgain">Senha Novamente:</label>
+                    <input type="password" name="passwordAgain" id="passwordAgain" placeholder="Senha">
+                </div>
+                <button type="button" class="btn focus">Cadastrar</button>
+                <div class="or">
+                    <div class="line"></div>
+                    <p>Ou</p>
+                    <div class="line"></div>
+                </div>
+                <div class="social">
+                    <button type="button" class="socialBtn">
+                        <img class="icon" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+                        Cadastrar com o Google
+                    </button>
+                    <button type="button" class="socialBtn">
+                        <img class="icon face" src="https://img.icons8.com/color/48/facebook-new.png"
+                            alt="facebook-new" />
+                        Cadastrar com o Facebook
+                    </button>
+                </div>
+                <h3>Já tenho uma <span class="conta" id="loginConta">conta</span>
+                </h3>
+            </form>
+        </div>
+        <div class="formContainer signIn">
+            <form>
+                <h2><label class="redLetter">E</label>ntrar</h2>
+                <div class="info">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="info">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" id="password" placeholder="Senha">
+                </div>
+                <div class="info2">
+                    <div class="remember">
+                        <input type="checkbox" name="remember" id="remember"><label for="remember">Lembrar de
+                            mim</label>
+                    </div>
+                    <span>Esqueci minha <a href="#" id="senha">senha</a></span>
+                </div>
+                <a href="/home/home.html"><button type="button" class="btn focus">Entrar</button></a>
+                <div class="or">
+                    <div class="line"></div>
+                    <p>Ou</p>
+                    <div class="line"></div>
+                </div>
+                <div class="social">
+                    <button type="button" class="socialBtn">
+                        <img class="icon" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+                        Entrar com o Google
+                    </button>
+                    <button type="button" class="socialBtn">
+                        <img class="icon face" src="https://img.icons8.com/color/48/facebook-new.png"
+                            alt="facebook-new" />
+                        Entrar com o Facebook
+                    </button>
+
+                </div>
+                <h3>Não tenho uma <span class="conta" id="registerConta">conta </span>
+                </h3>
+            </form>
+        </div>
+        <div class="toggleContainer">
+            <div class="toggle">
+                <div class="togglePanel toggleLeft">
+                    <div class="toggleImg"><img src="img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
+                    <h2>Bem-vindo de volta!</h2>
+                    <p>É ótimo ter você de volta ao nosso site!</p>
+                    <button type="button" class="hidden" id="login">Entrar</button>
+                </div>
+                <div class="togglePanel toggleRight">
+                    <div class="toggleImg"><img src="img/Simbolo.png" alt="Símbolo Tok D' Cereja"></div>
+                    <h2>Olá Açucarado(a)!</h2>
+                    <p>Para começar sua jornada, faça seu registro!</p>
+                    <button type="button" class="hidden" id="register">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="esqueciSenha" id="esqueciSenha">
+        <div class="containerSenha hidden" id="senha1">
+            <div class="conteudo">
+                <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
+                <div class="dado">
+                    <h3 class="texto">Nos informe o E-mail cadastrado:</h3>
+                    <input type="email" placeholder="E-mail" name="email" id="email" required>
+                </div>
+            </div>
+            <input type="submit" id="botao1" value="Confirmar">
+        </div>
+        <div class="containerSenha hidden" id="senha2">
+            <div class="conteudo">
+                <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
+                <div class="confirmacao">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <h3 class="texto">Código enviado com sucesso!</h3>
+                </div>
+            </div>
+            <input type="submit" id="botao2" value="Continuar">
+        </div>
+        <div class="containerSenha hidden" id="senha3">
+            <div class="conteudo">
+                <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
+                <div class="dado">
+                    <h3 class="texto">Escreva o código enviado:</h3>
+                    <input type="text" placeholder="Código" name="codigo" id="codigo">
+                </div>
+            </div>
+            <input type="submit" id="botao3" value="Confirmar">
+        </div>
+        <div class="containerAlterar hidden" id="senha4">
+            <div class="conteudo">
+                <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
+                <div class="senha">
+                    <h3 class="texto">Nova Senha:</h3>
+                    <input type="text" placeholder="Senha" name="senha" id="senha">
+                </div>
+                <div class="senha">
+                    <h3 class="texto">Senha Novamente:</h3>
+                    <input type="text" placeholder="Senha" name="senhaNovamente" id="senhaNovamente">
+                </div>
+            </div>
+            <input type="submit" id="botao4" value="Confirmar">
+        </div>
+        <div class="containerSenha hidden" id="senha5">
+            <div class="conteudo">
+                <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
+                <div class="confirmacao">
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <h3 class="texto">Senha alterada com sucesso!</h3>
+                </div>
+            </div>
+            <input type="submit" id="botao5" value="Confirmar">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="senha.js"></script>
+</body>
+
+</html>
