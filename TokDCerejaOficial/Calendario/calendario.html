@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/Simbolo.png" type="image/x-icon">
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <a href="/Notificação/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    </a>
+                    <a href="/Perfil/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
+                </li>
+                <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">dezembro 2024</div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/aaaa" class="date-input" />
+                        <button class="goto-btn">Ir</button>
+                    </div>
+                    <button class="today-btn">Hoje</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="today-date">
+                <div class="event-day">Qua</div>
+                <div class="event-date">03 de julho de 2024</div>
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Adicionar evento</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Nome do evento" class="event-name" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Início" class="event-time-from" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Término" class="event-time-to" />
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Adicionar evento</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    <script src="../JavaScript.js"></script>
+    <script src="calendario.js"></script>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

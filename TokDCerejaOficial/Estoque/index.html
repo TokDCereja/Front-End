@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Estoque</title>
+    <link rel="shortcut icon" href="../img/Simbolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./NavBar/NavBar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <a href="/Notificação/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    </a>
+                    <a href="/Perfil/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
+                </li>
+                <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="infos">
+        <form name="form" class="form">
+            <div>
+                <label for="campoIngrediente">Ingrediente:</label>
+                <input type="text" name="campoIngrediente" placeholder="Ingrediente">
+            </div>
+            <div>
+                <label for="quantAtual">Quantidade Atual:</label>
+                <input type="number" name="quantAtual" placeholder="Quant. Atual">
+            </div>
+            <div>
+                <label for="quantMax">Quantidade Máxima:</label>
+                <input type="number" name="quantMax" placeholder="Quant. Max.">
+            </div>
+            <div>
+                <label for="quantMin">Quantidade Mínima:</label>
+                <input type="number" name="quantMin" placeholder="Quant. Min.">
+            </div>
+            <div>
+                <label for="quantMin">Medida:</label>
+                <select name="medida" id="medida">
+                    <option name="und" value="und">und</option>
+                    <option name="g" value="g">g</option>
+                    <option name="kg" value="kg">kg</option>
+                    <option name="ml" value="ml">ml</option>
+                    <option name="l" value="l">l</option>
+                </select>
+            </div>
+            <button type="submit">Salvar</button>
+            <button type="button" class="button" onclick="Fechar()">Fechar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <ul class="tabela">
+            <li class="titulo">
+                <h2>Estoque</h2>
+            </li>
+            <li class="info">
+                <input type="checkbox" name="deletar" id="deletar">
+                <h3>Ingrediente</h3>
+                <h3>Quant. Max.</h3>
+                <h3>Quant Min.</h3>
+                <h3>Quant Atual</h3>
+                <h3>Medida</h3>
+            </li>
+            <ul class="listaIngrediente">
+            </ul>
+            <li class="rodape">
+                <h3 id="novo" onclick="Novo()">+ Novo Ingrediente</h3>
+            </li>
+        </ul>
+    </div>
+
+    <div class="background">
+        <div class="circulo InferiorEsquerdo"></div>
+        <div class="circulo SuperiorEsquerdo"></div>
+        <div class="ladoDireito">
+        </div>
+        <div class="circulo Direito"></div>
+        <img class="bolo" src="./img/cake1.png" alt="Desenho de um Bolo com Cobertura Rosa e Morango em cima">
+        <img class="cookie" src="./img/cookie1.png" alt="Desenho de um Cookie">
+        <img class="donut" src="./img/donut.png" alt="Desenho de Donut com cobertura mesclada">
+        <img class="pudim" src="./img/pudim.png" alt="Desenho de um Pudim">
+    </div>
+
+
+    <svg class="mask1">
+        <ClipPath id="mask1">
+            <path
+                d="M12.9466 168.355C202.446 -293.645 1016.93 41.3549 1016.93 41.3549L1028.93 1033.07C1028.93 1033.07 247.446 1119.86 275.928 1033.07C327.147 876.992 394.033 655.016 232.825 582.855C-28.5535 465.855 -11.7125 228.473 12.9466 168.355Z"
+                fill="#B3FFC2" />
+        </ClipPath>
+    </svg>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="./Script/NavBar.js"></script>
+    <script src="./Script/novoIngrediente.js"></script>
+    <script src="./Script/script.js"></script>
+    <script src="../Menu/JavaScript.js"></script>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+</body>
+
+</html>
