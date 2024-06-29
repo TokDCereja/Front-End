@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Símbolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="notificação.css">
+    <title>Notificações</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <a href="/Notificação/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    </a>
+                    <a href="/Perfil/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
+                </li>
+                <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!--Fundo-->
+        <div class="notificacoes-container">
+            <div class="Fundo">
+                <div class="arcoSuperiorEsquerdo">
+                    <img class="cupcake" src="/img/cake2 (3).png" alt="cupcake">
+                </div>
+                <div class="arcoInferiorEsquerdo">
+                    <img class="pudim" src="/img/pudim (1).png" alt="pudim">
+                </div>
+                <div class="arcoSuperiorDireito"></div>
+                <div class="arcoInferiorDireito">
+                    <img class="donuts" src="/img/donut.png" alt="donuts">
+                </div>
+            </div>
+
+            <!--Notificações tabela-->
+
+            <div class="blur">
+                <div class="QuadradoDeNotificações">
+                    <p class="texto">Notificações</p>
+                    <div class="linha"></div>
+
+                    <div class="notificações">
+                        <div class="notificação01">Comprar: Chocolate em Pó<i class="fa-regular fa-square"></i></div>
+                        <div class="notificação02">Comprar: Ovo<i class="fa-regular fa-square"></i></div>
+                        <div class="notificação03">Comprar: Farinha<i class="fa-regular fa-square"></i></div>
+                    </div>
+
+                    <div class="imprimir">
+                        <button class="lista">Imprimir</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    <script src="Notificação.js"></script>
+</body>
+
+</html>

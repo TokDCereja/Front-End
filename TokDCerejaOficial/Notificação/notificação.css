@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+:root {
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
+}
+
+nav {
+  width: 100%;
+  height: 85px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 10;
+}
+
+.containerNavBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
+}
+
+.containerNavBar .logo {
+  width: 65px;
+  height: 65px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
+}
+
+.containerNavBar button:active {
+  transform: scale(0.9);
+}
+
+.containerNavBar button:hover {
+  cursor: pointer;
+}
+
+.containerNavBar button.reg {
+  background-color: white;
+  color: #6b0206;
+}
+
+.containerNavBar .sections {
+  display: flex;
+  gap: 50px;
+}
+
+.sections a {
+  color: #6b0206;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+.icons .circuloIcon i.fa-config {
+  font-size: var(--fa-size);
+  color: #6b0206;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons .circuloIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+
+/*menu hambuguer*/
+
+.mobile-menu {
+  display: none;
+}
+
+/*fundo*/
+
+
+.notificacoes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  overflow: hidden;
+  background: #B8C8FF;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.arcoSuperiorEsquerdo{
+width:320px;
+height: 320px;
+border-radius: 50%;
+border: 60px solid #ff98e8;
+position: absolute;
+left: -20vh;
+top: 1vh;
+}
+
+.cupcake{
+  width: 350px;
+  height: 350px;
+  transform: rotate(125deg);
+  left: -6vh;
+  top: -9vh;
+  position: absolute;
+}
+
+.arcoInferiorEsquerdo{
+width:280px;
+height: 280px;
+border-radius: 50%;
+border: 60px solid #ff98e8;
+position: absolute;
+left: 8vh;
+bottom: -14vh;
+}
+
+.pudim{
+  width:300px ;
+  height: 300px;
+  top: -12vh;
+  position: absolute;
+  left: -10vh;
+}
+
+.arcoInferiorDireito{
+width:310px;
+height: 310px;
+border-radius: 50%;
+border: 60px solid #ff98e8;
+position: absolute;
+right: -18vh;
+bottom: -18vh;
+}
+
+.donuts{
+  width:320px ;
+  height: 320px;
+  top: -10vh;
+  position: absolute;
+  left: -11.2vh
+}
+
+
+.arcoSuperiorDireito{
+  width:310px;
+  height: 310px;
+  border-radius: 50%;
+  border: 60px solid #ff98e8;
+  position: absolute;
+  right: -18vh;
+  top: -1vh;
+
+  }
+
+/*Notificações*/
+
+.blur{
+    width: 45%;
+    height: 70vh;
+    backdrop-filter: blur(25px);
+    border-radius: 35px;
+    background-color: rgba(255, 179, 189, 0.1);
+    border: 5.5px solid #fff;
+    box-sizing: border-box;
+  
+    }
+
+    .QuadradoDeNotificações{
+        margin: 5vh;
+    }
+
+    .texto{
+      font-size: 38px;
+      font-weight: 800;
+      color: #6b0206;
+      display: flex;
+      justify-content: center;
+      align-items: center;       
+      }
+
+      .linha{
+          width: 100%;
+          background: #fff;
+          height: 0.5vh;
+          box-sizing: border-box;
+          margin: 2.4vh;
+      }
+
+      .notificações{
+       margin-top: 4vh;
+      }
+
+      .notificação01{
+          width: 100%;
+          height: 8vh;
+          background-color: #e7e7e7;
+          font-size: 17.5px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 35px;
+          margin-bottom: 2vh;
+      }
+
+      .notificação02{
+          width: 100%;
+          height: 8vh;
+          background-color: #e7e7e7;
+          font-size: 17.5px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 35px;
+          margin-bottom: 2vh;
+      }
+
+      .notificação03{
+          width: 100%;
+          height: 8vh;
+          font-size: 17.5px;
+          background-color: #e7e7e7;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 35px;
+          margin-bottom: 2vh;
+      }
+
+      .imprimir{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .lista{
+          border: none;
+          width: 23vh;
+          height: 5.8vh;
+          background: #6b0206;
+          font-size: 15.8px;
+          font-weight: 500;
+          color: #fff;
+          border-radius: 11px;
+          margin-top: 2vh;
+          cursor: pointer;
+          transition: all 80ms ease-in-out;
+      }
+
+         .lista:hover{
+         background: #fff;
+         color: #6b0206;
+         transform: scale(0.9);
+         border: solid #6b0206;
+      }
+      
+
+   
+@media screen and (max-width: 1440px){
+
+  .arcoSuperiorEsquerdo{
+    width:320px;
+    height: 320px;
+    left: -15vh;
+    top: 1vh;
+    }
+    
+    .cupcake{
+      left: -4vh;
+      top: -6vh;
+    }
+    
+    .arcoInferiorEsquerdo{
+    left: 7vh;
+    bottom: -14vh;
+    }
+    
+    .pudim{
+      top: -12vh;
+      left: -8vh;
+    }
+    
+    .arcoInferiorDireito{
+    right: -15vh;
+    bottom: -14vh;
+    }
+    
+    .donuts{
+      left: -9vh
+    }  
+    .arcoSuperiorDireito{
+    right: -15vh;
+     top: 1vh;
+  }    
+}
+  
+@media screen and (max-width: 1280px) {
+  
+  .arcoSuperiorEsquerdo{
+    width:320px;
+    height: 320px;
+    left: -15vh;
+    top: 1vh;
+    }
+    
+    .cupcake{
+      left: -7vh;
+      top: -8vh;
+    }
+    
+    .arcoInferiorEsquerdo{
+    left: 7vh;
+    bottom: -14vh;
+    }
+    
+    .pudim{
+      top: -11vh;
+      left: -9.2vh;
+    }
+    
+    .arcoInferiorDireito{
+    right: -15vh;
+    bottom: -14vh;
+    }
+    
+    .donuts{
+      left: -10vh
+    }  
+   
+  }
+
+  
+@media screen and (max-width: 768px) {
+  .arcoSuperiorEsquerdo{
+    width:320px;
+    height: 320px;
+    left: -15vh;
+    top: 1vh;
+    }
+    
+    .cupcake{
+      left: -5vh;
+      top: -6vh;
+      
+    }
+    
+    .arcoInferiorEsquerdo{
+    left: -10vh;
+    bottom: -9vh;
+    }
+    
+    .pudim{
+      top: -8vh;
+      left: -5vh;
+      transform: rotate(45deg);
+    }
+    
+    .arcoInferiorDireito{
+    right: -12vh;
+    bottom: -14vh;
+    }
+    
+    .donuts{
+      left: -8vh
+    }  
+
+    .linha{
+      width: 80%;
+  }
+
+  
+.blur{
+  width: 65%;
+  height: 60vh;
+}
+
+}
+  
+  
+@media screen and (max-width: 573px){
+.cupcake, .pudim, .donuts, .arcoInferiorDireito, .arcoSuperiorDireito, .arcoInferiorEsquerdo, .arcoSuperiorEsquerdo{
+  display: none;
+}
+
+.nav {
+  padding: 1.5rem 4rem;
+}
+
+.sections,
+.icons,
+.containerNavBar a {
+  display: none;
+}
+
+.mobile-menu-icon {
+  display: block;
+}
+
+.containerNavBar .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.containerNavBar .logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.menu {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #6b0206;
+  cursor: pointer;
+  left: 85vw;
+  top: 4vw;
+  position: relative;
+  z-index: 11;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  background: #fff;
+  z-index: 10;
+  top: 14vw;
+  left: 0vh;
+}
+
+.mobile-menu li {
+  height: 6vh;
+  width: 100vw;
+  top: -6vw;
+  position: relative;
+}
+
+.mobile-menu .nav-item {
+  display: block;
+  padding-top: 1.2rem;
+}
+
+.mobile-menu .icons-button {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu .icons-button i {
+  width: 100%;
+}
+
+.open {
+  display: block;
+}
+
+.menu,
+.fa-x {
+  font-size: 26px;
+}
+
+.icons-button {
+  left: 21vh;
+  position: relative;
+}
+
+.nav-item a,
+.fa-config {
+  color: #6b0206;
+}
+
+.nav-item li {
+  font-size: 18px;
+}
+
+.icons .circuloIcon {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.nav-item a {
+  color: #6b0206;
+  font-size: 19px;
+  transition: all 80ms ease-in-out;
+}
+
+.nav-item a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+.blur{
+  width: 65%;
+  height: 65vh;
+  }
+
+
+  .texto{
+    font-size: 32px;       
+    }
+
+    .linha{
+        width: 85%;
+    }
+
+    .notificação01{
+        font-size: 17px;
+    }
+
+    .notificação02{
+        font-size: 17px;
+    }
+
+    .notificação03{
+        font-size: 17px;
+    }
+
+    .imprimir{
+        font-size: 17px;
+    }
+
+    .lista{
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  
+.mobile-menu ul {
+  top: 16.9vw;
+}
+
+.blur{
+  width: 85%;
+  height: 60vh;
+}
+
+  .texto{
+    font-size: 28px;
+    font-weight: 800;  
+    }
+
+    .linha{
+        width: 85%;
+    }
+
+    .notificação01, .notificação02, .notificação03{
+        font-size: 16px;
+    }
+
+
+
+    .lista{
+        border: none;
+        width: 18vh;
+        height: 4vh;
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  .texto {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .notificação01, .notificação02, .notificação03 {
+    font-size: 14px;
+  }
+
+  .lista {
+    border: none;
+    width: 18vh;
+    height: 4vh;
+    font-size: 13px;
+  }
+}
