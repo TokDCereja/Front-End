@@ -1,0 +1,1234 @@
+.fundo {
+    background-image: url(img/Pão\ de\ mel\ embalagem.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.bb-1 {
+    color: #fff;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+
+.centralize-table2 {
+    height: 488px;
+}
+
+.test-02 {
+    width: 100%;
+}
+
+#tabela-3 {
+    height: 68px;
+    width: 100%;
+    border-bottom: 3px solid #D8D3D3;
+}
+
+.valor-tabela {
+    gap: 10px;
+    width: 170px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.valor-tabela-2 {
+    padding-bottom: 30px;
+}
+
+.separar-01 {
+    position: fixed;
+    margin-left: -95px;
+}
+
+.separ {
+    margin-left: 5px;
+}
+
+.check-01 {
+    margin-left: 15px;
+}
+
+.check-02 {
+    margin-left: -40px;
+    margin-right: 10px;
+}
+
+.check-03 {
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.check-001 {
+    margin-left: -10px;
+}
+
+.separar {
+    position: fixed;
+    margin-left: -50px;
+    padding-bottom: 10px;
+}
+
+/* R$  */
+.separar-1 {
+    position: fixed;
+    margin-left: -100px;
+}
+
+.separar-01 {
+    margin-left: 80px;
+}
+
+/* 500  */
+.separar-2 {
+    margin-left: 90px;
+    position: fixed;
+}
+
+.separar-3 {
+    position: fixed;
+    margin-left: 40px;
+
+}
+
+.separed {
+    position: fixed;
+    margin-left: 130px;
+}
+
+
+/* 500 coluna 2 */
+.separar-4 {
+    position: fixed;
+    margin-left: -55px;
+    align-items: center;
+    text-align: center;
+}
+
+/* G coluna 2 */
+.separar-5 {
+    position: fixed;
+    margin-left: -60px;
+}
+
+/* seta  */
+.separar-6 {
+    position: fixed;
+    margin-left: 108px;
+
+}
+
+.separar-7 {
+    position: fixed;
+    margin-left: -140px;
+}
+
+.separar-8 {
+    position: fixed;
+    margin-left: 5px;
+}
+
+.cont {
+    width: 200px;
+    position: relative;
+    left: 60px;
+    height: 25px;
+}
+
+/* conteudo 1 R$ 500 G  */
+.cont-1 {
+    position: relative;
+    height: 25px;
+}
+
+.cont-2 {
+    height: 25px;
+}
+
+#total2 {
+    position: fixed;
+    margin-left: 220px;
+    font-weight: 700;
+}
+
+#total3 {
+    position: fixed;
+    margin-left: 350px;
+    font-weight: 700;
+}
+
+.total1 {
+    position: fixed;
+    margin-left: 30px;
+}
+
+#adicionar {
+    padding-bottom: 20px;
+}
+
+#adicione {
+    position: fixed;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+#adicione1 {
+    position: fixed;
+    margin-left: 60px;
+}
+
+#mudar {
+    margin-left: 1160px;
+}
+
+/* aside  */
+@media (max-width: 360px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .centralize {
+        border-radius: 10%;
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .separ {
+        font-size: 0.5rem;
+    }
+
+    .bb-1 {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nome {
+        font-size: 0.5rem;
+        top: -5px;
+        position: relative;
+    }
+
+    #tabela {
+        height: 8px;
+        width: 100%;
+    }
+
+    #tabela-3 {
+        height: 5px;
+    }
+
+    .center {
+        width: 100%;
+        height: 10px;
+        margin: 0;
+    }
+
+    #textoEditavel {
+        width: 100px;
+        padding: 0;
+    }
+
+    .check-001 {
+        display: none;
+    }
+
+    .check-02 {
+        display: none;
+    }
+
+    .check-03 {
+        display: none;
+    }
+
+    .valor-tabela {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separar {
+        font-size: 0.5rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 35px;
+        top: -5px;
+    }
+
+    .tb1 {
+        left: 45px;
+        top: -5px;
+    }
+
+    .tb2 {
+        left: 38px;
+        top: -5px;
+    }
+
+    .separar-01 {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+        left: 145px;
+    }
+
+    .separar-2 {
+        font-size: 0.5rem;
+        left: 120px;
+    }
+
+    .separar-5 {
+        font-size: 0.5rem;
+        left: 300px;
+    }
+
+    .separar-7 {
+        font-size: 0.5rem;
+        left: 430px;
+    }
+
+    .separar-8 {
+        font-size: 0.5rem;
+        left: 315px;
+    }
+
+    .total {
+        width: 100%;
+        height: 28px;
+    }
+
+    .total1 {
+        margin: 0;
+        padding: 0;
+        left: 15px;
+    }
+
+    #total2 {
+        margin: 0;
+        padding: 0;
+        left: 110px;
+    }
+
+    #total3 {
+        left: -210px;
+        padding: 0;
+    }
+
+    #adicione {
+        left: -10px;
+        bottom: 125px;
+    }
+
+    .nome1 {
+        position: relative;
+        left: -30px;
+        top: -5px;
+
+    }
+
+    @media (width < 321px) {
+        #total2 {
+            margin: 0;
+            padding: 0;
+            left: 95px;
+        }
+
+        .separar-2 {
+            font-size: 0.5rem;
+            left: 95px;
+
+        }
+
+        .separar-5 {
+            font-size: 0.5rem;
+            left: 270px;
+
+        }
+
+        .separar-7 {
+            left: 395px;
+        }
+
+        .separar-8 {
+            font-size: 0.5rem;
+            left: 275px;
+        }
+    }
+}
+
+@media (width > 360px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .centralize {
+        border-radius: 5%;
+        height: 250px;
+        width: 100%;
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .separ {
+        font-size: 0.7rem;
+    }
+
+    .bb-1 {
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .nome {
+        font-size: 0.7rem;
+        top: -5px;
+        position: relative;
+    }
+
+    #tabela {
+        height: 8px;
+        width: 100%;
+    }
+
+    #tabela-3 {
+        height: 5px;
+    }
+
+    .center {
+        width: 100%;
+        height: 10px;
+        margin: 0;
+    }
+
+    #textoEditavel {
+        width: 100px;
+        padding: 0;
+    }
+
+    .check-001 {
+        display: none;
+    }
+
+    .check-02 {
+        display: none;
+    }
+
+    .check-03 {
+        display: none;
+    }
+
+    .valor-tabela {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separar {
+        font-size: 0.7rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 30px;
+        top: -5px;
+    }
+
+    .tb1 {
+        left: 45px;
+        top: -5px;
+    }
+
+    .tb2 {
+        left: 35px;
+        top: -5px;
+    }
+
+    .separar-01 {
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0;
+        left: 200px;
+    }
+
+    .separar-2 {
+
+        font-size: 0.7rem;
+        left: 190px;
+    }
+
+    .separar-5 {
+        font-size: 0.7rem;
+        left: 300px;
+    }
+
+    .separar-7 {
+        font-size: 0.5rem;
+        left: 430px;
+    }
+
+    .separar-8 {
+        font-size: 0.5rem;
+        left: 315px;
+    }
+
+    .total {
+        width: 100%;
+        height: 28px;
+    }
+
+    .total1 {
+        margin: 0;
+        padding: 0;
+        left: 15px;
+    }
+
+    #total2 {
+        margin: 0;
+        padding: 0;
+        left: 110px;
+    }
+
+    #total3 {
+        left: -210px;
+        padding: 0;
+    }
+
+    #adicione {
+
+        left: -10px;
+        bottom: 125px;
+    }
+
+    .nome1 {
+        position: relative;
+        left: -30px;
+        top: -5px;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    @media (width > 413px) {
+        .total1 {
+            font-size: 0.7rem;
+            left: 25px;
+        }
+
+        #total2 {
+            margin: 0;
+            padding: 0;
+            font-size: 0.7rem;
+            left: 135px;
+        }
+
+        #total3 {
+            font-size: 0.7rem;
+            left: -150px;
+        }
+
+        #adicione {
+            left: 5px;
+            bottom: 140px;
+        }
+    }
+
+    @media (width > 470px) {
+        .separar-01 {
+            font-size: 0.7rem;
+            margin: 0;
+            padding: 0;
+            left: 190px;
+        }
+
+        .separar-5 {
+            font-size: 0.7rem;
+            left: 370px;
+        }
+
+        .separar-7 {
+            left: 520px;
+            font-size: 0.7rem;
+
+        }
+
+        .separar-8 {
+            font-size: 0.7rem;
+            left: 400px;
+        }
+
+        .total1 {
+            font-size: 0.7rem;
+            left: 40px;
+        }
+
+        #total2 {
+            font-size: 0.7rem;
+            left: 155px;
+        }
+
+        #total3 {
+            font-size: 0.7rem;
+            left: 190px;
+            padding: 0;
+            margin: 0;
+        }
+
+        #adicione {
+            top: 465px;
+            left: 10px;
+        }
+    }
+
+    @media (width > 600px) {
+        .separar-01 {
+            left: 250px;
+        }
+
+        .separar-2 {
+            left: 270px;
+        }
+
+        .separar-5 {
+            left: 460px;
+        }
+
+        .separar-7 {
+            left: 620px;
+        }
+
+        .separar-8 {
+            left: 520px;
+        }
+
+        #adicione {
+            top: 380px;
+
+        }
+
+        .total1 {
+            top: 350px;
+            left: 50px;
+        }
+
+        #total2 {
+            top: 350px;
+            left: 200px;
+        }
+
+        #total3 {
+            top: 350px;
+            left: 250px;
+        }
+    }
+
+
+    @media (width < 321px) {
+        #total2 {
+            margin: 0;
+            padding: 0;
+            left: 95px;
+        }
+
+        .separar-2 {
+            font-size: 0.5rem;
+            left: 95px;
+        }
+
+        .separar-5 {
+            font-size: 0.5rem;
+            left: 270px;
+        }
+
+        .separar-7 {
+            left: 395px;
+        }
+
+        .separar-8 {
+            font-size: 0.5rem;
+            left: 275px;
+        }
+    }
+}
+
+
+@media (width > 767px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .centralize {
+        border-radius: 10%;
+        width: 90%;
+        overflow: hidden;
+        height: 488px;
+        margin-top: 150px;
+    }
+
+    .separ {
+        font-size: 22px;
+    }
+
+    .bb-1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nome {
+        font-size: 22px;
+        top: -5px;
+        position: relative;
+        left: -15px;
+    }
+
+    #tabela {
+        height: 70px;
+        width: 100%;
+    }
+
+    #tabela-3 {
+        height: 68px;
+    }
+
+    .center {
+        width: 100%;
+        height: 78px;
+        margin: 0;
+    }
+
+    #textoEditavel {
+        padding: 0;
+        width: 190px;
+        font-size: 30px;
+    }
+
+    .check-001 {
+        display: none;
+    }
+
+    .check-02 {
+        display: none;
+    }
+
+    .check-03 {
+        display: none;
+    }
+
+    .valor-tabela {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separar {
+        font-size: 22px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+        top: -5px;
+    }
+
+    .tb1 {
+        left: 15px;
+        top: -5px;
+    }
+
+    .tb2 {
+        left: 5px;
+        top: -5px;
+    }
+
+    .separar-01 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 330px;
+    }
+
+    .separar-2 {
+        font-size: 22px;
+        left: 340px;
+    }
+
+    .separar-5 {
+        font-size: 22px;
+        left: 560px;
+    }
+
+    .separar-7 {
+        font-size: 22px;
+        left: 720px;
+    }
+
+    .separar-8 {
+        font-size: 22px;
+        left: 640px;
+    }
+
+    .total {
+        width: 100%;
+        height: 68px;
+    }
+
+    .total1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 60px;
+        top: 490px;
+    }
+
+    #total2 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 240px;
+        top: 490px;
+    }
+
+    #total3 {
+        left: 330px;
+        top: 490px;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    #adicione {
+        left: 30px;
+        top: 540px;
+        font-size: 1.5rem;
+    }
+
+    .nome1 {
+        position: relative;
+        font-size: 22px;
+        left: -30px;
+        top: 5px;
+        padding: 10px;
+    }
+
+    @media (width < 321px) {
+        #total2 {
+            margin: 0;
+            padding: 0;
+            left: 95px;
+        }
+
+        .separar-2 {
+            font-size: 0.5rem;
+            left: 95px;
+        }
+
+        .separar-5 {
+            font-size: 0.5rem;
+            left: 270px;
+        }
+
+        .separar-7 {
+            left: 395px;
+        }
+
+        .separar-8 {
+            font-size: 0.5rem;
+            left: 275px;
+        }
+    }
+}
+
+@media (width > 1023px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .centralize {
+        border-radius: 50px;
+        width: 90%;
+        overflow: hidden;
+        height: 488px;
+        margin-top: 150px;
+    }
+
+    .separ {
+        font-size: 22px;
+    }
+
+    .bb-1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nome {
+        font-size: 22px;
+        top: -5px;
+        position: relative;
+        left: 0px;
+    }
+
+    #tabela {
+        height: 70px;
+        width: 100%;
+    }
+
+    #tabela-3 {
+        height: 68px;
+    }
+
+    .center {
+        width: 100%;
+        height: 78px;
+        margin: 0;
+    }
+
+    #textoEditavel {
+        padding: 0;
+        width: 190px;
+        font-size: 30px;
+    }
+
+    .check-001 {
+        display: none;
+    }
+
+    .check-02 {
+        display: none;
+    }
+
+    .check-03 {
+        display: none;
+    }
+
+    .valor-tabela {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separar {
+        font-size: 22px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 30px;
+        top: -5px;
+    }
+
+    .tb1 {
+        left: 30px;
+        top: -5px;
+    }
+
+    .tb2 {
+        left: 30px;
+        top: -5px;
+    }
+
+    .separar-01 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 430px;
+    }
+
+    .separar-2 {
+        font-size: 22px;
+        left: 580px;
+    }
+
+    .separar-5 {
+        font-size: 22px;
+        left: 650px;
+    }
+
+    .separar-7 {
+        font-size: 22px;
+        left: 930px;
+    }
+
+    .separar-8 {
+        font-size: 22px;
+        left: 860px;
+    }
+
+    .total {
+        width: 100%;
+        height: 68px;
+    }
+
+    .total1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 110px;
+        top: 490px;
+    }
+
+    #total2 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 340px;
+        top: 490px;
+    }
+
+    #total3 {
+        left: 430px;
+        top: 490px;
+        padding: 0;
+        font-size: 22px;
+    }
+
+    #adicione {
+        left: 60px;
+        top: 550px;
+        font-size: 1.5rem;
+    }
+
+    .nome1 {
+        position: relative;
+        font-size: 22px;
+        left: -30px;
+        top: 5px;
+        padding: 10px;
+
+    }
+
+    @media (width < 321px) {
+        #total2 {
+            margin: 0;
+            padding: 0;
+            left: 95px;
+        }
+
+        .separar-2 {
+            font-size: 0.5rem;
+            left: 95px;
+        }
+
+        .separar-5 {
+            font-size: 0.5rem;
+            left: 270px;
+        }
+
+        .separar-7 {
+            left: 395px;
+        }
+
+        .separar-8 {
+            font-size: 0.5rem;
+            left: 275px;
+        }
+    }
+}
+
+@media (width > 1050px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .centralize {
+        border-radius: 50px;
+        width: 90%;
+        overflow: hidden;
+        height: 488px;
+    }
+
+    .separ {
+        font-size: 22px;
+        position: relative;
+        top: -5px;
+    }
+
+    .bb-1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .seta-img {
+        left: 250px;
+    }
+
+    .st {
+        left: 350px;
+    }
+
+    .bb2 {
+        position: relative;
+        top: 10px;
+    }
+
+    .nome {
+        font-size: 22px;
+        top: -5px;
+        position: relative;
+        left: 20px;
+    }
+
+    #tabela {
+        height: 70px;
+        width: 100%;
+    }
+
+    #tabela-3 {
+        height: 68px;
+    }
+
+    .center {
+        width: 100%;
+        height: 78px;
+        margin: 0;
+    }
+
+    #textoEditavel {
+        padding: 0;
+        width: 190px;
+        font-size: 30px;
+    }
+
+    .check-001 {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 25px;
+    }
+
+    .check-02 {
+        display: block;
+        position: relative;
+        top: 20px;
+        left: 55px;
+    }
+
+    .check-03 {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+
+    .valor-tabela {
+        margin: 0;
+        padding: 0;
+    }
+
+    .separar {
+        font-size: 22px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 70px;
+        top: -5px;
+    }
+
+    .tb1 {
+        left: 70px;
+        top: -5px;
+    }
+
+    .tb2 {
+        left: 70px;
+        top: -5px;
+    }
+
+    .valor2 {
+        top: 10px;
+    }
+
+    .separar-01 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 660px;
+    }
+
+    .separar-2 {
+        font-size: 22px;
+        left: 860px;
+    }
+
+    .separar-5 {
+        font-size: 22px;
+        left: 1100px;
+
+    }
+
+    .separar-7 {
+        font-size: 22px;
+        left: 1430px;
+    }
+
+    .separar-8 {
+        font-size: 22px;
+        left: 1350px;
+    }
+
+    .total {
+        width: 100%;
+        height: 68px;
+    }
+
+    .total1 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 90px;
+        top: 540px;
+    }
+    
+    #total2 {
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        left: 555px;
+        top: 540px;
+    }
+    
+    #total3 {
+        left: 660px;
+        top: 540px;
+        padding: 0;
+        font-size: 22px;
+    }
+    
+    #adicione {
+        margin-top: 70px;
+        left: 60px;
+        top: -60px;
+        font-size: 1.5rem;
+    }
+
+    .nome1 {
+        position: relative;
+        font-size: 22px;
+        left: -30px;
+        top: 0px;
+        padding: 10px;
+    }
+
+    #adicione {
+        top: 530px;
+    }
+
+    .seta-esquerda,
+    .number,
+    .seta-direita {
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        font-size: 22px;
+        position: relative;
+        right: 70px;
+    }
+}

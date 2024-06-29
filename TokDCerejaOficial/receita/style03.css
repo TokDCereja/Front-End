@@ -1,0 +1,836 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.fundo {
+  background-image: url(img/Pão\ de\ mel\ cobertura.png ) !important;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 360px) {
+  .ch {
+    display: none;
+  }
+
+  .ovo {
+    position: relative;
+    left: 30px;
+    font-size: 0.5rem;
+    line-height: 27.5px;
+  }
+
+  .total22 {
+    position: relative;
+    bottom: 10px;
+    left: -15px;
+    font-size: 0.5rem;
+  }
+
+  #total2 {
+    position: relative;
+    left: -145px;
+  }
+
+  #adicione {
+    position: relative;
+    top: -5px;
+  }
+
+  .novo {
+    position: relative;
+    top: -5px;
+    font-size: 0.5rem;
+    left: 10px;
+  }
+}
+
+
+
+@media screen and (width > 413px) {
+  .ch {
+    display: none;
+  }
+
+  .ovo {
+    position: relative;
+    left: 40px;
+  }
+
+  .farinha {
+    position: relative;
+    left: 25px;
+  }
+
+  .total22 {
+    position: relative;
+    bottom: 15px;
+    left: -15px;
+  }
+
+  #total2 {
+    position: relative;
+    left: -135px;
+  }
+
+  .sp {
+    position: relative;
+    left: 62px;
+  }
+
+  .total22 {
+    font-size: 0.7rem;
+  }
+
+  #total2 {
+    font-size: 0.7rem;
+    left: -145px;
+    top: -15px;
+  }
+
+  #total3 {
+    top: -15px;
+  }
+
+  #adicione {
+    font-size: 0.7rem;
+  }
+
+  .novo {
+    position: relative;
+    top: -7px;
+    left: 5px;
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+
+  @media screen and (width > 479px) {
+    .ovo {
+      position: relative;
+      left: 40px;
+    }
+
+    .farinha {
+      position: relative;
+      left: 25px;
+    }
+
+    .total22 {
+      position: relative;
+      bottom: 15px;
+      left: -15px;
+    }
+
+    #total2 {
+      position: relative;
+      left: -135px;
+    }
+
+    .sp {
+      position: relative;
+      left: 50px;
+    }
+
+    .total22 {
+      font-size: 0.7rem;
+    }
+
+    #total2 {
+      font-size: 0.7rem;
+      left: -145px;
+      top: -15px;
+    }
+
+    #total3 {
+      top: -15px;
+    }
+
+    #adicione {
+      font-size: 0.7rem;
+    }
+
+    .novo {
+      position: relative;
+      top: -7px;
+      left: 5px;
+      font-size: 0.6rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (width > 600px) {
+  .leite {
+    left: -15px;
+  }
+
+  .sp {
+    left: 40px;
+  }
+
+  .sp1 {
+    left: 65px;
+  }
+
+  .separar-7 {
+    left: -220px;
+  }
+
+  .separar-1 {
+    left: 90px;
+  }
+
+  .rs3 {
+    left: 110px;
+  }
+
+  .sp1 {
+    left: 116px;
+  }
+
+  .separar-01 {
+    font-size: 0.9rem;
+    left: 140px;
+  }
+
+  .vl {
+    left: 120px;
+  }
+
+  .vl1 {
+    left: 150px;
+  }
+
+  .separar-2 {
+    left: 245px;
+  }
+
+  .separar-4 {
+    left: 125px;
+  }
+
+  .n2 {
+    left: 145px;
+    position: relative;
+  }
+
+  .n3 {
+    left: 160px;
+  }
+
+  .separar-5 {
+    left: 130px;
+  }
+
+  .und {
+    left: 165px;
+  }
+
+  .gms {
+    left: 150px;
+  }
+
+  .gr2 {
+    position: relative;
+    left: 235px;
+  }
+
+  .gr3 {
+    position: relative;
+    left: 230px;
+  }
+
+  .gg {
+    left: 270px;
+  }
+
+  .gg2 {
+    left: 265px;
+  }
+
+  .total22 {
+    top: -25px;
+    font-size: 0.9rem;
+    left: -20px;
+  }
+
+  #total2 {
+    font-size: 0.9rem;
+    top: -25px;
+    left: -95px;
+  }
+
+  #total3 {
+    font-size: 0.9rem;
+    top: -25px;
+    left: -95px;
+  }
+
+  #adicione {
+    font-size: 1rem;
+    left: -10px;
+    top: -10px;
+  }
+
+  .novo {
+    font-size: 0.9rem;
+    left: -5px;
+  }
+}
+
+@media (width > 765px) {
+  .leite {
+    left: 0;
+  }
+
+  .ovo {
+    left: 55px;
+  }
+
+  .farinha {
+    left: 40px;
+  }
+
+  .sp {
+    left: 40px;
+  }
+
+  .sp1 {
+    left: 65px;
+  }
+
+  .separar-7 {
+    left: -295px;
+  }
+
+  .separar-1 {
+
+    left: 90px;
+  }
+
+  .rs3 {
+    left: 115px;
+  }
+
+  .sp1 {
+    left: 120px;
+  }
+
+  .separar-01 {
+    font-size: 0.9rem;
+    left: 170px;
+  }
+
+  .vl {
+    left: 140px;
+  }
+
+  .vl1 {
+    left: 180px;
+  }
+
+  .separar-2 {
+    left: 285px;
+  }
+
+  .gg {
+    left: 320px;
+  }
+
+  .gg2 {
+    left: 310px;
+  }
+
+  .separar-4 {
+    left: 190px;
+  }
+
+  .n2 {
+    left: 215px;
+    position: relative;
+  }
+
+  .n3 {
+    left: 230px;
+  }
+
+  .separar-5 {
+    left: 200px;
+  }
+
+  .und {
+    left: 240px;
+  }
+
+  .gms {
+    left: 225px;
+  }
+
+  .separar-3 {
+    left: 260px;
+  }
+
+  .gr2 {
+    position: relative;
+    left: 300px;
+  }
+
+  .gr3 {
+    position: relative;
+    left: 280px;
+  }
+
+  .total22 {
+    top: -25px;
+    font-size: 0.9rem;
+    left: 0;
+  }
+
+  #total2 {
+    font-size: 0.9rem;
+    top: -25px;
+    left: -60px;
+  }
+
+  #total3 {
+    font-size: 0.9rem;
+    top: -25px;
+    left: -45px;
+  }
+
+  #adicione {
+    font-size: 1rem;
+    left: -10px;
+    top: -10px;
+  }
+
+  .novo {
+    font-size: 0.9rem;
+    left: -5px;
+  }
+}
+
+@media (width > 1023px) {
+  #textoEditavel {
+    width: 160px;
+    font-size: 25px;
+  }
+
+  .ch {
+    position: relative;
+    display: block;
+    top: 20px;
+    left: 1px;
+  }
+
+  .ch1 {
+    position: relative;
+    left: -40px;
+  }
+
+  .check-03 {
+    left: 7px;
+
+  }
+
+  .seta-img {
+    display: none;
+  }
+
+  .separ {
+    left: 10px;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .t {
+    position: relative;
+    top: 5px;
+  }
+
+  .leite {
+    left: 5px;
+  }
+
+  .ovo {
+    left: 10px;
+  }
+
+  .farinha {
+    left: 30px;
+  }
+
+  .sp {
+    left: 40px;
+  }
+
+  .sp1 {
+    left: 65px;
+  }
+
+  .separar-7 {
+    left: -420px;
+  }
+
+  .separar-8 {
+    left: 0;
+  }
+
+  .separed {
+    top: -20px;
+    display: none;
+  }
+
+  .s2 {
+    left: 615px;
+    top: -20px;
+  }
+
+  .s3 {
+    top: -15px;
+  }
+
+  .separar {
+    right: 150px;
+  }
+
+  .separar-1 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 50px;
+  }
+
+  .rs3 {
+    left: 50px;
+
+  }
+
+  .sp1 {
+    left: 80px;
+  }
+
+  .separar-01 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 150px;
+  }
+
+  .vl {
+    left: 150px;
+  }
+
+  .vl1 {
+    left: 170px;
+  }
+
+  .separar-2 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 280px;
+  }
+
+  .gg {
+    left: 320px;
+  }
+
+  .gg2 {
+    left: 280px;
+  }
+
+  .separar-4 {
+    left: 250px;
+  }
+
+  .n2 {
+    left: 245px;
+    position: relative;
+  }
+
+  .n3 {
+    left: 290px;
+  }
+
+  .separar-5 {
+    left: 280px;
+  }
+
+  .separar-6 {
+    left: 1145px;
+  }
+
+  .und {
+    left: 320px;
+
+  }
+
+  .gms {
+    left: 280px;
+  }
+
+  .separar-3 {
+    left: 310px;
+  }
+
+  .gr2 {
+    position: relative;
+    left: 340px;
+  }
+
+  .gr3 {
+    position: relative;
+    left: 305px;
+  }
+
+  .total22 {
+    top: -20px;
+    font-size: 22px;
+    left: 30px;
+  }
+
+  #total2 {
+    font-size: 22px;
+    top: -20px;
+    left: -28px;
+  }
+
+  #total3 {
+    font-size: 22px;
+    top: -20px;
+    left: 10px;
+  }
+
+  #adicione {
+    font-size: 1.5rem;
+    left: -15px;
+    top: -1px;
+  }
+
+  .novo {
+    font-size: 22px;
+    left: 15px;
+    top: 1px;
+  }
+
+  .seta-esquerda, .number, .seta-direita {
+    position: relative;
+    left: 240px;
+    top: 10px;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+}
+
+@media (width > 1050px) {
+  .seta-img {
+    display: block;
+  }
+
+  #textoEditavel {
+    font-size: 30px;
+    width: 200px;
+  }
+
+  .ch {
+    display: block;
+    position: relative;
+    left: 35px;
+  }
+
+  .ch1 {
+    position: relative;
+    left: -38px;
+  }
+
+  .separ {
+    left: 10px;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .t {
+    position: relative;
+    top: 15px;
+  }
+
+  .leite {
+    left: -10px;
+  }
+
+  .ovo {
+    left: 10px;
+  }
+
+  .farinha {
+    left: 30px;
+
+  }
+
+  .sp {
+    left: 40px;
+  }
+
+  .sp1 {
+    left: 65px;
+  }
+
+  .separar-7 {
+    left: -670px;
+  }
+
+  .separar-8 {
+    left: -20px;
+  }
+
+  .separed {
+    display: block;
+    top: -20px;
+  }
+
+  .s2 {
+    left: 615px;
+    top: -20px;
+  }
+
+  .s3 {
+    top: -15px;
+  }
+
+  .separar {
+    right: 220px;
+  }
+
+  .separar-1 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 0;
+  }
+
+  .rs3 {
+    left: -5px;
+
+  }
+
+  .sp1 {
+    left: 40px;
+
+  }
+
+  .separar-01 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 230px;
+  }
+
+  .vl {
+    left: 230px;
+  }
+
+  .vl1 {
+    left: 270px;
+  }
+
+  .separar-2 {
+    font-size: 22px;
+    line-height: 27.5px;
+    left: 360px;
+  }
+
+  .gg {
+    left: 410px;
+  }
+
+  .gg2 {
+    left: 360px;
+  }
+
+  .separar-4 {
+    left: 400px;
+  }
+
+  .n2 {
+    left: 375px;
+    position: relative;
+
+  }
+
+  .n3 {
+    left: 440px;
+  }
+
+  .separar-5 {
+    left: 460px;
+  }
+
+  .separar-6 {
+    left: 1145px;
+  }
+
+  .und {
+    left: 500px;
+
+  }
+
+  .gms {
+    left: 440px;
+
+  }
+
+  .separar-3 {
+    left: 380px;
+  }
+
+  .gr2 {
+    position: relative;
+    left: 420px;
+  }
+
+  .gr3 {
+    position: relative;
+    left: 365px;
+  }
+
+  .total22 {
+    top: -20px;
+    font-size: 22px;
+    left: 30px;
+  }
+
+  #total2 {
+    font-size: 22px;
+    top: -20px;
+    left: 115px;
+  }
+
+  #total3 {
+    font-size: 22px;
+    top: -20px;
+    left: 140px;
+  }
+
+  #adicione {
+    font-size: 1.5rem;
+    left: -10px;
+    top: -20px;
+  }
+
+  .novo {
+    font-size: 22px;
+    left: 10px;
+    top: -10px;
+  }
+
+  .seta-esquerda, .number, .seta-direita {
+    left: 780px;
+    top: -5px;
+  }
+}

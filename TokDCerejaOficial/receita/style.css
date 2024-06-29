@@ -1,0 +1,1075 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.fundo {
+  background-image: url(img/Tela\ recheio\ pão\ de\ mel.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  overflow: hidden;
+
+}
+
+.centralize {
+  border: 3px solid #2941BE;
+  max-height: 688px;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  overflow: auto;
+  margin-bottom: 100px;
+  border-radius: 2px;
+  height: 284px;
+  border-radius: 50px;
+}
+
+
+#tabela,
+#tabela-2 {
+  width: 1370px;
+  top: 293px;
+  left: 35px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.center {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 55px;
+  width: 1370px;
+  height: 78px;
+  background: #7B90FF;
+  border-bottom: 2px solid #2941BE
+}
+
+.editavel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 164px;
+  height: 38px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#textoEditavel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #7B90FF;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  margin: -30px;
+}
+
+#tabela {
+  background-color: #A1B0FF;
+  padding: 20px 10px 20px 10px;
+}
+
+.bb {
+  color: #fff;
+  padding-left: 40px;
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+.seta {
+  margin-left: 50px;
+}
+
+.check-01 {
+  margin-right: 10px;
+}
+
+.total {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.total1 {
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+#total2 {
+  margin-left: 150px;
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+#total3 {
+  margin-left: 70px;
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+
+.center-bottom {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: none;
+}
+
+#adicionar {
+  border: none;
+  background-color: #fff;
+  margin-left: 40px;
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+#adicione {
+  color: #BEC8D0;
+}
+
+#mudar {
+  display: flex;
+  justify-content: end;
+  margin-left: 950px;
+  gap: 30px;
+  height: 28px;
+  width: 228px fixed;
+  font-size: 22px;
+  line-height: 27.5px;
+  border: none;
+  background-color: #fff;
+}
+
+.number {
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+.seta-esquerda {
+  margin-right: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.seta-direita {
+  margin-left: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* css aside  */
+
+body {
+  background-color: cadetblue;
+}
+
+#aside {
+  width: 340px;
+  background: #fff;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.nomeTabela {
+  border: 3px solid #6B0206;
+  width: 310px;
+  height: 38px;
+  margin: 5px;
+  border-radius: 3px;
+  justify-content: space-between;
+  padding: 5px, 10px, 5px, 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-align: center;
+  color: #6B0206;
+}
+
+.nomeTabela:hover {
+  background-color: #6B0206;
+  color: #fff;
+}
+
+.name:hover {
+  background-color: #6B0206;
+  color: #fff;
+}
+
+.nomeTabela1 {
+  border: 3px solid #6B0206;
+  width: 310px;
+  height: 38px;
+  margin: 5px;
+  border-radius: 3px;
+  justify-content: space-between;
+  padding: 5px, 10px, 5px, 10px;
+  background-color: #6B0206;
+}
+
+.name {
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-align: center;
+  color: #6B0206;
+}
+
+.name1 {
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-align: center;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.setinha {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 2px;
+}
+
+.check {
+  margin-left: 200px;
+}
+
+.check1 {
+  margin-left: 182px;
+}
+
+.check2 {
+  margin-left: 158px;
+}
+
+.check3 {
+  margin-left: 138px;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 39px;
+  height: 70px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  cursor: pointer;
+}
+
+.bbt {
+  position: fixed;
+  top: 85px;
+  border: none;
+  margin-left: 0;
+}
+
+.bta {
+  position: absolute;
+  margin-top: -10px;
+  right: -1px;
+}
+
+#corpoTabela input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* css navbar  */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+:root {
+  --logoSize: 50px;
+  --paddingNavBar: 30px;
+  --fa-size: 28px;
+}
+
+nav {
+  width: 100%;
+  height: 85px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+.containerNavBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: var(--paddingNavBar);
+  padding-right: var(--paddingNavBar);
+}
+
+.containerNavBar .logo {
+  width: 65px;
+  height: 65px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.containerNavBar .logo img {
+  width: var(--logoSize);
+  height: calc(var(--logoSize) + 5px);
+}
+
+.containerNavBar button {
+  height: 35px;
+  border-radius: 8px;
+  background: #6b0206;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 80ms ease-in-out;
+}
+
+.containerNavBar button:active {
+  transform: scale(0.9);
+}
+
+.containerNavBar button:hover {
+  cursor: pointer;
+}
+
+.containerNavBar button.reg {
+  background-color: white;
+  color: #6b0206;
+}
+
+.containerNavBar .sections {
+  display: flex;
+  gap: 50px;
+}
+
+.sections a {
+  color: #6b0206;
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 80ms ease-in-out;
+}
+
+.sections a:hover {
+  text-decoration: underline 3px white;
+  transform: scale(0.9);
+}
+
+
+.icons .circuloIcon i.fa-config {
+  font-size: var(--fa-size);
+  color: #6b0206;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.icons .circuloIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 80ms ease-in-out;
+}
+
+.icons .circuloIcon:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .fundo {
+    height: 100vh;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .centralize {
+    width: 100%;
+    height: 250px;
+  }
+
+  .center {
+    width: 100%;
+    height: 68px;
+  }
+
+  #tabela {
+    padding: 0;
+  }
+
+  #mudar {
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+  .bb {
+    text-align: center;
+    font-size: 0.5rem;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .seta {
+    display: flex;
+    text-align: center;
+  }
+
+  /* table  */
+  #tabela {
+    width: 100%;
+    margin: 0;
+    height: 48px;
+  }
+
+  .total {
+    width: 100%;
+    height: 68px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .total1 {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+  }
+
+  /* seta img  */
+  .seta-img {
+    display: none;
+  }
+
+  /* recheio  */
+  #textoEditavel {
+    width: 30%;
+    text-align: center;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .total1,
+  #total2,
+  #total3 {
+    font-size: 0.5rem;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .check-01 {
+    margin-left: 18px;
+    display: none;
+  }
+
+  /* novo ingrediente  */
+  #adicionar {
+    font-size: 0.6rem;
+    display: flex;
+    cursor: pointer;
+    width: 68px;
+    height: 50px;
+    padding: 0;
+    margin-left: 10px;
+
+  }
+
+  #adicione {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .seta-esquerda {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 0.5rem;
+  }
+
+  .seta-direita {
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 0.5rem;
+  }
+
+  .number {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100px;
+  }
+
+  #mudar {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+  }
+
+  .center-bottom {
+    height: 54px;
+  }
+
+  .bbt {
+    height: 50px;
+    margin-left: -2px;
+  }
+
+  .containerNavBar {
+    width: 100%;
+  }
+
+  /* aside  */
+
+  #aside {
+    width: 220px;
+  }
+
+  .nomeTabela {
+    width: 200px;
+  }
+
+  .check1 {
+    position: relative;
+    right: 5px;
+    bottom: 26px;
+  }
+
+  .check {
+    position: relative;
+    right: 23px;
+    bottom: 26px;
+  }
+
+  .check2 {
+    position: relative;
+    left: 7px;
+    bottom: 26px;
+  }
+
+  .check3 {
+    position: relative;
+    left: 18px;
+    bottom: 26px;
+  }
+
+  .hamburguer {
+    height: 50px;
+  }
+
+  .menu {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #6b0206;
+    cursor: pointer;
+    left: 85vw;
+    top: 4vw;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+@media screen and (width > 600px) {
+
+  .fundo {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .centralize {
+    width: 95%;
+    height: 250px;
+
+  }
+
+  .center {
+    width: 100%;
+    height: 68px;
+  }
+
+
+  #mudar {
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+  .bb {
+    text-align: center;
+    font-size: 0.7rem;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .seta {
+    display: flex;
+    text-align: center;
+  }
+
+  /* table  */
+  #tabela {
+    width: 100%;
+    margin: 0;
+    height: 48px;
+    padding: 0;
+  }
+
+  .total {
+    width: 100%;
+    height: 68px;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .total1 {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+
+  /* seta img  */
+  .seta-img {
+    display: none;
+  }
+
+  /* recheio  */
+  #textoEditavel {
+    width: 25%;
+    text-align: center;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+
+  .total1,
+  #total2,
+  #total3 {
+    position: relative;
+    top: 10px;
+    font-size: 0.7rem;
+    padding: 20px;
+    margin: 5px;
+  }
+
+  #total2,
+  #total3 {
+    position: static;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .check-01 {
+    margin-left: 18px;
+    display: none;
+  }
+
+  /* novo ingrediente  */
+  #adicionar {
+    font-size: 0.8rem;
+    display: flex;
+    cursor: pointer;
+    width: 85px;
+    height: 50px;
+    padding: 0;
+    margin-left: 25px;
+
+  }
+
+  #adicione {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .seta-esquerda {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 0.5rem;
+  }
+
+  .seta-direita {
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 0.5rem;
+  }
+
+  .number {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100px;
+  }
+
+  #mudar {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+  }
+
+  .center-bottom {
+    height: 54px;
+  }
+
+  /* aside  */
+
+  .bbt {
+    height: 50px;
+    margin-left: -2px;
+  }
+
+  .containerNavBar {
+    width: 100%;
+  }
+
+  .fa-solid {
+    position: relative;
+    left: 50px;
+    bottom: 85px;
+  }
+
+  /* aside  */
+  #aside {
+    width: 220px;
+  }
+
+  .nomeTabela {
+    width: 200px;
+  }
+
+  .check1 {
+    position: relative;
+    right: 5px;
+    bottom: 26px;
+  }
+
+  .check {
+    position: relative;
+    right: 23px;
+    bottom: 26px;
+  }
+
+  .check2 {
+    position: relative;
+    left: 7px;
+    bottom: 26px;
+  }
+
+  .check3 {
+    position: relative;
+    left: 18px;
+    bottom: 26px;
+  }
+
+  .hamburguer {
+    height: 50px;
+  }
+}
+
+@media screen and (width=1024px) {
+  #mudar {
+    margin-left: 220px;
+  }
+}
+
+@media screen and (width > 1250px) {
+  #textoEditavel {
+    font-size: 1.8rem;
+    width: 210px;
+  }
+
+  .seta-img {
+    display: block;
+    position: relative;
+    right: 88px;
+    bottom: 10px;
+  }
+
+  .bb {
+    color: #fff;
+    padding-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .b1 {
+    position: relative;
+    top: 10px;
+  }
+
+  .b2 {
+    position: relative;
+    bottom: 7px;
+  }
+
+  .centralize {
+    height: 284px;
+  }
+
+  .check-01 {
+    display: block;
+    position: relative;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .total1 {
+    font-size: 1rem;
+    margin-left: 35px;
+    margin-bottom: 15px;
+  }
+
+  #total2 {
+    font-size: 1rem;
+  }
+
+  #total3 {
+    font-size: 1rem;
+  }
+
+  #adicione {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  #adicionar {
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  #adicion {
+    margin-top: 12px;
+  }
+
+  #mudar {
+    margin-left: 510px;
+  }
+
+  .seta-esquerda {
+    margin-top: 50px;
+  }
+
+  .seta-direita {
+    margin-top: 50px;
+  }
+
+  .number {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    padding: 1.5rem 4rem;
+  }
+
+  .sections, .icons, .containerNavBar a {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .containerNavBar .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .containerNavBar .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .menu {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #6b0206;
+    cursor: pointer;
+    left: 85vw;
+    top: 4vw;
+    position: relative;
+    z-index: 5;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    z-index: 4;
+    top: 16.9vw;
+    left: 0vh;
+  }
+
+  .mobile-menu li {
+    height: 6vh;
+    width: 100vw;
+    top: -6vw;
+    position: relative;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .icons-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .icons-button i {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .menu, .fa-x {
+    font-size: 26px;
+  }
+
+  .icons-button {
+    left: 21vh;
+    position: relative;
+  }
+
+  .nav-item a, .fa-config {
+    color: #6b0206;
+  }
+
+  .nav-item li {
+    font-size: 18px;
+  }
+
+  .icons .circuloIcon {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 80ms ease-in-out;
+  }
+
+  .icons .circuloIcon:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+  .nav-item a {
+    color: #6b0206;
+    font-size: 19px;
+    transition: all 80ms ease-in-out;
+  }
+
+  .nav-item a:hover {
+    text-decoration: underline 3px white;
+    transform: scale(0.9);
+  }
+}

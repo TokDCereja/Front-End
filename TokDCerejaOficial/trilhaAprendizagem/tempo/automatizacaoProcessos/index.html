@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="/Menu/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Automatização de Processos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="containerNavBar">
+                    <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                    <div class="sections">
+                        <a href="/home/home.html">Início</a>
+                        <a href="/Avaliação/avaliacao.html">Avaliação</a>
+                        <a href="/Planos/planos.html">Planos</a>
+                        <a href="/Livros/index.html">Ferramentas</a>
+                    </div>
+                    <div class="icons">
+                        <a href="/Notificação/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                        </a>
+                        <a href="/Perfil/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-icon">
+                <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                    <li class="nav-item"><a href="/Avaliação/avaliacao.html">Avaliação</a></li>
+                    <li class="nav-item"><a href="/Planos/planos.html">Planos</a></li>
+                    <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                    <li class="nav-item"><a href="/Notificação/index.html"><i
+                                class="fa-solid fa-bell fa-config"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="center">
+            <div class="conteudo">
+                <h1>Automatização de Processos</h1>
+                <h2>Ferramentas de Automação</h2>
+                <div class="paragrafo">
+                    <h2>Software de Gestão de Pedidos</h2>
+                    <p><span>Exemplo:</span>
+                        Use um software de gestão de pedidos para automatizar a entrada de pedidos, rastreamento de
+                        entregas
+                        e gestão de
+                        inventário.
+                    </p>
+                    <p><span>Benefícios:</span>
+                        Reduz erros e economiza tempo ao centralizar todas as informações em um único sistema.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <h2>Email Marketing</h2>
+                    <p><span>Exemplo:</span>
+                        Utilize ferramentas como Mailchimp ou Sendinblue para automatizar campanhas de email marketing.
+                    </p>
+                    <p><span>Benefícios:</span>
+                        Agende envios automáticos de newsletters e promoções, economizando tempo e garantindo
+                        consistência
+                        na comunicação.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div class="circulo superiorDireito"></div>
+        <div class="circulo inferiorDireito"></div>
+        <div class="circulo superiorEsquerdo"></div>
+        <div class="circulo inferiorEsquerdo"></div>
+
+    </div>
+    <script src="/Menu/JavaScript.js"></script>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+</body>
+
+</html>

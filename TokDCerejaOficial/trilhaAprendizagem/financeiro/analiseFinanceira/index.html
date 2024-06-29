@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="/Menu/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Análise Financeira</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="containerNavBar">
+                    <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                    <div class="sections">
+                        <a href="/home/home.html">Início</a>
+                        <a href="/Avaliação/avaliacao.html">Avaliação</a>
+                        <a href="/Planos/planos.html">Planos</a>
+                        <a href="/Livros/index.html">Ferramentas</a>
+                    </div>
+                    <div class="icons">
+                        <a href="/Notificação/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                        </a>
+                        <a href="/Perfil/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-icon">
+                <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                    <li class="nav-item"><a href="/Avaliação/avaliacao.html">Avaliação</a></li>
+                    <li class="nav-item"><a href="/Planos/planos.html">Planos</a></li>
+                    <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                    <li class="nav-item"><a href="/Notificação/index.html"><i
+                                class="fa-solid fa-bell fa-config"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="center">
+            <div class="conteudo">
+                <h1>Análise Financeira</h1>
+                <h2>Demonstrações Financeiras</h2>
+                <div class="paragrafo">
+                    <h2>DRE (Demonstração do Resultado do Exercício)</h2>
+                    <p><span>Receitas e Despesas:</span>
+                        Registre todas as receitas e despesas para calcular o lucro bruto e líquido.
+                    </p>
+                    <p><span>Análise de Rentabilidade:</span>
+                        Use a DRE para analisar a rentabilidade da confeitaria.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <h2>Balanço Patrimonial</h2>
+                    <p><span>Ativos e Passivos:</span>
+                        Registre todos os ativos (dinheiro em caixa, estoque, equipamentos) e passivos (dívidas, contas
+                        a
+                        pagar).
+                    </p>
+                    <p><span>Situação Financeira:</span>
+                        Analise a situação financeira da confeitaria para tomar decisões estratégicas.
+                    </p>
+                </div>
+                <h2>Indicadores Financeiros</h2>
+                <div class="paragrafo">
+                    <h2>Liquidez</h2>
+                    <p><span>Liquidez Corrente:</span>
+                        Ativos correntes divididos por passivos correntes para medir a capacidade de pagar dívidas de
+                        curto
+                        prazo.
+                    </p>
+                    <p><span>Liquidez Seca:</span>
+                        (Ativos correntes - Estoque) divididos por passivos correntes para uma visão mais conservadora
+                        da
+                        liquidez.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <h2>Rentabilidade</h2>
+                    <p><span>Margem de Lucro:</span>
+                        Lucro líquido dividido pela receita total para medir a rentabilidade dos produtos.
+                    </p>
+                    <p><span>Retorno sobre o Investimento (ROI):</span>
+                        (Lucro Líquido / Investimento Total) para medir a eficiência dos investimentos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div class="circulo superiorDireito"></div>
+        <div class="circulo inferiorDireito"></div>
+        <div class="circulo superiorEsquerdo"></div>
+        <div class="circulo inferiorEsquerdo"></div>
+
+    </div>
+    <script src="/Menu/JavaScript.js"></script>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="/Simbolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Menu/style.css">
+    <title>Aprendizagem</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <a href="/Notificação/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    </a>
+                    <a href="/Perfil/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
+                </li>
+                <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="body2">
+
+
+        <section>
+            <div id="titulo">
+                <h1>Seja Bem-Vindo(a) a nossa <br> área de aprendizagem!</h1>
+            </div>
+            <div class="container">
+
+                <div class="galeria">
+                    <a href="/trilhaAprendizagem/tempo/index.html">
+                        <div class="image fade">
+                            <div class="conteudo">
+                                <h3>Gestão de Tempo</h3>
+                            </div>
+                            <img src="img/1.jpg" id="img" alt="Gestão de Tempo" width="100%">
+                        </div>
+                    </a>
+
+                    <a href="/trilhaAprendizagem/marketing/index.html">
+                        <div class="image fade">
+                            <div class="conteudo">
+                                <h3>Marketing Digital</h3>
+                            </div>
+                            <img src="img/2.jpg" id="img" alt="Marketing Digital" width="100%">
+                        </div>
+                    </a>
+
+                    <a href="/trilhaAprendizagem/financeiro/index.html"">
+                        <div class="image fade">
+                            <div class="conteudo">
+                                <h3>Gestão Financeira</h3>
+                            </div>
+                            <img src="img/3.jpg" id="img" alt="Gestão Financeira" width="100%">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="dots">
+                    <i id="prev" onclick="show_image(-1)" class="fas fa-chevron-left"></i>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <i id="next" onclick="show_image(1)" class="fas fa-chevron-right"></i>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div class="background">
+        <div class="circulo circulo2"><img id="cookie1" src="./img/Cookie1.png" alt=""></div>
+        <div class="circulo circulo3"><img id="cookie2" src="./img/Cookie2.png" alt=""></div>
+        <div class="elementoGrande">
+            <div class="circulo circulo1"><img id="cookie3" src="./img/Cookie3.png" alt=""></div>
+        </div>
+    </div>
+
+    <svg>
+        <ClipPath id="mask1">
+            <path
+                d="M12.9466 168.355C202.446 -293.645 1016.93 41.3549 1016.93 41.3549L1028.93 1033.07C1028.93 1033.07 247.446 1119.86 275.928 1033.07C327.147 876.992 394.033 655.016 232.825 582.855C-28.5535 465.855 -11.7125 228.473 12.9466 168.355Z" />
+        </ClipPath>
+    </svg>
+
+    <script src="script.js"></script>
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+    <script src="../Menu/JavaScript.js"></script>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço produto - Cobertura</title>
+    <link rel="shortcut icon" href="img/Símbolo (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="style03.css">
+</head>
+
+<body class="fundo">
+
+    <!-- navbar -->
+    <header>
+        <nav>
+            <div class="containerNavBar">
+                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="sections">
+                    <a href="../home/home.html">Início</a>
+                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="../Planos/planos.html">Planos</a>
+                    <a href="../Livros/index.html">Ferramentas</a>
+                </div>
+                <div class="icons">
+                    <a href="/Notificação/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    </a>
+                    <a href="/Perfil/index.html">
+                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="mobile-menu-icon">
+            <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../home/home.html">Início</a></li>
+                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
+                </li>
+                <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- final navbar  -->
+
+    <!-- aside  -->
+
+    <aside id="aside">
+
+        <button id="toggleAside" class="bta" onclick="toggleAside()">
+
+            <svg class="hamburguer" width="29" height="60" viewBox="0 0 29 60" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_1512_655" fill="white">
+                    <path d="M0 0H24C26.7614 0 29 2.23858 29 5V55C29 57.7614 26.7614 60 24 60H0V0Z" />
+                </mask>
+                <path d="M0 0H24C26.7614 0 29 2.23858 29 5V55C29 57.7614 26.7614 60 24 60H0V0Z" fill="#AE0B11" />
+                <path
+                    d="M0 -1H24C27.3137 -1 30 1.68629 30 5H28C28 2.79086 26.2091 1 24 1H0V-1ZM30 55C30 58.3137 27.3137 61 24 61H0V59H24C26.2091 59 28 57.2091 28 55H30ZM0 60V0V60ZM24 -1C27.3137 -1 30 1.68629 30 5V55C30 58.3137 27.3137 61 24 61V59C26.2091 59 28 57.2091 28 55V5C28 2.79086 26.2091 1 24 1V-1Z"
+                    fill="white" mask="url(#path-1-inside-1_1512_655)" />
+                <path
+                    d="M7.94227 29.5904C7.65792 29.7894 7.65792 30.2106 7.94227 30.4096L20.8561 39.4493C21.1875 39.6813 21.6428 39.4442 21.6428 39.0397V20.9603C21.6428 20.5558 21.1875 20.3187 20.8561 20.5507L7.94227 29.5904Z"
+                    fill="white" />
+            </svg>
+        </button>
+
+        <a href="index.html">
+            <div class="nomeTabela">
+                Recheio
+                <input type="checkbox" class="check1">
+            </div>
+        </a>
+
+        <a href="index02.html">
+            <div class="nomeTabela">
+                Massa
+                <input type="checkbox" class="check">
+            </div>
+        </a>
+
+        <a href="index03.html">
+            <div class="nomeTabela">
+                Cobertura
+                <input type="checkbox" class="check2">
+            </div>
+        </a>
+
+        <a href="index04.html">
+            <div class="nomeTabela">
+                Embalagem
+                <input type="checkbox" class="check3">
+            </div>
+        </a>
+
+        <div class="nomeTabela1 nomeTabela">
+            <span class="name1"> <span class="setinha">
+                </span> Trocar Receita
+            </span>
+            <!-- <input type="checkbox" class="check3"> -->
+        </div>
+    </aside>
+
+
+    <button class="bbt">
+        <svg width="29" height="60" viewBox="0 0 29 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_1487_218" fill="white">
+                <path d="M0 0H24C26.7614 0 29 2.23858 29 5V55C29 57.7614 26.7614 60 24 60H0V0Z" />
+            </mask>
+            <path d="M0 0H24C26.7614 0 29 2.23858 29 5V55C29 57.7614 26.7614 60 24 60H0V0Z" fill="#7B90FF" />
+            <path
+                d="M0 -2H24C27.866 -2 31 1.13401 31 5H27C27 3.34315 25.6569 2 24 2H0V-2ZM31 55C31 58.866 27.866 62 24 62H0V58H24C25.6569 58 27 56.6569 27 55H31ZM0 60V0V60ZM24 -2C27.866 -2 31 1.13401 31 5V55C31 58.866 27.866 62 24 62V58C25.6569 58 27 56.6569 27 55V5C27 3.34315 25.6569 2 24 2V-2Z"
+                fill="white" mask="url(#path-1-inside-1_1487_218)" />
+            <path
+                d="M21.0577 29.5904C21.3421 29.7894 21.3421 30.2106 21.0577 30.4096L8.14391 39.4493C7.81252 39.6813 7.35718 39.4442 7.35718 39.0397L7.35718 20.9603C7.35718 20.5558 7.81252 20.3187 8.14391 20.5507L21.0577 29.5904Z"
+                fill="white" />
+        </svg>
+
+    </button>
+
+    <!-- final aside  -->
+
+    <main class="content">
+
+        <div class="centralize centralize-table2">
+
+            <div class="center">
+                <input type="text" id="textoEditavel" class="editavel" value="Pão de Mel">
+                <input type="text" id="textoEditavel" class="editavel" value="(Cobertura)">
+            </div>
+
+            <div class="test-02">
+                <table id="tabela">
+
+                    <thead class="cabecalho">
+                        <tr>
+                            <th class="bb-1"><input class="check-001" type="checkbox"
+                                    style="width: 15px; height: 15px;"><span class="separ">Ingrediente</span>
+                            </th>
+
+                            <th class="bb-1"> <span class="t">Preço (Inteiro)</span><span class="seta"><img
+                                        class="seta-img im1" src="img/Imagem_setas33-removebg-preview.png"
+                                        alt=""></span></th>
+                            <th class="bb-1"> <span class="t">Preço (Medida)</span><span class="seta"><img
+                                        class="seta-img im2" src="img/Imagem_setas33-removebg-preview.png"
+                                        alt=""></span></th>
+                            <th class="bb-1"> <span class="t">Quantidade</span> <span class="seta"><img class="seta-img"
+                                        src="img/Imagem_setas33-removebg-preview.png" alt=""></span></th>
+                            <th class="bb-1"> <span class="t">Preço (Total)</span><span class="seta"><img
+                                        class="seta-img" src="img/Imagem_setas33-removebg-preview.png" alt=""></span>
+                            </th>
+                            <!-- <th>Ação</th> -->
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+            <div class="test-03">
+
+
+                <!-- part2 -->
+                <table id="tabela-3">
+                    <tbody class=" corpo02" id="corpoTabela">
+                        <!-- linhas da tabela -->
+
+                        <th class="valor-tabela valor-tabela-1"><input class="check-01" type="checkbox"> <input
+                                class="ch" type="checkbox"> <span class="leite">Leite</span></th>
+
+                        <th class="valor-tabela valor-tabela-2">
+                            <p><span class="separar">R$</span> <span class="separar-01 vl">4,95</span></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont-1"> <span class="separar-1 sp">R$ </span> <span class="separar-2">500</span>
+                                <span class="separar-3">g</span> <svg class="separed s1" width="11" height="8"
+                                    viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg>
+                            </p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <!-- 500 final  -->
+                            <p class="cont"> <span class="separar-4 n1">500</span><span class="separar-5">g</span><svg
+                                    class="separar-6" width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont-2"><span class="separar-7">R$</span> <span class="separar-8">2,50</span></p>
+                        </th>
+                    </tbody>
+                </table>
+
+                <!-- part 3 -->
+
+                <table id="tabela-3">
+                    <tbody class=" corpo02" id="corpoTabela">
+                        <!-- linhas da tabela -->
+
+                        <th class="valor-tabela valor-tabela-1"><input class="check-02 int3" type="checkbox"> <input
+                                class="ch1" type="checkbox"><span class="ovo">Ovo</span></th>
+
+                        <th class="valor-tabela valor-tabela-2">
+                            <p><span class="separar">R$</span> <span class="separar-01 vl1">12,00</span></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont-1"> <span class="separar-1 sp1">R$ </span> <span
+                                    class="separar-2 gg">2,5</span> <span class="separar-3 gr2">und</span> <svg
+                                    class="separed s2" width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg> </p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont"> <span class="separar-4 n3">3</span><span
+                                    class="separar-5 und">und</span><svg class="separar-6" width="11" height="8"
+                                    viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont-2"><span class="separar-7">R$</span> <span class="separar-8">7,50</span></p>
+                        </th>
+                    </tbody>
+                </table>
+
+                <!-- part 4 -->
+
+                <table id="tabela-3">
+                    <tbody class=" corpo02" id="corpoTabela">
+                        <!-- linhas da tabela -->
+
+                        <th class="valor-tabela valor-tabela-1"><input class="check-03" type="checkbox"> <span
+                                class="farinha">Farinha</span></th>
+
+                        <th class="valor-tabela valor-tabela-2">
+                            <p><span class="separar">R$</span> <span class="separar-01">20,00</span></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <!-- rs inicio  -->
+                            <p class="cont-1"> <span class="separar-1 rs3">R$ </span> <span
+                                    class="separar-2 gg2">0,04</span> <span class="separar-3 gr3">g</span> <svg
+                                    class="separed s3" width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg> </p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <p class="cont"> <span class="separar-4 n2">600</span><span
+                                    class="separar-5 gms">g</span><svg class="separar-6" width="11" height="8"
+                                    viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15962 7.16483C5.96057 7.44919 5.53943 7.44919 5.34038 7.16483L1.05071 1.03673C0.81874 0.705343 1.05582 0.25 1.46033 0.25H10.0397C10.4442 0.25 10.6813 0.705342 10.4493 1.03673L6.15962 7.16483Z"
+                                        fill="#D8D3D3" />
+                                </svg></p>
+                        </th>
+
+                        <th class="valor-tabela">
+                            <!-- rs meio -->
+                            <p class="cont-2"><span class="separar-7">R$</span> <span class="separar-8">2,40</span></p>
+                        </th>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <!-- <br> -->
+            <!-- <hr> -->
+
+            <div class="total">
+                <p class="total1"> <span class="total22">Total:</span><span id="total2">R$</span><span
+                        id="total3">12,40</span></p>
+            </div>
+            <div class="center-bottom">
+                <button id="adicionar"> <span id="adicione">+</span> <span class="novo">Novo</span> <span class="novo">
+                        Ingrediente</span></button>
+                <button id="mudar">
+                    <button class="seta-esquerda">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.08517 4.59038C0.800808 4.78943 0.800807 5.21057 1.08517 5.40962L7.21327 9.69929C7.54466 9.93126 8 9.69418 8 9.28967L8 0.710328C8 0.305817 7.54466 0.0687399 7.21327 0.300712L1.08517 4.59038Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                    <p class="number"> 1 - 1 </p>
+                    <button class="seta-direita">
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.91483 4.59038C7.19919 4.78943 7.19919 5.21057 6.91483 5.40962L0.786732 9.69929C0.455343 9.93126 0 9.69418 0 9.28967L0 0.710328C0 0.305817 0.455342 0.0687399 0.786731 0.300712L6.91483 4.59038Z"
+                                fill="#333333" />
+                        </svg>
+                    </button>
+                </button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+</body>
+
+</html>

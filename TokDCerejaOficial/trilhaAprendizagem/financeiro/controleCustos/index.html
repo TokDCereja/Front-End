@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="/Menu/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Controle de Custos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="containerNavBar">
+                    <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                    <div class="sections">
+                        <a href="/home/home.html">Início</a>
+                        <a href="/Avaliação/avaliacao.html">Avaliação</a>
+                        <a href="/Planos/planos.html">Planos</a>
+                        <a href="/Livros/index.html">Ferramentas</a>
+                    </div>
+                    <div class="icons">
+                        <a href="/Notificação/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                        </a>
+                        <a href="/Perfil/index.html">
+                            <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mobile-menu-icon">
+                <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                    <li class="nav-item"><a href="/Avaliação/avaliacao.html">Avaliação</a></li>
+                    <li class="nav-item"><a href="/Planos/planos.html">Planos</a></li>
+                    <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                    <li class="nav-item"><a href="/Notificação/index.html"><i
+                                class="fa-solid fa-bell fa-config"></i></a>
+                    </li>
+                    <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="center">
+            <div class="conteudo">
+                <h1>Controle de Custos</h1>
+                <h2>Gestão de Compras e Estoque</h2>
+                <div class="paragrafo">
+                    <h2>Fornecedores</h2>
+                    <p><span>Negociação:</span>
+                        Negocie preços e condições de pagamento com fornecedores para obter melhores margens.
+                    </p>
+                    <p><span>Compras em Volume:</span>
+                        Considere compras em volume para reduzir custos unitários, mas evite excesso de estoque para não
+                        imobilizar capital.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <h2>Inventário</h2>
+                    <p><span>Sistema de Controle:</span>
+                        Utilize um sistema de controle de estoque para monitorar a quantidade de ingredientes e
+                        materiais
+                        disponíveis.
+                    </p>
+                    <p><span>FIFO:</span>
+                        Adote o método FIFO (First In, First Out) para evitar desperdícios e garantir a utilização de
+                        ingredientes mais antigos
+                        primeiro.
+                    </p>
+                </div>
+                <div class="paragrafo">
+                    <h2>Custos Fixos e Variáveis</h2>
+                    <p><span>Identificação:</span>
+                        Separe os custos fixos (aluguel, salários) dos variáveis (ingredientes, embalagens).
+                    </p>
+                    <p><span>Redução de Custos:</span>
+                        Avalie regularmente os custos para identificar áreas onde é possível economizar, como renegociar
+                        contratos de
+                        fornecedores ou otimizar processos de produção
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div class="circulo superiorDireito"></div>
+        <div class="circulo inferiorDireito"></div>
+        <div class="circulo superiorEsquerdo"></div>
+        <div class="circulo inferiorEsquerdo"></div>
+
+    </div>
+    <script src="/Menu/JavaScript.js"></script>
+
+    <div vw class="enabled"> <!-- API - Libras -->
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> <!-- API - Libras-->
+</body>
+
+</html>

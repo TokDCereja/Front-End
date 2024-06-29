@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.body2 {
+  margin-top: 10%;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+
+/*Título*/
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#titulo {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*Carrossel*/
+
+.container {
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image img {
+  border-radius: 15px;
+}
+
+#img {
+  margin-top: 20px;
+  height: 20rem;
+  width: 12rem;
+}
+
+#prev {
+  color: white;
+  top: 38.2rem;
+  left: 36rem;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+#next {
+  color: white;
+  top: 38.2rem;
+  right: 36rem;
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.6s ease;
+  border-radius: 3px 0px 0px 3px;
+  user-select: none;
+}
+
+#prev:hover,
+#next:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 42px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #717171;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+.imgActive {
+  transform: scale(1.1);
+}
+
+.fade {
+  transition: all 0.5s;
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+.background {
+  overflow: hidden;
+}
+.fade .conteudo {
+  width: 192px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: 4.5%;
+  border-radius: 15px 15px 0 0;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .galeria {
+    transform: scale(0.6);
+  }
+
+ h1 {
+    margin-top: 100px;
+  }
+}
+
+header {
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1001;
+}
