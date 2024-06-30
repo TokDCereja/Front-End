@@ -13,7 +13,7 @@ https://github.com/TokDCereja/Front-End/assets/147439694/89c31b0d-4b68-496a-afbb
 # Logando na plataforma
 
 
-## Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
+### Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
 
 
 https://github.com/TokDCereja/Front-End/assets/147439694/6a5d24aa-d497-44f5-823d-45d95e2c5ccf
