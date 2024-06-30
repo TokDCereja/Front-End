@@ -34,6 +34,46 @@ https://github.com/TokDCereja/Front-End/assets/147439694/a2fd6e0d-847b-4d35-8544
 
 https://github.com/TokDCereja/Front-End/assets/147439694/a04337e3-e57c-46ae-876d-7def07356ca9
 
+#Ferrantas
+
+ Além disso, a nossa plataforma proporciona os utensílios que nossos usúarios precisam para geranciar o seu negócio!
+
+## Litra de aprendizagem 
+
+https://github.com/TokDCereja/Front-End/assets/147439694/9c7b7fb9-056f-499b-b444-a6b1d2ab0bc6
+
+#Precificação
+
+Caso o profissional queira automatizar o seu negócio, oferecemos meios que agilizam esses processos, como a  precificação de seus produtos, considerando a mão de obra, custos fixos, embalagem e gastos com ingredientes.
+
+https://github.com/TokDCereja/Front-End/assets/147439694/b284ad61-c66d-42a7-a1ac-c47d2c70de03
+
+# Preço Produto
+
+Já sobre o preço produto separamos a receita em três categorias: massa, recheio e cobertura. Dessa forma, o confeiteiro saberá onde está gastando mais, onde pode economizar e como deve investir.
+
+
+https://github.com/TokDCereja/Front-End/assets/147439694/d117d94a-25ff-42ed-8825-547ebf5aa43b
+
+# Meu Caixa
+Também temos o recurso do caixa, onde o usuário pode gerenciar suas finanças e analisar seus resultados.
+
+https://github.com/TokDCereja/Front-End/assets/147439694/f430c363-c328-4f1e-9d95-a557e4ac4de5
+
+
+# Agenda 
+
+Também possuimos um calendário para que possam planejar entregas, gerenciar a produção e definir lembretes, garantindo que não deixem passar nenhuma tarefa ou compromisso. 
+
+
+
+
+
+
+
+
+
+
 
 
 https://www.canva.com/design/DAGFUhOr9cc/wI04y3AHO4om4wKNNOlp3w/edit
