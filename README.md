@@ -45,7 +45,8 @@ https://github.com/TokDCereja/Front-End/assets/147439694/a04337e3-e57c-46ae-876d
 
 # Litra de aprendizagem 
 
-https://github.com/TokDCereja/Front-End/assets/147439694/9c7b7fb9-056f-499b-b444-a6b1d2ab0bc6
+https://github.com/TokDCereja/Front-End/assets/147439694/258aabd8-6ac5-4e52-b609-16d2e5504135
+
 
 # Precificação
 
