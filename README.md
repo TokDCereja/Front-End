@@ -1,10 +1,10 @@
 # Front-End Tok D' Cereja
 
-### Ao entrar na nossa plataforma, o usuário será direcionado para a página inicial.
+ Ao entrar na nossa plataforma, o usuário será direcionado para a página inicial.
 
 ![image](https://github.com/TokDCereja/Front-End/assets/147439694/f4416bcc-999b-4a14-b141-9265152c8438)
 
-### Em seguida, ele poderá acessar a seção "Sobre", onde encontrará informações sobre nossos valores, visão de futuro, equipe de desenvolvimento e identidade visual, parcerias e um footer com contato e as redes sociais.
+ Em seguida, ele poderá acessar a seção "Sobre", onde encontrará informações sobre nossos valores, visão de futuro, equipe de desenvolvimento e identidade visual, parcerias e um footer com contato e as redes sociais.
 
 
 https://github.com/TokDCereja/Front-End/assets/147439694/89c31b0d-4b68-496a-afbb-18a933eec229
@@ -13,7 +13,7 @@ https://github.com/TokDCereja/Front-End/assets/147439694/89c31b0d-4b68-496a-afbb
 # Logando na plataforma
 
 
-### Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
+ Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
 
 https://github.com/TokDCereja/Front-End/assets/147439694/6a5d24aa-d497-44f5-823d-45d95e2c5ccf
 
@@ -34,15 +34,15 @@ https://github.com/TokDCereja/Front-End/assets/147439694/a2fd6e0d-847b-4d35-8544
 
 https://github.com/TokDCereja/Front-End/assets/147439694/a04337e3-e57c-46ae-876d-7def07356ca9
 
-#Ferrantas
+# Ferrantas
 
  Além disso, a nossa plataforma proporciona os utensílios que nossos usúarios precisam para geranciar o seu negócio!
 
-## Litra de aprendizagem 
+# Litra de aprendizagem 
 
 https://github.com/TokDCereja/Front-End/assets/147439694/9c7b7fb9-056f-499b-b444-a6b1d2ab0bc6
 
-#Precificação
+# Precificação
 
 Caso o profissional queira automatizar o seu negócio, oferecemos meios que agilizam esses processos, como a  precificação de seus produtos, considerando a mão de obra, custos fixos, embalagem e gastos com ingredientes.
 
