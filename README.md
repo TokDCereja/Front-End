@@ -1,5 +1,10 @@
 # Front-End Tok D' Cereja
 
+#cAcesse a nossa plataforma 
+
+https://tokdcereja.netlify.app/
+
+
  Ao entrar na nossa plataforma, o usuário será direcionado para a página inicial.
 
 ![image](https://github.com/TokDCereja/Front-End/assets/147439694/f4416bcc-999b-4a14-b141-9265152c8438)
@@ -65,20 +70,35 @@ https://github.com/TokDCereja/Front-End/assets/147439694/f430c363-c328-4f1e-9d95
 
 Também possuimos um calendário para que possam planejar entregas, gerenciar a produção e definir lembretes, garantindo que não deixem passar nenhuma tarefa ou compromisso. 
 
+https://github.com/TokDCereja/Front-End/assets/147439694/116d0ee1-0037-4704-a2c0-015e7e3c6a86
 
 
+# Estoque 
 
+Também fornecemos uma ferramenta de gerenciamento de estoque, onde trazemos automação e organização avançada com atualizações conforme seu “recheamento". Desse modo, o sistema identifica automaticamente itens em baixa, gerando uma lista de compras. Assegurando que os itens essenciais estejam sempre disponíveis e evitando surpresas durante pedidos urgentes.
 
+https://github.com/TokDCereja/Front-End/assets/147439694/3441fdbc-160d-4243-871a-9a3f72ea9b83
 
+# Vitrine Virtual
 
+Para que os nossos ausúrio possam compartilhar seu trabalho, disponibilizamos uma vitrine virtual, permitindo que seus clientes tenham acesso aos produtos à venda de uma forma mais simples e intuitiva.
 
+# Ferramenta de tradução
 
+Adicionamos uma ferramenta de tradução para permitir que os nossos usuários possam escolher tanto o seu idioma nativo quanto o de mais conforto
 
+https://github.com/TokDCereja/Front-End/assets/147439694/74211523-987e-4fce-b927-a4b7d1462673
 
+# Perfil
+Também disponibilizamos uma tela de perfil onde os usuários podem editar seus dados.
+
+https://github.com/TokDCereja/Front-End/assets/147439694/7dd71172-854c-43fe-a170-a5d27134e52a
+
+# Slide de apresentação
 
 https://www.canva.com/design/DAGFUhOr9cc/wI04y3AHO4om4wKNNOlp3w/edit
 
-https://tokdcereja.netlify.app/
+# Prototipagem da plataforma
 
 https://www.figma.com/design/0YL49ajg28wbS6SLYGcb6a/Tok-D'-Cereja?node-id=1371-599&t=5a88tj69K8ySOavr-0
 
