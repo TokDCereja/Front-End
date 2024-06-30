@@ -11,6 +11,7 @@
   
   body{
     overflow-x: hidden;
+    overflow-y: scroll;
   }
   
   :root {
@@ -254,7 +255,7 @@ svg{
 
 
 .tabela{
-    width:750px;
+    width:500px;
     height: auto;
     background: #ffff;
     border-radius: 20px;
@@ -275,30 +276,28 @@ svg{
     font-weight: bold;
 }
 
-.info{
-    width:100%;
-    height: 60px;
-    border-bottom: 2.5px solid #000;
-    border-right: 2.5px solid #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1% 0 1%;
+.info {
+  width: 100%;
+  height: 60px;
+  border-bottom: 2.5px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1% 0 1%;
+}
 
+.ultimo {
+  border-bottom: none;
 }
 
 
-.ultimo{
-    border-bottom: 0px;
-
+.dados {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.dados{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-}
 
 
 .conteudo{

@@ -13,38 +13,37 @@
     <header>
         <nav>
             <div class="containerNavBar">
-                <div class="logo"><img src="../img/Simbolo.png" alt="logo Tok D' Cereja"></div>
+                <div class="logo"><img src="/img/Simbolo.png" alt="logo Tok D' Cereja"></div>
                 <div class="sections">
-                    <a href="../home/home.html">Início</a>
-                    <a href="../Avaliação/avaliacao.html">Avaliação</a>
-                    <a href="../Planos/planos.html">Planos</a>
-                    <a href="../Livros/index.html">Ferramentas</a>
+                    <a href="/home/home.html">Início</a>
+                    <a href="/telas/Avaliação/avaliacao.html">Avaliação</a>
+                    <a href="/telas/Planos/planos.html">Planos</a>
+                    <a href="/Livros/index.html">Ferramentas</a>
                 </div>
                 <div class="icons">
-                    <a href="/Notificação/index.html">
-                        <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
-                    </a>
-                    <a href="/Perfil/index.html">
-                        <div class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></div>
-                    </a>
+                    <div class="circuloIcon"><i class="fa-solid fa-bell fa-config"></i></div>
+                    <a href="/Perfil/index.html" class="circuloIcon"><i class="fa-solid fa-user fa-config"></i></a>
                 </div>
             </div>
         </nav>
-    
+
+
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
-    
+
+
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="../home/home.html">Início</a></li>
-                <li class="nav-item"><a href="../Avaliação/avaliacao.html">Avaliação</a></li>
-                <li class="nav-item"><a href="../Planos/planos.html">Planos</a></li>
-                <li class="nav-item"><a href="../Livros/index.html">Ferramentas</a></li>
-                <li class="nav-item"><a href="/Notificação/index.html"><i class="fa-solid fa-bell fa-config"></i></a>
-                </li>
+                <li class="nav-item"><a href="/home/home.html">Início</a></li>
+                <li class="nav-item"><a href="/telas/Avaliação/avaliacao.html">Avaliação</a></li>
+                <li class="nav-item"><a href="/telas/Planos/planos.html">Planos</a></li>
+                <li class="nav-item"><a href="/Livros/index.html">Ferramentas</a></li>
+                <li class="nav-item"><a href="#"><i class="fa-solid fa-bell fa-config"></i></a></li>
                 <li class="nav-item"><a href="/Perfil/index.html"><i class="fa-solid fa-user fa-config"></i></a>
                 </li>
+
+
             </ul>
         </div>
     </header>
@@ -57,49 +56,41 @@
             <div class="conteudo">
                 <div class="dados">
                     <div class="info">
-                        <p>Custo total da receita</p>
-                        <p>R$5,00</p>
+                        <p>Preço de custo</p>
+                        <input type="number" id="precoCustoInput" value="R$">
                     </div>
                     <div class="info">
-                        <p>Mão de obra (% sobre o custo da receita)</p>
-                        <p>R$--</p>
+                        <p>Rendimento</p>
+                        <input type="number" id="rendimentoInput" value="Unidaes ou Kg">
                     </div>
                     <div class="info">
-                        <p>Custo fixo unitário</p>
-                        <p>R$5,00</p>
+                        <p>Embalagem de entrega (R$)</p>
+                        <input type="number" id="custoEmbalagemInput" value="R$">
                     </div>
                     <div class="info">
-                        <p>Custo variável unitário</p>
-                        <p>R$5,00</p>
+                        <p>Outras despesas (%)</p>
+                        <input type="number" id="outrasDespesasInput" value="20">
                     </div>
                     <div class="info">
-                        <p>Preço de venda (inserir)</p>
-                        <p>R$--</p>
+                        <p>Mão de obra (%)</p>
+                        <input type="number" id="maoDeObraInput" value="100">
+                    </div>
+                    <div class="info">
+                        <p>Lucro (%)</p>
+                        <input type="number" id="lucroInput" value="100">
+                    </div>
+                    <div class="info">
+                        <p>Total da receita</p>
+                        <output id="totalReceitaOutput" value="0.00">0.00</output>
                     </div>
                     <div class="info ultimo">
-                        <p>Lucro Projetado</p>
-                        <p>R$5,00</p>
-                    </div>
-                </div>
-                <div class="grafico">
-                    <div class="text">
-                        <p>Porcentual de lucro</p>
-                        <p>20%</p>
-                    </div>
-                    <div class="text">
-                        <p>Lucro unitário</p>
-                        <p>R$2,00</p>
-                    </div>
-                    <div id="colorido">
-                        <canvas id="myChart"></canvas>
+                        <p>Venda por rendimento</p>
+                        <output id="vendaRendimentoOutput">0.00</output>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    </div>
-
     <div class="backgroud">
         <img class="cookie" src="img/cookie2.png" alt="cookie">
 
