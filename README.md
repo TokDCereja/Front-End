@@ -19,7 +19,7 @@ https://github.com/TokDCereja/Front-End/assets/147439694/6a5d24aa-d497-44f5-823d
 
 # Planos e Acessibilidade
 
-Sendo os planos divididos em 3 categorias 
+Sendo os planos divididos em três categorias:
 
 1/4 xícara é o plano gratuito, tendo acesso as ferramentas básicas como trilha de aprendizagem com vídeos e artigos, focados em marketing digital, gestão de tempo e finanças juntamente com a  precificação, gestão de estoque e meu caixa com análise de resultados.
 
@@ -27,7 +27,7 @@ Sendo os planos divididos em 3 categorias
 
 1 xícara é nosso plano mensal Premium, que oferece todos os benefícios do Plano Gratuito e mensal básico, com o adicional de uma tabela nutricional.
 
-  Garantimos que todos os nossos “açucarados” tenham acesso ao portal de acessibilidade para alcançarmos todos os públicos,  atendendo a diversos níveis de dificuldade, incluindo um chatbot para esclarecer dúvidas e um sistema de feedback para entender a experiência do usuário.
+  Garantimos que todos os nossos “açucarados” tenham acesso ao portal de acessibilidade para alcançarmos todos os públicos.
 
 
 https://github.com/TokDCereja/Front-End/assets/147439694/a2fd6e0d-847b-4d35-8544-d7b87aa13964
