@@ -43,9 +43,10 @@ https://github.com/TokDCereja/Front-End/assets/147439694/a04337e3-e57c-46ae-876d
 
  Além disso, a nossa plataforma proporciona os utensílios que nossos usúarios precisam para geranciar o seu negócio!
 
-# Litra de aprendizagem 
+# Trilha de aprendizagem 
 
-https://github.com/TokDCereja/Front-End/assets/147439694/258aabd8-6ac5-4e52-b609-16d2e5504135
+
+https://github.com/TokDCereja/Front-End/assets/147439694/1f4a1fe4-6181-4f0a-a6d1-fae8d8372fea
 
 
 # Precificação
