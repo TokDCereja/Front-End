@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../img/Simbolo.png" type="image/x-icon">
     <title>Meu caixa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="caixa.css">
 </head>
 
 <body>
@@ -30,11 +31,11 @@
                 </div>
             </div>
         </nav>
-    
+
         <div class="mobile-menu-icon">
             <button class="menu" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
         </div>
-    
+
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="../home/home.html">Início</a></li>
@@ -50,68 +51,105 @@
     </header>
 
     <div class="container">
+        <div class="interface hidden" id="custoFixo">
+            <form name="custoFixo" class="custoFixo form">
+                <div class="campo">
+                    <label for="nomeFixo">Custo Fixo:</label>
+                    <input name="nomeFixo" id="nomeFixo" type="text" placeholder="Conta de Água">
+                </div>
+                <div class="campo">
+                    <label for="valorFixo">Valor:</label>
+                    <input name="valorFixo" id="valorFixo" type="number" placeholder="180">
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="FecharFixo()">Fechar</button>
+            </form>
+        </div>
+        <div class="interface hidden" id="custoUnd">
+            <form name="custoUnd" class="custoUnd form">
+                <div class="campo">
+                    <label for="nomeUnd">Produto:</label>
+                    <input name="nomeUnd" id="nomeUnd" type="text" placeholder="Pão de Mel">
+                </div>
+                <div class="campo">
+                    <label for="valorUnd">Valor:</label>
+                    <input name="valorUnd" id="valorUnd" type="number" placeholder="10,00">
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="FecharUnd()">Fechar</button>
+            </form>
+        </div>
+        <div class="interface hidden" id="totalVenda">
+            <form name="totalVenda" class="totalVenda form">
+                <div class="campo">
+                    <label for="totalProduto">Produto:</label>
+                    <input name="totalProduto" id="totalProduto" type="text" placeholder="Pão de Mel">
+                </div>
+                <div class="campo">
+                    <label for="quantProduto">Quantidade:</label>
+                    <input name="quantProduto" id="quantProduto" type="number" placeholder="100">
+                </div>
+                <div class="campo">
+                    <label for="valorProd">Valor:</label>
+                    <input name="valorProd" id="valorProd" type="number" placeholder="1000,00">
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="FecharVenda()">Fechar</button>
+            </form>
+        </div>
         <div class="caixa-container">
             <h2>Meu caixa</h2>
             <div class="main-box">
                 <div class="box">
-                    <h3>Custo fixo</h3>
+                    <div class="mais">
+                        <h3>Custo fixo</h3>
+                        <div id="mais" onclick="NovoFixo()">
+                            <p>+</p>
+                        </div>
+                    </div>
                     <div class="content">
-                        <div class="row">
-                            <p class="left">Conta de luz</p>
-                            <p>R$199,99</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Conta de água</p>
-                            <p>R$109,99</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Conta de gás</p>
-                            <p>R$199,99</p>
-                        </div>
+                        <ul class="listaCustoFixo">
+                        </ul>
                     </div>
                     <h3>Fundo de reserva</h3>
                     <div class="bottom">
-                        <p>R$500,00</p>
+                        <div>
+                            <p>R$</p>
+                            <input type="number" placeholder="500">
+                        </div>
                     </div>
                 </div>
 
                 <div class="box">
-                    <h3>Custo por unidade</h3>
+                    <div class="mais">
+                        <h3>Custo por Unidade</h3>
+                        <div id="mais" onclick="NovoUnd()">
+                            <p>+</p>
+                        </div>
+                    </div>
                     <div class="content">
-                        <div class="row">
-                            <p class="left">Brigadeiro</p>
-                            <p>R$4,99</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Bolo de pote</p>
-                            <p>R$15,99</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Bronie</p>
-                            <p>R$8,99</p>
-                        </div>
+                        <ul class="listaCustoUnd">
+                        </ul>
                     </div>
                     <h3>Capital de giro</h3>
                     <div class="bottom">
-                        <p>R$400,00</p>
+                        <div>
+                            <p>R$</p>
+                            <input type="number" placeholder="500">
+                        </div>
                     </div>
                 </div>
 
                 <div class="box">
-                    <h3>Total de vendas</h3>
+                    <div class="mais">
+                        <h3>Total de Vendas</h3>
+                        <div id="mais" onclick="NovoVenda()">
+                            <p>+</p>
+                        </div>
+                    </div>
                     <div class="content">
-                        <div class="row">
-                            <p class="left">Brigadeiro</p>
-                            <p>R$500,00</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Bolo de pote</p>
-                            <p>R$800,00</p>
-                        </div>
-                        <div class="row">
-                            <p class="left">Brownie</p>
-                            <p>R$700,00</p>
-                        </div>
+                        <ul class="listaTotalVenda">
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -149,6 +187,8 @@
     </script> <!-- API - Libras-->
     <script src="../JavaScript.js"></script>
     <script src="https://kit.fontawesome.com/e42a9cbd70.js" crossorigin="anonymous"></script>
+    <script src="CRUDCaixa.js"></script>
+    <script src="btnFechar.js"></script>
 </body>
 
 </html>

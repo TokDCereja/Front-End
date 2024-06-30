@@ -6,6 +6,7 @@
   font-family: "Lexend", sans-serif;
   text-decoration: none;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -370,7 +371,6 @@ nav {
 .box h3 {
   color: #6b0206;
   font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 
 .main-box {

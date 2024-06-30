@@ -26,6 +26,7 @@ nav {
   background: #ffffff;
   position: absolute;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .containerNavBar {
@@ -702,7 +703,7 @@ nav {
   overflow: hidden;
 }
 
-.produto01,
+.produto02,
 .produto03 {
   background-color: #fff;
   border-radius: 20px;
@@ -721,7 +722,7 @@ nav {
   font-weight: 500;
 }
 
-.produto01:hover,
+.produto02:hover,
 .produto03:hover {
   background: #6b0206;
   color: #fff;
@@ -729,7 +730,7 @@ nav {
   transform: scale(0.9);
 }
 
-.produto02 {
+.produto01 {
   background-color: #fff;
   background-color: #fff;
   border-radius: 20px;
@@ -749,7 +750,7 @@ nav {
   font-weight: 500;
 }
 
-.produto02:hover {
+.produto01:hover {
   background: #fff;
   color: #6b0206;
   border-color: #6b0206;
@@ -861,7 +862,16 @@ nav {
   .imagens {
     left: 0.2vh;
   }
+.visializar{
+  padding: 12px;
+}
 
+.açoes{
+  left: -8vh;
+}
+.alterações{
+  padding: 15px;
+}
   .produto01,
   .produto02,
   .produto03 {
@@ -927,6 +937,13 @@ nav {
     top: 72vw;
     left: 92vw;
   }
+
+  .alterações, .visializar{
+    width: 20%;
+    left: -6vh;
+    padding: 9px;
+    left: 0.8vh;
+  }
 }
 @media screen and (max-width: 1200px) {
   .comida {
@@ -939,6 +956,14 @@ nav {
   .açoes {
     left: -11vw;
   }
+
+  .alterações, .visializar{
+    width: 20%;
+    left: -6vh;
+    padding: 10px;
+    left: 0.8vh;
+  }
+
 }
 
 @media screen and (max-width: 1120px) {
@@ -1029,6 +1054,39 @@ nav {
   .whatsapp {
     top: 93.5vh;
     left: 90vw;
+  }
+
+  
+  .alterações, .visializar{
+    width: 20%;
+    left: -6vh;
+    padding: 9px;
+    left: 0vh;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  .comida{
+    left: 36vh;
+    top: -5vh;
+  }
+
+  .produto01, .produto02, .produto03{
+    width: 12%;
+  }
+
+  .alterações, .visializar{
+    width: 22%;
+    left: -6vh;
+  }
+
+  .visializar{
+    padding: 18px;
+  }
+
+  .backgroud{
+    height: 120vh;
   }
 }
 
@@ -1399,22 +1457,27 @@ nav {
     padding: 5px;
     top: 18vh;
     font-family: 11.8px;
+    height: 6vh;
   }
 
   .imagens {
-    left: -3.5vh;
-    top: -32vw;
+    left: -22vh;
+    top: -25vw;
   }
 
-  .alterações {
-    width: 40%;
+
+  .alterações{
+    height: 6vh;
     padding: 5px;
-    font-family: 11.8px;
+    font-size: 11.8px;
   }
+
 
   .açoes {
-    left: -3.2vh;
+    left: 19.2vh;
     top: -1vh;
+    width: 9%;
+  
   }
 
   .whatsapp::before,
@@ -1437,9 +1500,13 @@ nav {
   }
 }
 
+
 @media screen and (max-width: 428px) {
   .açoes {
-    left: -2.9vw;
+    left: 43vw;
+  }
+  .imagens{
+    left: -24vh;
   }
 
   .fa-whatsapp {
@@ -1470,6 +1537,7 @@ nav {
     font-size: 11.2px;
     font-weight: none;
     width: 30%;
+    height: 7vh;
   }
 
   .produto {
@@ -1478,11 +1546,13 @@ nav {
     padding: 10px;
     margin-left: 12px;
     margin-right: 12px;
+    height: 10vh;
   }
   .imagens {
-    left: -3vh;
-    top: 12vh;
+    left: -21.2vh;
+    top: 19vh;
   }
+
 
   .BoloKitKat,
   .BoloBrigadeiro,
@@ -1494,12 +1564,8 @@ nav {
     height: 190px;
   }
 
-  .açoes {
-    left: -1.2vh;
-  }
 
   .alterações {
-    width: 45%;
     font-size: 11.2px;
   }
 
@@ -1522,7 +1588,7 @@ nav {
   }
 
   .açoes {
-    left: -6.4vw;
+    left: 36vw;
   }
 
   .açoes .alterações {
@@ -1569,7 +1635,6 @@ nav {
     left: -15vh;
     top: 12vh;
   }
-
   .BoloKitKat,
   .BoloBrigadeiro,
   .BoloLaranja,
@@ -1608,15 +1673,16 @@ nav {
   }
 
   .açoes {
-    left: -6.4vw;
+    left: -6vw;
   }
   .açoes .alterações {
     font-size: 10.2px;
+    
   }
 
   .visializar {
     font-size: 10.2px;
-    padding-top: 5px;
+   
 }
 }
 
@@ -1655,22 +1721,26 @@ nav {
     display: none;
   }
 
+  
   .produto01,
   .produto02,
   .produto03 {
     font-size: 8.5px;
     font-weight: none;
-    height: 6vh;
+    height: 8vh;
+    width: 23%;
   }
 
   .produto {
-    top: 12vh;
+    top: 15vh;
     left: 0.5vh;
+    height:12vh;
   }
   .imagens {
-    left: -5vh;
-    top: 14vh;
+    left: -22.2vh;
+    top: 22vh;
   }
+
 
   .BoloKitKat,
   .BoloBrigadeiro,
@@ -1683,7 +1753,7 @@ nav {
   }
 
   .açoes {
-    left: -2vh;
+    left: 22vh;
   }
 
   .alterações {

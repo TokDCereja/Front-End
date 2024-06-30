@@ -26,6 +26,7 @@ nav {
   background: #ffffff;
   position: absolute;
   z-index: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .containerNavBar {
@@ -1437,8 +1438,8 @@ nav {
     margin-right: 12px;
   }
   .imagens {
-    left: 3vh;
-    top: 25vh;
+    left: 5vh;
+    top: 30vh;
   }
 
   .produtoNovo button {
@@ -1488,8 +1489,8 @@ nav {
   
   #botaoAdicionar{
     display: flex;
-     bottom: -6vh;
-     left: 20vh;
+     bottom: -12vh;
+     left: 21.5vh;
     position: absolute;
   }
   .produtoNovo {
@@ -1498,7 +1499,9 @@ nav {
 
     .produtoNovo input[type="text"] {
      padding-bottom: 25px;
-      margin:3vh; 
+     padding: 0.5vh;
+      left: 12vh;
+      position: absolute;
     }
   }
   

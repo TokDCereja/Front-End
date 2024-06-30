@@ -1,0 +1,156 @@
+.box .content {
+  width: 400px;
+  height: 200px;
+  max-width: 400px;
+  overflow-y: scroll;
+  padding: 5px;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.box .content input[type="text"] {
+  width: 120px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  margin-left: 2px;
+}
+
+.box .content input[type="number"] {
+  width: 70px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+}
+.bottom input[type="number"] {
+  width: 70px;
+  border: none;
+}
+
+.bottom input,
+.bottom p {
+  font-size: 1.5rem;
+}
+.elemento {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.elemento div,
+.bottom div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  margin-left: 5%;
+}
+
+.bottom div {
+  margin: 0;
+}
+
+.mais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#mais p {
+  width: auto;
+  height: auto;
+  padding-bottom: 1px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #6b0206;
+  font-weight: 800;
+}
+
+#mais {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#mais:hover {
+  background-color: #c2c2c2;
+  cursor: pointer;
+}
+
+.interface {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 2.5px solid #6b0206;
+  background-color: #fff;
+}
+form,
+form input,
+form button {
+  font-size: 1.4rem;
+}
+form .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+form button,
+form input {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2.5px solid #6b0206;
+}
+
+form button {
+  background-color: transparent;
+  color: #6b0206;
+  font-weight: 800;
+  transition: all 100ms ease-in-out;
+}
+
+form button:hover {
+  transform: scale(0.9);
+  color: #ffffff;
+  background-color: #6b0206;
+}
+form input {
+  padding-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .box .content {
+    width: 350px;
+  }
+
+  .interface {
+    height: 250vh;
+    align-items: center;
+  }
+}
