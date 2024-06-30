@@ -1,6 +1,6 @@
 # Front-End Tok D' Cereja
 
-#### Ao entrar na nossa plataforma, o usuário será direcionado para a página inicial.
+### Ao entrar na nossa plataforma, o usuário será direcionado para a página inicial.
 
 ![image](https://github.com/TokDCereja/Front-End/assets/147439694/f4416bcc-999b-4a14-b141-9265152c8438)
 
@@ -10,10 +10,10 @@
 https://github.com/TokDCereja/Front-End/assets/147439694/89c31b0d-4b68-496a-afbb-18a933eec229
 
 
-#### Logando na plataforma
+# Logando na plataforma
 
 
-#### Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
+### Após fazer login na plataforma, o usuário terá acesso ao portal de feedbacks e às ferramentas disponíveis. No entanto, as ferramentas acessíveis serão limitadas de acordo com o plano ao qual o usuário está inscrito.
 
 
 https://github.com/TokDCereja/Front-End/assets/147439694/6a5d24aa-d497-44f5-823d-45d95e2c5ccf
