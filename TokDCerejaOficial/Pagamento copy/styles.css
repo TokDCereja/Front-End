@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbf2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.payment-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+
+.payment-container::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  margin-bottom: 8px;
+}
+
+.image-wrapper img {
+  width: 70px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group-inline .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group-inline .form-group:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#cvv {
+  margin-top: 17px;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#value {
+  background-color: #fff;
+  color: #000;
+}
+
+#Cvv label {
+  /*margin-left: 60px;*/
+  display: flex;
+}
