@@ -1,6 +1,6 @@
 # Front-End Tok D' Cereja
 
-#cAcesse a nossa plataforma 
+## Acesse a nossa plataforma 
 
 https://tokdcereja.netlify.app/
 
