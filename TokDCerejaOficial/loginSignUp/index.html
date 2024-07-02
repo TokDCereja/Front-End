@@ -13,29 +13,35 @@
 <body>
     <div class="container" id="container">
         <div class="formContainer signUp" id="signUp">
-            <form>
+            <form class="registrarForm">
                 <h2><label class="redLetter">C</label>adastrar-se</h2>
+
                 <div class="info">
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" placeholder="Nome">
                 </div>
+
                 <div class="info">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="email" name="email" id="emailRegister" placeholder="E-mail">
                 </div>
+
                 <div class="info">
                     <label for="emailAgain">E-mail Novamente:</label>
                     <input type="email" name="emailAgain" id="emailAgain" placeholder="E-mail">
                 </div>
+
                 <div class="info">
-                    <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password" placeholder="Senha">
+                    <label for="password" id="cadastrarSenha">Senha:</label>
+                    <input type="password" name="password" id="passwordRegister" placeholder="Senha">
                 </div>
+
                 <div class="info">
                     <label for="passwordAgain">Senha Novamente:</label>
                     <input type="password" name="passwordAgain" id="passwordAgain" placeholder="Senha">
                 </div>
-                <button type="button" class="btn focus">Cadastrar</button>
+
+                <button type="submit" class="btn focus">Cadastrar</button>
                 <div class="or">
                     <div class="line"></div>
                     <p>Ou</p>
@@ -56,16 +62,17 @@
                 </h3>
             </form>
         </div>
+
         <div class="formContainer signIn">
-            <form>
+            <form class="entrarForm">
                 <h2><label class="redLetter">E</label>ntrar</h2>
                 <div class="info">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="email" name="emailLogin" id="email" placeholder="E-mail">
                 </div>
                 <div class="info">
                     <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password" placeholder="Senha">
+                    <input type="password" name="passwordLogin" id="password" placeholder="Senha">
                 </div>
                 <div class="info2">
                     <div class="remember">
@@ -74,7 +81,7 @@
                     </div>
                     <span>Esqueci minha <a href="#" id="senha">senha</a></span>
                 </div>
-                <a href="/home/home.html"><button type="button" class="btn focus">Entrar</button></a>
+                <button type="submit" class="btn focus" id="entrar">Entrar</button>
                 <div class="or">
                     <div class="line"></div>
                     <p>Ou</p>
@@ -96,6 +103,7 @@
                 </h3>
             </form>
         </div>
+
         <div class="toggleContainer">
             <div class="toggle">
                 <div class="togglePanel toggleLeft">
@@ -119,7 +127,7 @@
                 <h2 class="titulo"><span>E</span>squeceu sua Senha?</h2>
                 <div class="dado">
                     <h3 class="texto">Nos informe o E-mail cadastrado:</h3>
-                    <input type="email" placeholder="E-mail" name="email" id="email" required>
+                    <input type="email" placeholder="E-mail" name="email" id="emailPassword">
                 </div>
             </div>
             <input type="submit" id="botao1" value="Confirmar">
@@ -171,6 +179,7 @@
     </div>
     <script src="script.js"></script>
     <script src="senha.js"></script>
+    <script src="cadastroLogin.js"></script>
 </body>
 
 </html>

@@ -42,3 +42,4 @@ esqueciSenha.addEventListener("click", function () {
   tela.style.display = "flex";
   senha1.classList.remove("hidden");
 });
+
